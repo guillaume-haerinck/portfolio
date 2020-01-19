@@ -10,6 +10,9 @@ import { Component, Prop, Vue } from 'vue-property-decorator';
 @Component
 export default class Project extends Vue {
   @Prop() private description!: string;
+  @Prop() private date!: string;
+  @Prop() private logo!: string;
+  @Prop() private url!: string;
 }
 </script>
 
