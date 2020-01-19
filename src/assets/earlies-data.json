@@ -1,0 +1,20 @@
+[
+    {
+        "name": "test",
+        "logo": "stm.png",
+        "url": "'qj",
+        "description": "MySuperDescription"
+    },
+    {
+        "name": "test",
+        "logo": "stm.png",
+        "url": "aoeu",
+        "description": "MySuperDescription2"
+    },
+    {
+        "name": "test",
+        "logo": "img/mirrors-lasers-robots/logo.png",
+        "url": "aoeu",
+        "description": "MySuperDescription2"
+    }
+]
