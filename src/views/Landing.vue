@@ -1,28 +1,29 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+  <div class="landing">
+    <div id="first-screen">
+      <h1 class="backgrounded left">Hello I'm Guillaume,<br>a software engineer student <br>based in Paris.</h1>
+      <p id="description">Exploring computer graphics, I'm making projects related to realtime rendering, data-oriented design, web and user interface development.</p>
 
-    <h1>Hello I'm Guillaume, a software engineer student based in Paris</h1>
-    <p>Exploring computer graphics, I'm making projects related to realtime rendering, data-oriented design, web and user interface development</p>
-
-    <div>
-      <p><a>linkedin</a></p>
-      <p><a>vimeo</a></p>
-      <p><a>cv</a></p>
-      <p><a>github</a></p>
+      <div id="links">
+        <p><a id="linkedin" href="/">linkedin</a></p>
+        <p><a id="vimeo" href="/">vimeo</a></p>
+        <p><a id="cv" href="/">cv</a></p>
+        <p><a id="github" href="/">github</a></p>
+      </div>
     </div>
 
-    <h2>A selection of sofwares I worked on</h2>
-
-    <p>{{ projects[0].description }}</p>
-
+    <div class="separator">
+      <h3 class="backgrounded left">A selection of sofwares I worked on.</h3>
+    </div>
 
     <Project v-for="(project, index) in projects" 
-      v-bind:key="index"
-      v-bind:description="project.description"
-      v-bind:date="project.date"
-      v-bind:logo="project.logo"
-      v-bind:url="project.url"
+      :key="index"
+      :name="project.name"
+      :description="project.description"
+      :date="project.date"
+      :logo="project.logo"
+      :url="project.url"
+      :capture="project.capture"
     />
   </div>
 </template>
@@ -44,7 +45,72 @@ export default class App extends Vue {
 </script>
 
 <style scoped lang="scss">
-h3 {
-  margin: 40px 0 0;
+#first-screen {
+  min-height: 100vh;
+  display: grid;
+  align-content: center;
 }
+
+.separator {
+  display: grid;
+}
+
+#description {
+  max-width: 1000px;
+  padding-left: var(--left-decals);
+}
+
+#links {
+  margin: 10vh 0;
+  display: inline-grid;
+  grid-auto-flow: column;
+  justify-content: left;
+
+  p {
+    margin: 0 0.5em;
+
+    &:first-of-type {
+      margin-left: var(--left-decals);
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: 3px;
+  }
+
+  #linkedin {
+    border-bottom: 4px solid #0077b5;
+
+    &:hover {
+      color: #0077b5;
+    }
+  }
+
+  #vimeo {
+    border-bottom: 4px solid #00adef;
+
+    &:hover {
+      color: #00adef;
+    }
+  }
+
+  #cv {
+    border-bottom: 4px solid violet;
+
+    &:hover {
+      color: violet;
+    }
+  }
+
+  #github {
+    border-bottom: 4px solid grey;
+
+    &:hover {
+      color: grey;
+    }
+  }
+}
+
 </style>
