@@ -26,9 +26,9 @@
       :capture="soft.capture"
     />
 
-    <div class="separator">
-      <h3 class="backgrounded left">Some projects in early stages.</h3>
-    </div>
+    <span class="separator spacing"></span>
+
+    <h3 class="backgrounded left">Some projects in early stages.</h3>
 
     <div class="earlies">
       <EarlyProject class="backgrounded" v-for="(early, index) in earlies" 
@@ -40,9 +40,9 @@
       />
     </div>
 
-    <div class="separator">
-      <h3 class="backgrounded left">A selection of websites I made.</h3>
-    </div>
+    <span class="separator spacing"></span>
+
+    <h3 class="backgrounded left">A selection of websites I made.</h3>
 
     <Project v-for="(web, index) in webs" 
       :key="'web-' + index"

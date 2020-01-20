@@ -15,7 +15,7 @@
 body {
   background-color: #f4f4f4;
   font-family: 'IBM Plex Sans', sans-serif;
-  font-size: 1.4em;
+  font-size: 1.2em;
   margin: 0;
   padding: 0; 
 }
@@ -51,6 +51,10 @@ p {
 
 .center {
   justify-self: center;
+}
+
+.spacing {
+  margin: 15px 0;
 }
 
 </style>

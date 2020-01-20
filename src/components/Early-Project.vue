@@ -21,14 +21,14 @@ export default class EarlyProject extends Vue {
 .early-project {
   display: grid;
   justify-content: center;
-  text-align: justify;
+  justify-items: center;
   max-width: 500px;
   width: 100%;
   background-color: white;
   margin: 20px;
 
   img {
-    width: 100%;
+    max-height: 250px;
   }
 
   p {

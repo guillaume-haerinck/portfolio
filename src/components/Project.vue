@@ -41,7 +41,6 @@ export default class Project extends Vue {
 }
 
 .description {
-  text-align: justify;
   max-width: 1200px;
 }
 
@@ -60,7 +59,7 @@ export default class Project extends Vue {
 
 .capture {
   margin: 10px 0;
-  max-height: 350px;
+  max-height: 250px;
   overflow: hidden;
   display: inline-grid;
   align-content: center;
