@@ -1,6 +1,7 @@
 <template>
   <div class="early-project">
-    
+    <a :href=url><img :src=logo :alt=name></a>
+    <p>{{ description }}</p>
   </div>
 </template>
 
@@ -17,5 +18,22 @@ export default class EarlyProject extends Vue {
 </script>
 
 <style scoped lang="scss">
+.early-project {
+  display: grid;
+  justify-content: center;
+  text-align: justify;
+  max-width: 500px;
+  width: 100%;
+  background-color: white;
+  margin: 20px;
+
+  img {
+    width: 100%;
+  }
+
+  p {
+    padding: 5px 20px;
+  }
+}
 
 </style>

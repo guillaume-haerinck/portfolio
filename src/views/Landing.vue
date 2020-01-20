@@ -5,10 +5,10 @@
       <p id="description">Exploring computer graphics, I'm making projects related to realtime rendering, data-oriented design, web and user interface development.</p>
 
       <div id="links">
-        <p><a id="linkedin" href="/">linkedin</a></p>
-        <p><a id="vimeo" href="/">vimeo</a></p>
-        <p><a id="cv" href="/">cv</a></p>
-        <p><a id="github" href="/">github</a></p>
+        <p><a id="linkedin" href="https://www.linkedin.com/in/guillaumehaerinck/">linkedin</a></p>
+        <p><a id="vimeo" href="https://vimeo.com/guillaumehaerinck">vimeo</a></p>
+        <p><a id="cv" href="https://www.guillaumehaerinck.com/cv-en.pdf">cv</a></p>
+        <p><a id="github" href="https://github.com/guillaume-haerinck">github</a></p>
       </div>
     </div>
 
@@ -27,6 +27,20 @@
     />
 
     <div class="separator">
+      <h3 class="backgrounded left">Some projects in early stages.</h3>
+    </div>
+
+    <div class="earlies">
+      <EarlyProject class="backgrounded" v-for="(early, index) in earlies" 
+        :key="'ep' + index"
+        :name="early.name"
+        :description="early.description"
+        :logo="early.logo"
+        :url="early.url"
+      />
+    </div>
+
+    <div class="separator">
       <h3 class="backgrounded left">A selection of websites I made.</h3>
     </div>
 
@@ -38,18 +52,6 @@
       :logo="web.logo"
       :url="web.url"
       :capture="web.capture"
-    />
-
-    <div class="separator">
-      <h3 class="backgrounded left">Some projects in early stages.</h3>
-    </div>
-
-    <EarlyProject v-for="(early, index) in earlies" 
-      :key="'ep' + index"
-      :name="early.name"
-      :description="early.description"
-      :logo="early.logo"
-      :url="early.url"
     />
   </div>
 </template>
@@ -80,6 +82,7 @@ export default class App extends Vue {
 <style scoped lang="scss">
 .landing {
   padding: 0 50px;
+  display: grid;
 }
 
 #first-screen {
@@ -100,16 +103,13 @@ export default class App extends Vue {
 
 #links {
   margin: 10vh 0;
-  display: inline-grid;
-  grid-auto-flow: column;
+  padding-left: 5px;
+  display: flex;
   justify-content: left;
+  flex-wrap: wrap;
 
   p {
     margin: 0 0.5em;
-
-    &:first-of-type {
-      margin-left: var(--left-decals);
-    }
   }
 
   a {
@@ -149,6 +149,16 @@ export default class App extends Vue {
       color: grey;
     }
   }
+}
+
+.earlies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-self: center;
+  max-width: 1200px;
+  width: 100%;
+  margin-bottom: 35px;
 }
 
 </style>

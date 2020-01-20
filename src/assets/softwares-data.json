@@ -1,26 +1,34 @@
 [
     {
-        "name": "test",
-        "date": "2019-670-657",
-        "logo": "stm.png",
-        "url": "'qj",
-        "description": "MySuperDescription",
-        "capture": "sntm.png"
+        "name": "Cube beast editor",
+        "date": "05-01-2020",
+        "logo": "TODO",
+        "url": "https://github.com/guillaume-haerinck/cube-beast-editor",
+        "description": "A voxel map editor built with OpenGL ES. Inspired by MagicaVoxel, you can create 3D model from scratch with a set of basic tools. Cross-platform, it can target web-browser with wasm support.",
+        "capture": "TODO"
     },
     {
-        "name": "test",
-        "date": "54-547-954",
-        "logo": "stm.png",
-        "url": "aoeu",
-        "description": "MySuperDescription2",
-        "capture": "sntm.png"
+        "name": "DirectX 11 Playground",
+        "date": "25-09-2019",
+        "logo": "TODO",
+        "url": "https://github.com/guillaume-haerinck/directx11-playground",
+        "description": "A simple data-oriented renderer built for learning purposes. The architecture is using Entity Component System to handle graphic objects attribution and deletion.",
+        "capture": "TODO"
     },
     {
-        "name": "test",
-        "date": "54-547-954",
+        "name": "Mirrors, Lasers and Robots",
+        "date": "11-05-2019",
         "logo": "img/mirrors-lasers-robots/logo.png",
-        "url": "aoeu",
-        "description": "MySuperDescription2",
-        "capture": "sntm.png"
+        "url": "https://github.com/guillaume-haerinck/imac-tower-defense",
+        "description": "A tower-defense game built with modern OpenGL. The player has to place mirrors on the map to reflect lasers on robot waves. The architecture is made using Entity Component System.",
+        "capture": "TODO"
+    },
+    {
+        "name": "L'échoppe de Ben",
+        "date": "04-03-2018",
+        "logo": "TODO",
+        "url": "https://vincent-le-ven.itch.io/ben-echoppe",
+        "description": "A Unity3D game made for the Digital Art Jam 2. It is a point'n click taking place at the shop of Ben Vautier. There is one screen with many hidden enigmas for the player to resolve.",
+        "capture": "TODO"
     }
 ]

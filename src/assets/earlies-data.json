@@ -1,20 +1,20 @@
 [
     {
-        "name": "test",
-        "logo": "stm.png",
-        "url": "'qj",
-        "description": "MySuperDescription"
+        "name": "Met ECS",
+        "logo": "TODO",
+        "url": "https://github.com/guillaume-haerinck/met-ecs",
+        "description": "A simple Entity Component System library heavily based on ENTT library. Made for learning purposes, there are still bugs to cover."
     },
     {
-        "name": "test",
-        "logo": "stm.png",
-        "url": "aoeu",
-        "description": "MySuperDescription2"
+        "name": "Which Gui",
+        "logo": "TODO",
+        "url": "https://github.com/guillaume-haerinck/which-gui",
+        "description": "I am remaking the same interfaces across multiple technologies. HTML, QT, XAML, etc. I pick the ui to integrate from video-games."
     },
     {
-        "name": "test",
-        "logo": "img/mirrors-lasers-robots/logo.png",
-        "url": "aoeu",
-        "description": "MySuperDescription2"
+        "name": "Roll Goal",
+        "logo": "TODO",
+        "url": "https://github.com/guillaume-haerinck/roll-goal",
+        "description": "A mini-game coming from The legend of zelda that I am remaking across multiple game engines (Unreal, Unity, Godot)."
     }
 ]

@@ -4,14 +4,17 @@
       <h4 class="backgrounded">{{ date }}</h4>
     </div>
   
-    <div class="center">
-      <img :src=logo>
+    <div class="center logo">
+      <a :href=url>
+        <img :src=logo :alt=name>
+      </a>
     </div>
 
-    <p class="center">{{ description }}</p>
-    <div class="center">
+    <p class="description center">{{ description }}</p>
+  
+    <div class="capture center">
       <a :href=url>
-        <img :src=capture>
+        <img :src=capture alt="Project capture">
       </a>
     </div>
   </div>
@@ -34,10 +37,32 @@ export default class Project extends Vue {
 <style scoped lang="scss">
 .project {
   display: grid;
+  margin: 10px 0;
+}
+
+.description {
+  text-align: justify;
+  max-width: 1200px;
 }
 
 .date {
   justify-content: right;
+}
+
+.logo {
+  margin: 10px 0;
+
+  img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+.capture {
+  margin: 10px 0;
+  border: 3px solid black;
+  width: 100%;
+  max-width: 1200px;
 }
 
 h3 {
