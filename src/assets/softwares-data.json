@@ -2,18 +2,18 @@
     {
         "name": "Cube beast editor",
         "date": "05-01-2020",
-        "logo": "TODO",
+        "logo": "img/cube-beast-editor/logo.png",
         "url": "https://github.com/guillaume-haerinck/cube-beast-editor",
         "description": "A voxel map editor built with OpenGL ES. Inspired by MagicaVoxel, you can create 3D model from scratch with a set of basic tools. Cross-platform, it can target web-browser with wasm support.",
-        "capture": "TODO"
+        "capture": "img/cube-beast-editor/capture.png"
     },
     {
         "name": "DirectX 11 Playground",
         "date": "25-09-2019",
-        "logo": "TODO",
+        "logo": "img/dx11-playground/logo.png",
         "url": "https://github.com/guillaume-haerinck/directx11-playground",
         "description": "A simple data-oriented renderer built for learning purposes. The architecture is using Entity Component System to handle graphic objects attribution and deletion.",
-        "capture": "TODO"
+        "capture": "img/dx11-playground/capture.png"
     },
     {
         "name": "Mirrors, Lasers and Robots",
@@ -21,14 +21,14 @@
         "logo": "img/mirrors-lasers-robots/logo.png",
         "url": "https://github.com/guillaume-haerinck/imac-tower-defense",
         "description": "A tower-defense game built with modern OpenGL. The player has to place mirrors on the map to reflect lasers on robot waves. The architecture is made using Entity Component System.",
-        "capture": "TODO"
+        "capture": "img/mirrors-lasers-robots/capture.png"
     },
     {
         "name": "L'échoppe de Ben",
         "date": "04-03-2018",
-        "logo": "TODO",
+        "logo": "img/echoppe-ben/logo.png",
         "url": "https://vincent-le-ven.itch.io/ben-echoppe",
         "description": "A Unity3D game made for the Digital Art Jam 2. It is a point'n click taking place at the shop of Ben Vautier. There is one screen with many hidden enigmas for the player to resolve.",
-        "capture": "TODO"
+        "capture": "img/echoppe-ben/capture.png"
     }
 ]

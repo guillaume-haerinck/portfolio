@@ -54,15 +54,26 @@ export default class Project extends Vue {
 
   img {
     width: 100%;
-    max-width: 300px;
+    max-width: 200px;
   }
 }
 
 .capture {
   margin: 10px 0;
-  border: 3px solid black;
-  width: 100%;
-  max-width: 1200px;
+  max-height: 350px;
+  overflow: hidden;
+  display: inline-grid;
+  align-content: center;
+  border: 5px solid black;
+
+  a {
+    display: inherit;
+  }
+
+  img {
+    width: 100%;
+    max-width: 1200px;
+  }
 }
 
 h3 {
