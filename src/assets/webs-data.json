@@ -2,25 +2,25 @@
     {
         "name": "Lolimac",
         "date": "05-06-2019",
-        "logo": "TODO",
+        "logo": "img/lolimac/logo.png",
         "url": "https://github.com/guillaume-haerinck/lolimac",
-        "description": "An event-organisation website made with Angular. You can create, modify and join events made for IMAC students. Synchronisation with calendars is available as well.",
-        "capture": "TODO"
+        "description": "Lolimac is an event-organisation website made with Angular. You can create, modify and join events made for IMAC students. Synchronisation with calendars is available as well.",
+        "capture": "img/lolimac/capture.png"
     },
     {
         "name": "Coffee Conspiration",
         "date": "07-01-2019",
-        "logo": "TODO",
+        "logo": "img/coffee-conspiration/logo.png",
         "url": "https://github.com/guillaume-haerinck/imac-coffee-conspiration",
         "description": "An inner-joke built with webpack and HTML Components. It is a game/story experience dedicated to surprise its audience and play with conspiration tropes.",
-        "capture": "TODO"
+        "capture": "img/coffee-conspiration/capture.png"
     },
     {
         "name": "Infotrafic.com",
         "date": "25-08-2018",
-        "logo": "TODO",
+        "logo": "img/infotrafic/logo.png",
         "url": "https://www.infotrafic.com/home",
         "description": "A realtime-trafic map visualizer made for my employer Infotrafic. It is built with Angular and uses Node as backend. Uses progressive web app (PWA) structure and conventions.",
-        "capture": "TODO"
+        "capture": "img/infotrafic/capture.png"
     }
 ]
