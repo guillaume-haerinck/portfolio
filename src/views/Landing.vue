@@ -79,7 +79,7 @@ export default class App extends Vue {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="css">
 .landing {
   padding: 0 50px;
   display: grid;
@@ -107,48 +107,48 @@ export default class App extends Vue {
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
+}
 
-  p {
+#links p {
     margin: 0 0.5em;
-  }
+}
 
-  a {
-    text-decoration: none;
-    color: black;
-    padding-bottom: 3px;
-  }
+#links a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 3px;
+}
 
-  #linkedin {
-    border-bottom: 4px solid #0077b5;
+#linkedin {
+  border-bottom: 4px solid #0077b5;
+}
 
-    &:hover {
-      color: #0077b5;
-    }
-  }
+#linkedin:hover {
+  color: #0077b5;
+}
 
-  #vimeo {
-    border-bottom: 4px solid #00adef;
+#vimeo {
+  border-bottom: 4px solid #00adef;
+}
 
-    &:hover {
-      color: #00adef;
-    }
-  }
+#vimeo:hover {
+  color: #00adef;
+}
 
-  #cv {
-    border-bottom: 4px solid violet;
+#cv {
+  border-bottom: 4px solid violet;
+}
 
-    &:hover {
-      color: violet;
-    }
-  }
+#cv:hover {
+  color: violet;
+}
 
-  #github {
-    border-bottom: 4px solid grey;
+#github {
+  border-bottom: 4px solid grey;
+}
 
-    &:hover {
-      color: grey;
-    }
-  }
+#github:hover {
+  color: grey;
 }
 
 .earlies {

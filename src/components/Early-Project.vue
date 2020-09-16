@@ -17,7 +17,7 @@ export default class EarlyProject extends Vue {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="css">
 .early-project {
   display: grid;
   justify-content: center;

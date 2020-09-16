@@ -34,7 +34,7 @@ export default class Project extends Vue {
 }
 </script>
 
-<style scoped lang="scss">
+<style scoped lang="css">
 .project {
   display: grid;
   margin: 10px 0;

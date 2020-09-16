@@ -7,7 +7,7 @@
   </div>
 </template>
 
-<style lang="scss">
+<style lang="css">
 :root {
   --left-decals: 20px;
 }
@@ -33,12 +33,12 @@ p {
 
 #footer {
   background-color: white;
+}
 
-  p {
+#footer p {
     text-align: center;
     margin: 0;
     padding: 0;
-  }
 }
 
 .left {
