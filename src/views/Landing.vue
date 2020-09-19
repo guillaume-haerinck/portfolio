@@ -12,70 +12,35 @@
       </div>
     </div>
 
-    <div class="separator">
-      <h3 class="backgrounded left">A selection of sofwares I worked on.</h3>
-    </div>
-
-    <Project v-for="(soft, index) in softwares" 
-      :key="'soft' + index"
-      :name="soft.name"
-      :description="soft.description"
-      :date="soft.date"
-      :logo="soft.logo"
-      :url="soft.url"
-      :capture="soft.capture"
+    <Project v-for="(project, index) in projects" 
+      :key="'project' + index"
+      :name="project.name"
+      :description="project.description"
+      :date="project.date"
+      :logo="project.logo"
+      :url="project.url"
+      :capture="project.capture"
     />
 
     <span class="separator spacing"></span>
 
-    <h3 class="backgrounded left">Some projects in early stages.</h3>
-
-    <div class="earlies">
-      <EarlyProject class="backgrounded" v-for="(early, index) in earlies" 
-        :key="'ep' + index"
-        :name="early.name"
-        :description="early.description"
-        :logo="early.logo"
-        :url="early.url"
-      />
-    </div>
-
-    <span class="separator spacing"></span>
-
-    <h3 class="backgrounded left">A selection of websites I made.</h3>
-
-    <Project v-for="(web, index) in webs" 
-      :key="'web-' + index"
-      :name="web.name"
-      :description="web.description"
-      :date="web.date"
-      :logo="web.logo"
-      :url="web.url"
-      :capture="web.capture"
-    />
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 import Project from '@/components/Project.vue';
-import EarlyProject from '@/components/Early-Project.vue';
 
-import Softs from '@/assets/softwares-data.json';
-import Webs from '@/assets/webs-data.json';
-import Earlies from '@/assets/earlies-data.json';
+import Projects from '@/assets/projects-data.json';
 
 @Component({
   components: {
-    Project,
-    EarlyProject
+    Project
   }
 })
-export default class App extends Vue {
+export default class Landing extends Vue {
   // Data
-  softwares = Softs;
-  webs = Webs;
-  earlies = Earlies;
+  projects = Projects;
 }
 </script>
 

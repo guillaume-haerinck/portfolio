@@ -1,17 +1,5 @@
 <template>
   <div class="project">
-    <div class="date right">
-      <h4 class="backgrounded">{{ date }}</h4>
-    </div>
-  
-    <div class="center logo">
-      <a :href=url>
-        <img :src=logo :alt=name>
-      </a>
-    </div>
-
-    <p class="description center">{{ description }}</p>
-  
     <div class="capture center">
       <a :href=url>
         <img :src=capture alt="Project capture">
@@ -35,47 +23,5 @@ export default class Project extends Vue {
 </script>
 
 <style scoped lang="css">
-.project {
-  display: grid;
-  margin: 10px 0;
-}
 
-.description {
-  max-width: 1200px;
-}
-
-.date {
-  justify-content: right;
-}
-
-.logo {
-  margin: 10px 0;
-
-  img {
-    width: 100%;
-    max-width: 200px;
-  }
-}
-
-.capture {
-  margin: 10px 0;
-  max-height: 250px;
-  overflow: hidden;
-  display: inline-grid;
-  align-content: center;
-  border: 5px solid black;
-
-  a {
-    display: inherit;
-  }
-
-  img {
-    width: 100%;
-    max-width: 1200px;
-  }
-}
-
-h3 {
-  margin: 40px 0 0;
-}
 </style>
