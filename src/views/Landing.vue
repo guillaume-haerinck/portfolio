@@ -148,20 +148,23 @@ export default class Landing extends Vue {
 .presentation-element {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  padding: 10px 0px;
 }
 
 .presentation-text {
-  max-width: 500px;
+  max-width: 600px;
 }
 
 .presentation-icon {
   max-width: 200px;
+  justify-self: center;
 }
 
 .presentation-icon img {
   width: 100%;
+  margin: 10px;
 }
 
 </style>
