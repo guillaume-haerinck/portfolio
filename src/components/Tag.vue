@@ -1,5 +1,5 @@
 <template>
-  <div class="menu">
+  <div class="tag">
 
   </div>
 </template>
@@ -7,7 +7,7 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
-export default class Menu extends Vue {
+export default class Tag extends Vue {
 
 }
 </script>

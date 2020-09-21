@@ -38,24 +38,25 @@
       </div>
     </div>
 
-    <div class="title">
-      <h1>LAST PROJECTS</h1>
-    </div> 
+    <div class="fullheight">
+      <div class="title">
+        <h1>LAST PROJECTS</h1>
+      </div>
 
-    <!--
-    <Project v-for="(project, index) in projects" 
-      :key="'project' + index"
-      :name="project.name"
-      :description="project.description"
-      :date="project.date"
-      :logo="project.logo"
-      :url="project.url"
-      :capture="project.capture"
-    />
+      <div id="last-projects">
+        <Project v-for="(project, index) in projects" 
+          :key="'project' + index"
+          :name="project.name"
+          :description="project.description"
+          :date="project.date"
+          :logo="project.logo"
+          :url="project.url"
+          :capture="project.capture"
+        />
+      </div>
 
-    -->
-
-    <div>More</div>
+      <div>More</div>
+    </div>
   </div>
 </template>
 
@@ -165,6 +166,13 @@ export default class Landing extends Vue {
 .presentation-icon img {
   width: 100%;
   margin: 10px;
+}
+
+/* Last projects */
+
+#last-projects {
+  display: flex;
+  flex-direction: row;
 }
 
 </style>

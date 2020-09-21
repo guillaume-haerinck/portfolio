@@ -1,9 +1,11 @@
 <template>
   <div class="project">
-    <div class="capture center">
-      <a :href=url>
-        <img :src=capture alt="Project capture">
-      </a>
+    <div class="project-image">
+      <a :href=url><img :src=capture alt="Project capture"></a>
+    </div>
+    <div class="project-description">
+      <h4>{{ name }}</h4>
+      <p>{{ description }}</p>
     </div>
   </div>
 </template>
@@ -23,5 +25,13 @@ export default class Project extends Vue {
 </script>
 
 <style scoped lang="css">
+
+.project {
+  max-width: 400px;
+}
+
+.project-image img {
+  width: 100%;
+}
 
 </style>

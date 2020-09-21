@@ -1,11 +1,25 @@
 <template>
   <div id="app">
+    <Menu/>
     <router-view/>
     <div id="footer">
       <p><small>Guillaume Haerinck - 2020</small></p>
     </div>
   </div>
 </template>
+
+<script lang="ts">
+import { Component, Prop, Vue } from 'vue-property-decorator';
+import Menu from '@/components/Menu.vue';
+
+@Component({
+  components: {
+    Menu
+  }
+})
+export default class App extends Vue {
+}
+</script>
 
 <style lang="css">
 :root {
@@ -27,7 +41,7 @@ p {
   line-height: 160%;
 }
 
-/* Todo move me */
+/* Footer */
 
 #footer {
   background-color: white;
