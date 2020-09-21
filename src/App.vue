@@ -12,6 +12,8 @@
   --left-decals: 20px;
 }
 
+/* Text styling */
+
 body {
   background-color: #f4f4f4;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -25,11 +27,7 @@ p {
   line-height: 160%;
 }
 
-.backgrounded {
-  background-color: white;
-  padding: var(--left-decals);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+/* Todo move me */
 
 #footer {
   background-color: white;
@@ -39,6 +37,14 @@ p {
     text-align: center;
     margin: 0;
     padding: 0;
+}
+
+/* Common styling */
+
+.backgrounded {
+  background-color: white;
+  padding: var(--left-decals);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .left {
@@ -55,6 +61,14 @@ p {
 
 .spacing {
   margin: 15px 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.fullheight {
+  min-height: 100vh;
 }
 
 </style>

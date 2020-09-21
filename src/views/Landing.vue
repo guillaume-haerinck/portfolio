@@ -1,6 +1,6 @@
 <template>
   <div class="landing">
-    <div id="first-screen">
+    <div class="fullheight" id="first-screen">
       <h1 class="backgrounded left">Hello I'm Guillaume,<br>a software engineer student <br>based in Paris.</h1>
       <p id="description">Exploring computer graphics, I'm making projects related to realtime rendering, data-oriented design, web and user interface development.</p>
 
@@ -12,6 +12,37 @@
       </div>
     </div>
 
+    <div class="fullheight">
+      <div class="title">
+        <h1>PRESENTATION</h1>
+      </div>
+
+      <div class="presentation-element">
+        <div class="backgrounded presentation-text">
+          <p>While I focus on graphics and software programming, I have an artistic background which allows me to understand the needs of many fields involved in a creative pipeline</p>
+        </div>
+
+        <div class="presentation-icon">
+          <img src="img/meeting.png" alt="Meeting icon">
+        </div>
+      </div>
+
+      <div class="presentation-element">
+        <div class="presentation-icon">
+          <img src="img/business-and-finance.png" alt="Business icon">
+        </div>
+
+        <div class="backgrounded presentation-text">
+          <p>I do my best to keep up to date with the innovations of the industry. Writing documentation, blog posts and tutorials is also something I really like</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="title">
+      <h1>LAST PROJECTS</h1>
+    </div> 
+
+    <!--
     <Project v-for="(project, index) in projects" 
       :key="'project' + index"
       :name="project.name"
@@ -22,8 +53,9 @@
       :capture="project.capture"
     />
 
-    <span class="separator spacing"></span>
+    -->
 
+    <div>More</div>
   </div>
 </template>
 
@@ -40,25 +72,20 @@ import Projects from '@/assets/projects-data.json';
 })
 export default class Landing extends Vue {
   // Data
-  projects = Projects;
+  projects = [ Projects[0], Projects[2] ];
 }
 </script>
 
 <style scoped lang="css">
 .landing {
   padding: 0 50px;
-  display: grid;
 }
+
+/* First screen */
 
 #first-screen {
-  min-height: 100vh;
   display: grid;
   align-content: center;
-}
-
-.separator {
-  display: grid;
-  border-top: 2px dashed grey;
 }
 
 #description {
@@ -116,14 +143,25 @@ export default class Landing extends Vue {
   color: grey;
 }
 
-.earlies {
+/* Presentation */
+
+.presentation-element {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
-  justify-self: center;
-  max-width: 1200px;
+  align-items: center;
+}
+
+.presentation-text {
+  max-width: 500px;
+}
+
+.presentation-icon {
+  max-width: 200px;
+}
+
+.presentation-icon img {
   width: 100%;
-  margin-bottom: 35px;
 }
 
 </style>
