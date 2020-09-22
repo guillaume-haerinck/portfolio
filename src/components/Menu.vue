@@ -1,6 +1,27 @@
 <template>
   <div class="menu">
-    <p>I'm the menu</p>
+    <div class="menu-logo">
+      <img />
+    </div>
+
+    <div class="menu-items">
+      <a class="menu-item" href="/">
+        <img />
+        Profile
+      </a>
+      <a class="menu-item" href="/projects">
+        <img />
+        Projects
+      </a>
+      <a class="menu-item" href="https://github.com/learn-computer-graphics" target="blank">
+        <img />
+        Blog
+      </a>
+    </div>
+
+    <div class="menu-search">
+      <img />
+    </div>
   </div>
 </template>
 
@@ -15,6 +36,8 @@ export default class Menu extends Vue {
 <style scoped lang="css">
 .menu {
   position: fixed;
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
   top: 0;
   background-color: black;
   width: 100%;

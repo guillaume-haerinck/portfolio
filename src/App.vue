@@ -53,7 +53,7 @@ p {
     padding: 0;
 }
 
-/* Common styling */
+/* Common styling TODO add top padding class for menu prevent hide content, use css var */
 
 .backgrounded {
   background-color: white;
