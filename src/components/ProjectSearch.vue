@@ -17,6 +17,6 @@ export default class ProjectSearch extends Vue {
   background-color: black;
   color: white;
   left: 0;
-  height: 100vh;
+  min-height: 100vh;
 }
 </style>

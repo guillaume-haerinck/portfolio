@@ -13,6 +13,8 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'vue-property-decorator';
 
+import Tag from '@/components/Tag.vue';
+
 @Component
 export default class Project extends Vue {
   @Prop() private name!: string;
@@ -28,6 +30,7 @@ export default class Project extends Vue {
 
 .project {
   max-width: 400px;
+  margin: 20px;
 }
 
 .project-image img {

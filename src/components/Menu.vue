@@ -5,15 +5,15 @@
     </div>
 
     <div class="menu-items">
-      <a class="menu-item" href="/">
+      <router-link class="menu-item" to="/">
         <img />
         Profile
-      </a>
-      <a class="menu-item" href="/projects">
+      </router-link>
+      <router-link class="menu-item" to="/projects">
         <img />
         Projects
-      </a>
-      <a class="menu-item" href="https://github.com/learn-computer-graphics" target="blank">
+      </router-link>
+      <a class="menu-item" href="https://learn-computer-graphics.github.io/blog/" target="blank">
         <img />
         Blog
       </a>

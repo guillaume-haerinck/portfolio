@@ -2,7 +2,7 @@
   <div class="projects">
     <ProjectSearch/>
 
-    <div class="projects-list">
+    <div class="project-list">
       <Project v-for="(project, index) in projects" 
         :key="'project' + index"
         :name="project.name"
@@ -37,6 +37,11 @@ export default class Projects extends Vue {
 <style scoped lang="css">
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: row;
 }
 </style>
