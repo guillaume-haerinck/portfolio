@@ -9,19 +9,18 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { defineComponent } from 'vue';
 import Menu from '@/components/Menu.vue';
 
-@Component({
+export default defineComponent({
+  name: 'App',
   components: {
     Menu
   }
-})
-export default class App extends Vue {
-}
+});
 </script>
 
-<style lang="css">
+<style >
 :root {
   --left-decals: 20px;
 }

@@ -17,24 +17,26 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { defineComponent } from 'vue';
+
 import Project from '@/components/Project.vue';
 import ProjectSearch from '@/components/ProjectSearch.vue';
 
 import ProjectsData from '@/assets/projects-data.json';
 
-@Component({
+export default defineComponent({
+  name: 'Projects',
   components: {
     Project,
     ProjectSearch
+  },
+  props: {
+    projects: {}
   }
-})
-export default class Projects extends Vue {
-  projects = ProjectsData;
-}
+});
 </script>
 
-<style scoped lang="css">
+<style scoped >
 .projects {
   display: grid;
   grid-template-columns: 1fr 3fr;

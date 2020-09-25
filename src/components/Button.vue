@@ -5,13 +5,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { defineComponent } from 'vue';
 
-export default class Button extends Vue {
-
-}
+export default defineComponent({
+  name: 'Button',
+});
 </script>
 
-<style scoped lang="css">
+<style scoped>
 
 </style>

@@ -5,14 +5,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { defineComponent } from 'vue';
 
-export default class ProjectSearch extends Vue {
-
-}
+export default defineComponent({
+  name: 'ProjectSearch'
+});
 </script>
 
-<style scoped lang="css">
+<style scoped>
 .project-search {
   background-color: black;
   color: white;

@@ -61,23 +61,24 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
 import Project from '@/components/Project.vue';
 
 import Projects from '@/assets/projects-data.json';
 
-@Component({
+import { defineComponent } from 'vue';
+
+export default defineComponent({
+  name: 'Landing',
   components: {
     Project
+  },
+  props: {
+    projects: {}
   }
-})
-export default class Landing extends Vue {
-  // Data
-  projects = [ Projects[0], Projects[2] ];
-}
+});
 </script>
 
-<style scoped lang="css">
+<style scoped >
 .landing {
   padding: 0 50px;
 }

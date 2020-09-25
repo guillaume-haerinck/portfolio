@@ -26,14 +26,14 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { defineComponent } from 'vue';
 
-export default class Menu extends Vue {
-
-}
+export default defineComponent({
+  name: 'Menu'
+});
 </script>
 
-<style scoped lang="css">
+<style scoped>
 .menu {
   position: fixed;
   display: grid;

@@ -11,22 +11,22 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'vue-property-decorator';
+import { defineComponent } from 'vue';
 
-import Tag from '@/components/Tag.vue';
-
-@Component
-export default class Project extends Vue {
-  @Prop() private name!: string;
-  @Prop() private description!: string;
-  @Prop() private date!: string;
-  @Prop() private logo!: string;
-  @Prop() private url!: string;
-  @Prop() private capture!: string;
-}
+export default defineComponent({
+  name: 'Project',
+  props: {
+    name: String,
+    description: String,
+    date: String,
+    logo: String,
+    url: String,
+    capture: String
+  }
+});
 </script>
 
-<style scoped lang="css">
+<style scoped>
 
 .project {
   max-width: 400px;
