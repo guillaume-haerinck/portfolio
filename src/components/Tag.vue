@@ -1,6 +1,6 @@
 <template>
   <div class="tag">
-    <p>{{ name }}</p>
+    <p>{{ name }} {{ enabled }}</p>
   </div>
 </template>
 
@@ -10,7 +10,8 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'Tag',
   props: {
-    name: String
+    name: String,
+    enabled: Boolean
   }
 });
 </script>

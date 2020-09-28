@@ -7,18 +7,17 @@ export const store = createStore({
     projectCategories: []
   },
   mutations: {
-    setProjectTags(state: any, tags: ProjectTag[]) {
-      state.projectTags = tags;
-    },
     addProjectTag(state: any, tag: ProjectTag) {
       state.projectTags.push(tag);
-      console.log('here');
     },
     removeProjectTag(state: any, tagIndex: number) {
       state.projectTags.splice(tagIndex, 1);
     },
-    setProjectCategories(state: any, categories: ProjectCategory[]) {
-      state.projectCategories = categories;
+    addProjectCategory(state: any, category: ProjectCategory) {
+      state.projectCategories.push(category);
+    },
+    removeProjectCategory(state: any, categoryIndex: number) {
+      state.projectCategories.splice(categoryIndex, 1);
     }
   }
 });

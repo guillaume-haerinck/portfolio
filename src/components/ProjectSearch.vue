@@ -1,10 +1,20 @@
 <template>
   <div class="project-search">
     <p>Search project</p>
+
+    <Tag v-for="(category, index) in categories"
+      :key="'category-' + index"
+      :name="category"
+      :enabled="isCategoryEnabled(category)"
+      v-on:click="toggleCategory(category)"
+    />
+
     <Tag v-for="(tag, index) in tags"
-      :key="index"
+      :key="'tag-' + index"
       :name="tag"
-      v-on:click="toggleTag(tag)"/>
+      :enabled="isTagEnabled(tag)"
+      v-on:click="toggleTag(tag)"
+    />
   </div>
 </template>
 
@@ -12,7 +22,7 @@
 import { defineComponent } from 'vue'
 import Tag from './Tag.vue'
 import { store } from '@/store'
-import { ProjectTag, ProjectCategory, ProjectTags, ProjectCategories } from '@/store/project-types'
+import { ProjectTags, ProjectCategories } from '@/store/project-types'
 
 export default defineComponent({
   name: 'ProjectSearch',
@@ -32,6 +42,19 @@ export default defineComponent({
         store.commit('addProjectTag', tag);
       else
         store.commit('removeProjectTag', tagIndex);
+    },
+    toggleCategory(category: string) {
+      const categoryIndex = store.state.projectCategories.indexOf(category);
+      if (categoryIndex === -1)
+        store.commit('addProjectCategory', category);
+      else
+        store.commit('removeProjectCategory', categoryIndex);
+    },
+    isCategoryEnabled(category: string): boolean {
+      return store.state.projectCategories.includes(category);
+    },
+    isTagEnabled(tag: string): boolean {
+      return store.state.projectTags.includes(tag);
     }
   }
 });
