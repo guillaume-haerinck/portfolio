@@ -6,8 +6,8 @@
         "url": "https://github.com/guillaume-haerinck/lolimac",
         "description": "Lolimac is an event-organisation website made with Angular. You can create, modify and join events made for IMAC students. Synchronisation with calendars is available as well.",
         "capture": "img/lolimac/capture.png",
-        "category": "",
-        "tags": []
+        "category": "Web",
+        "tags": ["C#", "Test"]
     },
     {
         "name": "Coffee Conspiration",
@@ -16,8 +16,8 @@
         "url": "https://github.com/guillaume-haerinck/imac-coffee-conspiration",
         "description": "An inner-joke built with webpack and HTML Components. It is a game/story experience dedicated to surprise its audience and play with conspiration tropes.",
         "capture": "img/coffee-conspiration/capture.png",
-        "category": "",
-        "tags": []
+        "category": "Web",
+        "tags": ["C#", "Test"]
     },
     {
         "name": "Infotrafic.com",
@@ -26,7 +26,7 @@
         "url": "https://www.infotrafic.com/home",
         "description": "A realtime-trafic map visualizer made for my employer Infotrafic. It is built with Angular and uses Node as backend. Uses progressive web app (PWA) structure and conventions.",
         "capture": "img/infotrafic/capture.png",
-        "category": "",
-        "tags": []
+        "category": "Web",
+        "tags": ["C#", "Test"]
     }
 ]

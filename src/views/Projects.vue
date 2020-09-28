@@ -2,10 +2,6 @@
   <div class="projects">
     <ProjectSearch/>
 
-    <p v-for="(tag, index) in temp" :key="index">
-      test
-    </p>
-
     <div class="project-list">
       <Project v-for="(project, index) in projects" 
         :key="'project' + index"
@@ -34,14 +30,20 @@ export default defineComponent({
     Project,
     ProjectSearch
   },
-  data() {
-    return {
-      projects: ProjectsData
-    }
-  },
   computed: {
-    temp() {
-      return store.state.projectTags
+    projects() {
+      if (store.state.projectCategories.length === 0 && store.state.projectTags.length === 0)
+        return ProjectsData; // No filter, show all
+      else if (store.state.projectTags.length === 0) // Filter by category only
+        return ProjectsData.filter(project => store.state.projectCategories.includes(project.category));
+      else if (store.state.projectCategories.length === 0) // Filter by tag only
+        return ProjectsData.filter(project => store.state.projectTags.every((tag: string) => project.tags.includes(tag)));
+      else { // All filters
+        return ProjectsData.filter(project => 
+          store.state.projectCategories.includes(project.category) &&
+          store.state.projectTags.every((tag: string) => project.tags.includes(tag))
+        );
+      }
     }
   }
 });
