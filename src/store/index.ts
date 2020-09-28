@@ -4,7 +4,8 @@ import { ProjectTag, ProjectCategory } from './project-types'
 export const store = createStore({
   state: {
     projectTags: [],
-    projectCategories: []
+    projectCategories: [],
+    isMobile: false
   },
   mutations: {
     addProjectTag(state: any, tag: ProjectTag) {
@@ -18,6 +19,9 @@ export const store = createStore({
     },
     removeProjectCategory(state: any, categoryIndex: number) {
       state.projectCategories.splice(categoryIndex, 1);
+    },
+    setIsMobile(state: any, value: boolean) {
+      state.isMobile = value;
     }
   }
 });

@@ -1,21 +1,49 @@
 <template>
   <div id="app">
-    <Menu/>
+    <Menu v-if="!isMobile" />
+
     <router-view/>
-    <div id="footer">
+
+    <div id="footer" v-if="!isMobile">
       <p><small>Guillaume Haerinck - 2020</small></p>
     </div>
+
+    <BottomMenu v-if="isMobile" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Menu from '@/components/Menu.vue'
+import BottomMenu from '@/components/BottomMenu.vue'
+import { store } from '@/store'
+
+// TODO init isMobile on startup and listen for screen width changes
 
 export default defineComponent({
   name: 'App',
   components: {
-    Menu
+    Menu,
+    BottomMenu
+  },
+  computed: {
+    isMobile(): boolean {
+      return store.state.isMobile;
+    }
+  },
+  methods: {
+    updateMobileState(event: any) {
+      if (window.innerWidth < 650)
+        store.commit('setIsMobile', true);
+      else
+        store.commit('setIsMobile', false);
+    }
+  },
+  created() {
+    window.addEventListener('resize', this.updateMobileState);
+  },
+  unmounted() {
+    window.removeEventListener('resize', this.updateMobileState);
   }
 });
 </script>
