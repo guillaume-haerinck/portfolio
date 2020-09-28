@@ -61,19 +61,21 @@
 </template>
 
 <script lang="ts">
-import Project from '@/components/Project.vue';
+import Project from '@/components/Project.vue'
 
-import Projects from '@/assets/projects-data.json';
+import Projects from '@/assets/projects-data.json'
 
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'Landing',
   components: {
     Project
   },
-  props: {
-    projects: {}
+  data() {
+    return {
+      projects: [Projects[0]]
+    }
   }
 });
 </script>

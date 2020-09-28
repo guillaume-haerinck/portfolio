@@ -17,12 +17,12 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent } from 'vue'
 
-import Project from '@/components/Project.vue';
-import ProjectSearch from '@/components/ProjectSearch.vue';
+import Project from '@/components/Project.vue'
+import ProjectSearch from '@/components/ProjectSearch.vue'
 
-import ProjectsData from '@/assets/projects-data.json';
+import ProjectsData from '@/assets/projects-data.json'
 
 export default defineComponent({
   name: 'Projects',
@@ -30,8 +30,10 @@ export default defineComponent({
     Project,
     ProjectSearch
   },
-  props: {
-    projects: {}
+  data() {
+    return {
+      projects: ProjectsData
+    }
   }
 });
 </script>
