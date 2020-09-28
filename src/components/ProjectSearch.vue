@@ -8,14 +8,18 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { store } from '@/store'
+import { ProjectTag, ProjectCategory } from '@/store/project-types'
 
 export default defineComponent({
   name: 'ProjectSearch',
   methods: {
     doSearch() {
       console.log("Hello");
-      store.commit('increment');
-      console.log(store.state.count);
+      store.commit('setProjectTags', [
+        ProjectTag.OPENGL,
+        ProjectTag.CPP
+      ]);
+      console.log(store.state.projectTags);
     }
   }
 });

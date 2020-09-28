@@ -1,15 +1,17 @@
 import { createStore } from 'vuex'
-
-const state = {
-  count: 0
-};
-type State = typeof state;
+import { ProjectTag, ProjectCategory } from './project-types'
 
 export const store = createStore({
-  state: state,
+  state: {
+    projectTags: [],
+    projectCategories: []
+  },
   mutations: {
-    increment(state: State) {
-      state.count++;
+    setProjectTags(state: any, tags: ProjectTag[]) {
+      state.projectTags = tags;
+    },
+    setProjectCategories(state: any, categories: ProjectCategory[]) {
+      state.projectCategories = categories;
     }
   }
-})
+});
