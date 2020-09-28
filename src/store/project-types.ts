@@ -1,15 +1,17 @@
 export enum ProjectCategory {
-    WEB,
-    GAMES
+    Web = 'Web',
+    GAMES = 'Games'
 }
+export const ProjectCategories = Object.values(ProjectCategory);
 
 export enum ProjectTag {
-    OPENGL,
-    VULKAN,
-    ECS,
-    UNITY,
-    UNREAL,
-    CPP,
-    CSHARP,
-    PYTHON
+    OpenGL = 'OpenGL',
+    Vulkan = 'Vulkan',
+    ECS = 'ECS',
+    Unity = 'Unity',
+    Unreal = 'Unreal',
+    CPP = 'C++',
+    CSharp = 'C#',
+    Python = 'Python'
 }
+export const ProjectTags = Object.values(ProjectTag);

@@ -1,6 +1,6 @@
 <template>
   <div class="tag">
-
+    <p>{{ name }}</p>
   </div>
 </template>
 
@@ -8,7 +8,10 @@
 import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: 'Tag'
+  name: 'Tag',
+  props: {
+    name: String
+  }
 });
 </script>
 
