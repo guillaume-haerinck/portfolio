@@ -13,6 +13,10 @@
         :capture="project.capture"
       />
     </div>
+
+    <div v-if="projects.length == 0">
+      <p>No project match !</p>
+    </div>
   </div>
 </template>
 

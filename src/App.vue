@@ -18,8 +18,6 @@ import Menu from '@/components/Menu.vue'
 import BottomMenu from '@/components/BottomMenu.vue'
 import { store } from '@/store'
 
-// TODO init isMobile on startup and listen for screen width changes
-
 export default defineComponent({
   name: 'App',
   components: {
@@ -32,7 +30,7 @@ export default defineComponent({
     }
   },
   methods: {
-    updateMobileState(event: any) {
+    updateMobileState() {
       if (window.innerWidth < 650)
         store.commit('setIsMobile', true);
       else
