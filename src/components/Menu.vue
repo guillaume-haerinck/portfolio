@@ -1,26 +1,26 @@
 <template>
   <div class="menu">
     <div class="menu-logo">
-      <img />
+      <img src="img/logo-white.png" />
     </div>
 
     <div class="menu-items">
       <router-link class="menu-item" to="/">
-        <img />
+        <i class="material-icons">person</i>
         Profile
       </router-link>
       <router-link class="menu-item" to="/projects">
-        <img />
+        <i class="material-icons">work</i>
         Projects
       </router-link>
       <a class="menu-item" href="https://learn-computer-graphics.github.io/blog/" target="blank">
-        <img />
+        <i class="material-icons">book</i>
         Blog
       </a>
     </div>
 
     <div class="menu-search">
-      <img />
+      <i class="material-icons">search</i>
     </div>
   </div>
 </template>

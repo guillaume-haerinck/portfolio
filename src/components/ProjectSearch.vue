@@ -1,20 +1,26 @@
 <template>
   <div class="project-search">
-    <p>Search project</p>
+    <h1>SEARCH</h1>
 
-    <Tag v-for="(category, index) in categories"
-      :key="'category-' + index"
-      :name="category"
-      :enabled="isCategoryEnabled(category)"
-      v-on:click="toggleCategory(category)"
-    />
+    <h2>Categories</h2>
+    <div>
+      <Tag v-for="(category, index) in categories"
+        :key="'category-' + index"
+        :name="category"
+        :enabled="isCategoryEnabled(category)"
+        v-on:click="toggleCategory(category)"
+      />
+    </div>
 
-    <Tag v-for="(tag, index) in tags"
-      :key="'tag-' + index"
-      :name="tag"
-      :enabled="isTagEnabled(tag)"
-      v-on:click="toggleTag(tag)"
-    />
+    <h2>Tags</h2>
+    <div>
+      <Tag v-for="(tag, index) in tags"
+        :key="'tag-' + index"
+        :name="tag"
+        :enabled="isTagEnabled(tag)"
+        v-on:click="toggleTag(tag)"
+      />
+    </div>
   </div>
 </template>
 

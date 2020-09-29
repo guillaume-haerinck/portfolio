@@ -5,7 +5,8 @@ export const store = createStore({
   state: {
     projectTags: [],
     projectCategories: [],
-    isMobile: false
+    isMobile: false,
+    showSearchMenu: true
   },
   mutations: {
     addProjectTag(state: any, tag: ProjectTag) {
@@ -22,6 +23,9 @@ export const store = createStore({
     },
     setIsMobile(state: any, value: boolean) {
       state.isMobile = value;
+    },
+    setShowSearchMenu(state: any, value: boolean) {
+      state.showSearchMenu = value;
     }
   }
 });

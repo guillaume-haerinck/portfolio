@@ -1,33 +1,22 @@
 <template>
   <div id="app">
-    <Menu v-if="!isMobile" />
-
+    <Menu />
     <router-view/>
-
-    <div id="footer" v-if="!isMobile">
+    <div id="footer">
       <p><small>Guillaume Haerinck - 2020</small></p>
     </div>
-
-    <BottomMenu v-if="isMobile" />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
 import Menu from '@/components/Menu.vue'
-import BottomMenu from '@/components/BottomMenu.vue'
 import { store } from '@/store'
 
 export default defineComponent({
   name: 'App',
   components: {
-    Menu,
-    BottomMenu
-  },
-  computed: {
-    isMobile(): boolean {
-      return store.state.isMobile;
-    }
+    Menu
   },
   methods: {
     updateMobileState() {

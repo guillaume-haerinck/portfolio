@@ -2,7 +2,7 @@
   <div class="projects">
     <ProjectSearch/>
 
-    <div class="project-list">
+    <div class="project-list" v-if="projects.length != 0">
       <Project v-for="(project, index) in projects" 
         :key="'project' + index"
         :name="project.name"
@@ -14,7 +14,7 @@
       />
     </div>
 
-    <div v-if="projects.length == 0">
+    <div v-else>
       <p>No project match !</p>
     </div>
   </div>
@@ -23,7 +23,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { store } from '@/store'
-import { ProjectCategory, ProjectTag } from '@/store/project-types'
 import Project from '@/components/Project.vue'
 import ProjectSearch from '@/components/ProjectSearch.vue'
 import ProjectsData from '@/assets/projects-data.json'
