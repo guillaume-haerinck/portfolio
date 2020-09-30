@@ -39,6 +39,7 @@ export default defineComponent({
 :root {
   --left-decals: 20px;
   --menu-height: 50px;
+  --footer-height: 40px;
 }
 
 /* Text styling */
@@ -101,6 +102,10 @@ p {
 
 .fullheight {
   min-height: calc(100vh - var(--menu-height));
+}
+
+.fullheight-min {
+  min-height: calc(100vh - calc(var(--menu-height) + var(--footer-height)));
 }
 
 .oblique-title-container {

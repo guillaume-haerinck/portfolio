@@ -1,5 +1,5 @@
 <template>
-  <div class="project-search fullheight">
+  <div class="project-search fullheight-min">
     <h1 class="title">SEARCH</h1>
 
     <h2>Categories</h2>
@@ -75,11 +75,27 @@ export default defineComponent({
   left: 0;
   padding: 0 15px;
   max-width: 280px;
+  display: grid;
+  align-content: start;
 }
 
 .tags {
   display: flex;
   flex-wrap: wrap;
+}
+
+.project-search .title {
+  margin-bottom: 10px;
+}
+
+.project-search .oblique-white {
+  max-width: 252px;
+  justify-self: center;
+  margin: 60px 0;
+}
+
+.project-search h2 {
+  margin-top: 0;
 }
 
 </style>

@@ -1,5 +1,5 @@
 <template>
-  <div class="projects">
+  <div class="projects fullheight-min">
     <ProjectSearch v-if="showSearchMenu" />
 
     <div class="project-list" v-if="projects.length != 0">

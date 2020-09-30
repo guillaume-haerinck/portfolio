@@ -40,7 +40,7 @@
       </div>
     </div>
 
-    <div class="fullheight">
+    <div class="fullheight-min">
       <div class="oblique-title-container">
         <div class="oblique-black"></div>
         <h1 class="title">LAST PROJECTS</h1>
