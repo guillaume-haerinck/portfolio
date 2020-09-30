@@ -23,7 +23,7 @@
 
     <div class="menu-items menu-search" v-on:click="moveToProjectsAndToggleSearch">
       <i class="material-icons" v-if="!isProjectsAndSearch">search</i>
-      <i class="material-icons" v-else>search_off</i>
+      <i class="material-icons" v-else style="color: red">search_off</i>
     </div>
   </div>
 </template>

@@ -31,10 +31,20 @@ export default defineComponent({
 .project {
   max-width: 400px;
   margin: 20px;
+  background-color: lightblue;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .project-image img {
   width: 100%;
+}
+
+.project h4, .project p {
+  margin: 0;
+}
+
+.project-description {
+  padding: 10px;
 }
 
 </style>
