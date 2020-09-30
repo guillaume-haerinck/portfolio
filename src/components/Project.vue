@@ -48,7 +48,7 @@ export default defineComponent({
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  width: 400px;
+  width: 100%;
   height: calc(100% - 5px);
   font-size: 50px;
   pointer-events: none;

@@ -1,5 +1,5 @@
 <template>
-  <div class="projects fullheight-min">
+  <div class="projects fullheight-min" :class="{ 'projects-with-search' : showSearchMenu }">
     <ProjectSearch v-if="showSearchMenu" />
 
     <div class="project-list" v-if="projects.length != 0">
@@ -55,9 +55,9 @@ export default defineComponent({
 </script>
 
 <style scoped >
-.projects {
+.projects-with-search {
   display: grid;
-  grid-auto-flow: column;
+  grid-template-columns: calc(var(--search-width) + 5px) 1fr;
 }
 
 .project-list {
