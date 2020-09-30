@@ -1,5 +1,5 @@
 <template>
-  <div class="project">
+  <div class="project" :class="colorClass">
     <div class="project-image">
       <a :href=url><img :src=capture alt="Project capture"></a>
     </div>
@@ -21,6 +21,13 @@ export default defineComponent({
     url: String,
     description: String,
     capture: String
+  },
+  data() {
+    const classes = ['red', 'blue', 'green', 'yellow', 'orange'];
+    const index = Math.floor(Math.random() * Math.floor(classes.length - 1));
+    return {
+      colorClass: classes[index]
+    }
   }
 });
 </script>
@@ -30,7 +37,6 @@ export default defineComponent({
 .project {
   max-width: 400px;
   margin: 20px;
-  background-color: lightblue;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 

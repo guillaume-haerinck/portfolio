@@ -77,6 +77,16 @@ p {
   padding: 0;
 }
 
+/* Colors */
+
+.red { background-color: lightcoral; }
+.green { background-color: lightgreen; }
+.blue { background-color: lightblue; }
+.yellow { background-color: lightyellow; }
+.orange { background-color: lightsalmon; }
+
+/* Common styling */
+
 .backgrounded {
   background-color: white;
   padding: var(--left-decals);
