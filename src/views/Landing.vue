@@ -1,7 +1,7 @@
 <template>
   <div class="landing">
     <div class="fullheight" id="first-screen">
-      <h1 class="backgrounded left">Hello I'm Guillaume,<br>a software engineer student <br>based in Paris.</h1>
+      <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a software engineer student <br>based in Paris.</h1>
       <p id="description">Exploring computer graphics, I'm making projects related to realtime rendering, data-oriented design, web and user interface development.</p>
 
       <div id="links">
@@ -20,7 +20,7 @@
       </div>
 
       <div class="presentation-element wrap-reverse">
-        <div class="backgrounded presentation-text">
+        <div class="backgrounded presentation-text green">
           <p>While I focus on graphics and software programming, I have an artistic background which allows me to understand the needs of many fields involved in a creative pipeline</p>
         </div>
 
@@ -34,7 +34,7 @@
           <img src="img/business-and-finance.png" alt="Business icon">
         </div>
 
-        <div class="backgrounded presentation-text">
+        <div class="backgrounded presentation-text blue">
           <p>I do my best to keep up to date with the innovations of the industry. Writing documentation, blog posts and tutorials is also something I really like</p>
         </div>
       </div>
@@ -104,7 +104,7 @@ export default defineComponent({
 
 #description {
   max-width: 1000px;
-  padding-left: var(--left-decals);
+  padding-left: var(--default-padding);
 }
 
 #links {

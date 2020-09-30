@@ -1,7 +1,8 @@
 <template>
   <div class="project" :class="colorClass">
     <div class="project-image">
-      <a :href=url><img :src=capture alt="Project capture"></a>
+      <i class="material-icons view" v-show="imgHover">visibility</i>
+      <a :href=url target="blank" @mouseover="imgHover = true" @mouseleave="imgHover = false"><img :src=capture alt="Project capture"></a>
     </div>
     <div class="project-description">
       <h4>{{ name }}</h4>
@@ -26,7 +27,8 @@ export default defineComponent({
     const classes = ['red', 'blue', 'green', 'yellow', 'orange'];
     const index = Math.floor(Math.random() * Math.floor(classes.length - 1));
     return {
-      colorClass: classes[index]
+      colorClass: classes[index],
+      imgHover: false
     }
   }
 });
@@ -38,6 +40,23 @@ export default defineComponent({
   max-width: 400px;
   margin: 20px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.view {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 400px;
+  height: calc(100% - 5px);
+  font-size: 50px;
+  pointer-events: none;
+  color: white;
+}
+
+.project-image {
+  position: relative; /* needed for view height */
 }
 
 .project-image img {

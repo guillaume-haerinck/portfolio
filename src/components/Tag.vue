@@ -28,7 +28,6 @@ export default defineComponent({
 .tag:hover {
   border-color: red;
   color: red;
-  transition: border-color 0.3s, color 0.3s;
   cursor: pointer;
 }
 
@@ -39,8 +38,8 @@ export default defineComponent({
 
 .enabled, .enabled:hover {
   color: black;
-  border-color: red;
-  background-color: red;
+  border-color: lightgreen;
+  background-color: lightgreen;
 }
 
 </style>

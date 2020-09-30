@@ -38,7 +38,7 @@ export default defineComponent({
 
 <style >
 :root {
-  --left-decals: 20px;
+  --default-padding: 20px;
   --menu-height: 50px;
   --footer-height: 38px;
   --search-width: 280px;
@@ -88,8 +88,7 @@ p {
 /* Common styling */
 
 .backgrounded {
-  background-color: white;
-  padding: var(--left-decals);
+  padding: var(--default-padding);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
