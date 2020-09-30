@@ -67,4 +67,10 @@ export default defineComponent({
   justify-content: center;
   align-items: flex-start;
 }
+
+@media screen and (max-width: 650px) {
+  .projects-with-search {
+    display: unset;
+  }
+}
 </style>

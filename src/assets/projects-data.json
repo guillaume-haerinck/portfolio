@@ -1,5 +1,115 @@
 [
   {
+    "name": "Chaos Dashboard",
+    "year": 2020,
+    "url": "https://chaosdashboard.guillaumehaerinck.com/",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Web",
+    "tags": [
+      "React"
+    ]
+  },
+  {
+    "name": "A Rogue Like",
+    "year": 2020,
+    "url": "https://gitlab.guillaumehaerinck.com/root/rogue-like",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Game",
+    "tags": [
+      "Unreal", "C++"
+    ]
+  },
+  {
+    "name": "The Last Call",
+    "year": 2020,
+    "url": "https://vimeo.com/421542604",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Animation",
+    "tags": [
+      "Unreal", "Blender"
+    ]
+  },
+  {
+    "name": "A Snowpiercer Scene",
+    "year": 2020,
+    "url": "https://vimeo.com/384904687",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Animation",
+    "tags": [
+      "Blender"
+    ]
+  },
+  {
+    "name": "Learn Vulkan",
+    "year": 2020,
+    "url": "https://github.com/guillaume-haerinck/learn-vulkan",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Tool",
+    "tags": [
+      "Vulkan", "C++"
+    ]
+  },
+  {
+    "name": "Cube Beast Editor",
+    "year": 2020,
+    "url": "https://github.com/guillaume-haerinck/cube-beast-editor",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Tool",
+    "tags": [
+      "C++", "ECS", "OpenGL"
+    ]
+  },
+  {
+    "name": "Met ECS",
+    "year": 2020,
+    "url": "https://github.com/guillaume-haerinck/met-ecs",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Tool",
+    "tags": [
+      "ECS", "C++"
+    ]
+  },
+  {
+    "name": "Mirrors Lasers & Robots",
+    "year": 2019,
+    "url": "https://github.com/guillaume-haerinck/imac-tower-defense",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Game",
+    "tags": [
+      "C++", "ECS", "OpenGL", "XAML"
+    ]
+  },
+  {
+    "name": "OpenGL Playground",
+    "year": 2019,
+    "url": "https://github.com/guillaume-haerinck/opengl-playground",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Tool",
+    "tags": [
+      "C++", "ECS", "OpenGL"
+    ]
+  },
+  {
+    "name": "DirectX 11 Playground",
+    "year": 2019,
+    "url": "https://github.com/guillaume-haerinck/directx11-playground",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Tool",
+    "tags": [
+      "C++", "DirectX"
+    ]
+  },
+  {
     "name": "Lolimac",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/lolimac",
@@ -7,20 +117,49 @@
     "capture": "img/lolimac/capture.png",
     "category": "Web",
     "tags": [
-      "C#",
-      "Test"
+      "Angular"
+    ]
+  },
+  {
+    "name": "Which GUI",
+    "year": 2019,
+    "url": "https://github.com/guillaume-haerinck/which-gui",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Tool",
+    "tags": [
+      "Unreal", "Unity", "Vue", "React", "Angular", "XAML"
+    ]
+  },
+  {
+    "name": "Roll Goal",
+    "year": 2019,
+    "url": "https://github.com/guillaume-haerinck/roll-goal",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Game",
+    "tags": [
+      "Unreal", "Unity", "Godot", "C++", "C#"
     ]
   },
   {
     "name": "Coffee Conspiration",
-    "year": 2019,
+    "year": 2018,
     "url": "https://github.com/guillaume-haerinck/imac-coffee-conspiration",
     "description": "An inner-joke built with webpack and HTML Components. It is a game/story experience dedicated to surprise its audience and play with conspiration tropes.",
     "capture": "img/coffee-conspiration/capture.png",
     "category": "Web",
+    "tags": []
+  },
+  {
+    "name": "L'échoppe de Ben",
+    "year": 2018,
+    "url": "https://vincent-le-ven.itch.io/ben-echoppe",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Game",
     "tags": [
-      "C#",
-      "Test"
+      "Unity", "C#"
     ]
   },
   {
@@ -31,8 +170,18 @@
     "capture": "img/infotrafic/capture.png",
     "category": "Web",
     "tags": [
-      "C#",
-      "Test"
+      "Angular"
+    ]
+  },
+  {
+    "name": "Kanaga Wave",
+    "year": 2017,
+    "url": "https://globalgamejam.org/2017/games/kanaga-wave",
+    "description": "",
+    "capture": "img/.png",
+    "category": "Game",
+    "tags": [
+      "Unity", "C#"
     ]
   }
 ]
