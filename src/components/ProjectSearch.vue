@@ -84,14 +84,14 @@ export default defineComponent({
   color: white;
   left: 0;
   padding: 0 15px;
-  max-width: 280px;
+  max-width: var(--search-width);
   display: grid;
   align-content: start;
 }
 
 .overlay {
   position: fixed;
-  left: 280px;
+  left: var(--search-width);
   background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;

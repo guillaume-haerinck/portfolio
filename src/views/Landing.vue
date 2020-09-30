@@ -51,10 +51,9 @@
         <Project v-for="(project, index) in projects" 
           :key="'project' + index"
           :name="project.name"
-          :description="project.description"
-          :date="project.date"
-          :logo="project.logo"
+          :year="project.year"
           :url="project.url"
+          :description="project.description"
           :capture="project.capture"
         />
       </div>

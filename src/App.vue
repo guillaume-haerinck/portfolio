@@ -41,6 +41,7 @@ export default defineComponent({
   --left-decals: 20px;
   --menu-height: 50px;
   --footer-height: 38px;
+  --search-width: 280px;
 }
 
 #app {

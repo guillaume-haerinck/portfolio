@@ -17,10 +17,9 @@ export default defineComponent({
   name: 'Project',
   props: {
     name: String,
-    description: String,
-    date: String,
-    logo: String,
+    year: Number,
     url: String,
+    description: String,
     capture: String
   }
 });
