@@ -1,9 +1,9 @@
 <template>
-  <div class="project-search">
+  <div class="project-search fullheight">
     <h1>SEARCH</h1>
 
     <h2>Categories</h2>
-    <div>
+    <div class="tags">
       <Tag v-for="(category, index) in categories"
         :key="'category-' + index"
         :name="category"
@@ -13,7 +13,7 @@
     </div>
 
     <h2>Tags</h2>
-    <div>
+    <div class="tags">
       <Tag v-for="(tag, index) in tags"
         :key="'tag-' + index"
         :name="tag"
@@ -71,6 +71,17 @@ export default defineComponent({
   background-color: black;
   color: white;
   left: 0;
-  min-height: 100vh;
+  padding: 0 15px;
+  max-width: 280px;
 }
+
+h1 {
+  text-align: center;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="projects">
-    <ProjectSearch/>
+    <ProjectSearch v-if="showSearchMenu" />
 
     <div class="project-list" v-if="projects.length != 0">
       <Project v-for="(project, index) in projects" 
@@ -34,6 +34,9 @@ export default defineComponent({
     ProjectSearch
   },
   computed: {
+    showSearchMenu() {
+      return store.state.showSearchMenu;
+    },
     projects() {
       if (store.state.projectCategories.length === 0 && store.state.projectTags.length === 0)
         return ProjectsData; // No filter, show all
@@ -55,11 +58,13 @@ export default defineComponent({
 <style scoped >
 .projects {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-auto-flow: column;
 }
 
 .project-list {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 </style>

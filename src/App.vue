@@ -38,6 +38,7 @@ export default defineComponent({
 <style >
 :root {
   --left-decals: 20px;
+  --menu-height: 50px;
 }
 
 /* Text styling */
@@ -47,7 +48,8 @@ body {
   font-family: 'IBM Plex Sans', sans-serif;
   font-size: 1.2em;
   margin: 0;
-  padding: 0; 
+  padding: 0;
+  margin-top: var(--menu-height);
 }
 
 p {
@@ -96,7 +98,7 @@ p {
 }
 
 .fullheight {
-  min-height: 100vh;
+  min-height: calc(100vh - var(--menu-height));
 }
 
 </style>

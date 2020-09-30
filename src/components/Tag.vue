@@ -21,7 +21,8 @@ export default defineComponent({
   border: 2px solid white;
   border-radius: 30px;
   text-align: center;
-  margin: 10px;
+  margin-bottom: 5px;
+  margin-right: 5px;
 }
 
 .tag:hover {
@@ -33,6 +34,7 @@ export default defineComponent({
 
 .tag p {
   font-size: 1em;
+  margin: 1px 5px;
 }
 
 .enabled, .enabled:hover {

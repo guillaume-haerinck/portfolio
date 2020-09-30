@@ -21,8 +21,9 @@
       </a>
     </div>
 
-    <div class="menu-items menu-search">
-      <i class="material-icons">search</i>
+    <div class="menu-items menu-search" v-on:click="moveToProjectsAndToggleSearch">
+      <i class="material-icons" v-if="!isProjectsAndSearch">search</i>
+      <i class="material-icons" v-else>search_off</i>
     </div>
   </div>
 </template>
@@ -30,12 +31,29 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { store } from '@/store'
+import router from '@/router'
 
 export default defineComponent({
   name: 'Menu',
+  methods: {
+    moveToProjectsAndToggleSearch() {
+      const isProjects = router.currentRoute.value.path === '/projects';
+      if (!isProjects) {
+        router.push('projects');
+        store.commit('setShowSearchMenu', true);
+      } else {
+        store.commit('setShowSearchMenu', !store.state.showSearchMenu);
+      }
+    }
+  },
   computed: {
     isMobile() {
       return store.state.isMobile;
+    },
+    isProjectsAndSearch() {
+      const isProjects = router.currentRoute.value.path === '/projects';
+      const isSearch = store.state.showSearchMenu;
+      return isProjects && isSearch;
     }
   }
 });
@@ -47,7 +65,7 @@ export default defineComponent({
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   align-items: center;
-  height: 50px;
+  height: var(--menu-height);
   top: 0;
   background-color: black;
   width: 100%;
