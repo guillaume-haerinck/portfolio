@@ -1,7 +1,9 @@
 <template>
   <div class="menu">
     <div class="menu-logo">
-      <img src="img/logo-white.png" />
+      <router-link class="menu-item" to="/">
+        <img src="img/logo-white.png" />
+      </router-link>
     </div>
 
     <div class="menu-items">
@@ -19,8 +21,10 @@
       </a>
     </div>
 
-    <div class="menu-search">
-      <i class="material-icons">search</i>
+    <div class="menu-items">
+      <router-link class="menu-item" to="/projects">
+        <i class="material-icons">search</i>
+      </router-link>
     </div>
   </div>
 </template>
@@ -38,10 +42,44 @@ export default defineComponent({
   position: fixed;
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
+  align-items: center;
   top: 0;
   background-color: black;
   width: 100%;
   color: white;
+}
+
+.menu-logo {
+  width: 60px;
+  margin: 5px 0px;
+}
+
+.menu-logo img {
+  width: 100%;
+}
+
+.menu-items {
+  justify-self: right;
+  align-self: center;
+  display: flex;
+}
+
+.menu-item {
+  color: white;
+  text-decoration: none;
+  margin: 0px 15px;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-self: center;
+  justify-content: center;
+}
+
+.menu-item i {
+  margin: 0px 5px;
+}
+
+.menu-item:hover {
+  color: gray;
 }
 
 </style>
