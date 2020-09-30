@@ -1,5 +1,5 @@
 <template>
-  <div class="project-search fullheight-min">
+  <div class="project-search fullheight-min" :class="{ overlay : isMobile }">
     <h1 class="title">SEARCH</h1>
 
     <h2>Categories</h2>
@@ -86,6 +86,15 @@ export default defineComponent({
   align-content: start;
 }
 
+.overlay::after {
+  content: "";
+  position: fixed;
+  left: 280px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -107,8 +116,10 @@ export default defineComponent({
 
 @media screen and (max-width: 650px) {
   .project-search {
-    position: absolute;
+    position: fixed;
+    left: 0;
     z-index: 1;
+    min-height: calc(100vh - var(--menu-height));
   }
 }
 

@@ -197,7 +197,7 @@ export default defineComponent({
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
 }
 
 </style>
