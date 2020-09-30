@@ -32,6 +32,8 @@ import Tag from './Tag.vue'
 import { store } from '@/store'
 import { ProjectTags, ProjectCategories } from '@/store/project-types'
 
+// TODO if click outside, close container
+
 export default defineComponent({
   name: 'ProjectSearch',
   components: {
@@ -41,6 +43,11 @@ export default defineComponent({
     return {
       tags: ProjectTags,
       categories: ProjectCategories
+    }
+  },
+  computed: {
+    isMobile() {
+      return store.state.isMobile;
     }
   },
   methods: {
@@ -96,6 +103,13 @@ export default defineComponent({
 
 .project-search h2 {
   margin-top: 0;
+}
+
+@media screen and (max-width: 650px) {
+  .project-search {
+    position: absolute;
+    z-index: 1;
+  }
 }
 
 </style>

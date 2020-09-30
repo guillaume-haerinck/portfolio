@@ -27,6 +27,7 @@ export default defineComponent({
     }
   },
   created() {
+    this.updateMobileState();
     window.addEventListener('resize', this.updateMobileState);
   },
   unmounted() {
@@ -39,7 +40,7 @@ export default defineComponent({
 :root {
   --left-decals: 20px;
   --menu-height: 50px;
-  --footer-height: 40px;
+  --footer-height: 38px;
 }
 
 /* Text styling */
@@ -61,13 +62,14 @@ p {
 /* Footer */
 
 #footer {
-  background-color: white;
+  background-color: black;
 }
 
 #footer p {
-    text-align: center;
-    margin: 0;
-    padding: 0;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
 }
 
 /* Common styling TODO add top padding class for menu prevent hide content, use css var */

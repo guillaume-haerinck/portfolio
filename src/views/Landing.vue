@@ -15,7 +15,7 @@
     <div class="fullheight" id="presentation">
       <div class="oblique-title-container">
         <div class="oblique-black"></div>
-        <h1 class="title">PRESENTATION</h1>
+        <h1 class="title">ABOUT ME</h1>
         <div class="oblique-black"></div>
       </div>
 
@@ -197,6 +197,7 @@ export default defineComponent({
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: start;
 }
 
 </style>

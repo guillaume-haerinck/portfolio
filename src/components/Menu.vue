@@ -70,6 +70,7 @@ export default defineComponent({
   background-color: black;
   width: 100%;
   color: white;
+  z-index: 10;
 }
 
 .menu-logo img {
