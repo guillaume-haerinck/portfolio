@@ -13,8 +13,10 @@
     </div>
 
     <div class="fullheight">
-      <div class="title">
-        <h1>PRESENTATION</h1>
+      <div class="oblique-title-container">
+        <div class="oblique-black"></div>
+        <h1 class="title">PRESENTATION</h1>
+        <div class="oblique-black"></div>
       </div>
 
       <div class="presentation-element">
@@ -39,8 +41,10 @@
     </div>
 
     <div class="fullheight">
-      <div class="title">
-        <h1>LAST PROJECTS</h1>
+      <div class="oblique-title-container">
+        <div class="oblique-black"></div>
+        <h1 class="title">LAST PROJECTS</h1>
+        <div class="oblique-black"></div>
       </div>
 
       <div id="last-projects">

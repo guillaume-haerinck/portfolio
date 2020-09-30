@@ -95,10 +95,34 @@ p {
 
 .title {
   text-align: center;
+  text-shadow: 3px 3px red;
+  margin: 0 20px;
 }
 
 .fullheight {
   min-height: calc(100vh - var(--menu-height));
+}
+
+.oblique-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0px;
+}
+
+.oblique-black {
+  background-image: url(/img/oblique-bar-black.svg);
+}
+
+.oblique-white {
+  background-image: url(/img/oblique-bar-white.svg);
+}
+
+.oblique-black, .oblique-white {
+  background-repeat: repeat;
+  height: 35px;
+  width: 100%;
+  max-width: 324px;
 }
 
 </style>

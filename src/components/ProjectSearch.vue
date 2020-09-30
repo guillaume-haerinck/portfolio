@@ -1,6 +1,6 @@
 <template>
   <div class="project-search fullheight">
-    <h1>SEARCH</h1>
+    <h1 class="title">SEARCH</h1>
 
     <h2>Categories</h2>
     <div class="tags">
@@ -11,6 +11,8 @@
         v-on:click="toggleCategory(category)"
       />
     </div>
+
+    <div class="oblique-white"></div>
 
     <h2>Tags</h2>
     <div class="tags">
@@ -73,10 +75,6 @@ export default defineComponent({
   left: 0;
   padding: 0 15px;
   max-width: 280px;
-}
-
-h1 {
-  text-align: center;
 }
 
 .tags {
