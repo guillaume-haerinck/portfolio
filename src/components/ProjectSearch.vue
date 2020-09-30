@@ -1,5 +1,7 @@
 <template>
-  <div class="project-search fullheight-min" :class="{ overlay : isMobile }">
+  <div class="project-search fullheight-min">
+    <div class="overlay" v-if="isMobile" v-on:click="close"></div>
+
     <h1 class="title">SEARCH</h1>
 
     <h2>Categories</h2>
@@ -31,8 +33,6 @@ import { defineComponent } from 'vue'
 import Tag from './Tag.vue'
 import { store } from '@/store'
 import { ProjectTags, ProjectCategories } from '@/store/project-types'
-
-// TODO if click outside, close container
 
 export default defineComponent({
   name: 'ProjectSearch',
@@ -70,6 +70,9 @@ export default defineComponent({
     },
     isTagEnabled(tag: string): boolean {
       return store.state.projectTags.includes(tag);
+    },
+    close() {
+      store.commit('setShowSearchMenu', false);
     }
   }
 });
@@ -86,13 +89,13 @@ export default defineComponent({
   align-content: start;
 }
 
-.overlay::after {
-  content: "";
+.overlay {
   position: fixed;
   left: 280px;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
+  cursor: pointer;
 }
 
 .tags {
