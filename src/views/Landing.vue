@@ -90,6 +90,9 @@ export default defineComponent({
 <style scoped >
 .landing {
   padding: 0 50px;
+  display: grid;
+  justify-self: center;
+  max-width: 950px;
 }
 
 /* First screen */
@@ -97,6 +100,7 @@ export default defineComponent({
 #first-screen {
   display: grid;
   align-content: center;
+  justify-self: center;
 }
 
 #description {
@@ -198,6 +202,12 @@ export default defineComponent({
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+}
+
+@media screen and (max-width: 650px) {
+  .landing {
+    padding: 0 15px;
+  }
 }
 
 </style>

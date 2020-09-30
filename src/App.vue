@@ -43,6 +43,10 @@ export default defineComponent({
   --footer-height: 38px;
 }
 
+#app {
+  display: grid;
+}
+
 /* Text styling */
 
 body {
@@ -72,8 +76,6 @@ p {
   padding: 0;
 }
 
-/* Common styling TODO add top padding class for menu prevent hide content, use css var */
-
 .backgrounded {
   background-color: white;
   padding: var(--left-decals);
@@ -86,6 +88,7 @@ p {
   align-items: center;
   justify-content: center;
   color: black;
+  margin: 25px 0;
 }
 
 .button:hover {
