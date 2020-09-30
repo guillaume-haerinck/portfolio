@@ -1,6 +1,6 @@
 <template>
   <div class="menu">
-    <div class="menu-logo">
+    <div class="menu-logo" v-if="!isMobile">
       <router-link class="menu-item" to="/">
         <img src="img/logo-white.png" />
       </router-link>
@@ -21,19 +21,23 @@
       </a>
     </div>
 
-    <div class="menu-items">
-      <router-link class="menu-item" to="/projects">
-        <i class="material-icons">search</i>
-      </router-link>
+    <div class="menu-items menu-search">
+      <i class="material-icons">search</i>
     </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { store } from '@/store'
 
 export default defineComponent({
-  name: 'Menu'
+  name: 'Menu',
+  computed: {
+    isMobile() {
+      return store.state.isMobile;
+    }
+  }
 });
 </script>
 
@@ -41,21 +45,17 @@ export default defineComponent({
 .menu {
   position: fixed;
   display: grid;
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr;
   align-items: center;
+  height: 50px;
   top: 0;
   background-color: black;
   width: 100%;
   color: white;
 }
 
-.menu-logo {
-  width: 60px;
-  margin: 5px 0px;
-}
-
 .menu-logo img {
-  width: 100%;
+  height: 30px;
 }
 
 .menu-items {
@@ -78,8 +78,31 @@ export default defineComponent({
   margin: 0px 5px;
 }
 
-.menu-item:hover {
+.menu-search {
+  margin: 0px 15px;
+}
+
+.menu-item:hover, .menu-search:hover {
   color: gray;
+  cursor: pointer;
+}
+
+.router-link-active {
+  color: mediumturquoise;
+}
+
+@media screen and (max-width: 650px) {
+  .menu {
+    grid-template-columns: 4fr 1fr;
+  }
+
+  .menu-items:first-child {
+    justify-self: left;
+  }
+
+  .menu-item {
+    font-size: 0.8em;
+  }
 }
 
 </style>
