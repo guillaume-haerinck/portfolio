@@ -78,6 +78,27 @@ p {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+.button {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+}
+
+.button:hover {
+  color: gray;
+}
+
+.button i {
+  margin: 0 10px;
+  background-color: white;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 2em;
+}
+
 .left {
   justify-self: left;
 }

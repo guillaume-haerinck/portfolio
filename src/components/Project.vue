@@ -44,7 +44,7 @@ export default defineComponent({
 }
 
 .project-description {
-  padding: 10px;
+  padding: 15px;
 }
 
 </style>

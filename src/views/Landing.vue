@@ -12,14 +12,14 @@
       </div>
     </div>
 
-    <div class="fullheight">
+    <div class="fullheight" id="presentation">
       <div class="oblique-title-container">
         <div class="oblique-black"></div>
         <h1 class="title">PRESENTATION</h1>
         <div class="oblique-black"></div>
       </div>
 
-      <div class="presentation-element">
+      <div class="presentation-element wrap-reverse">
         <div class="backgrounded presentation-text">
           <p>While I focus on graphics and software programming, I have an artistic background which allows me to understand the needs of many fields involved in a creative pipeline</p>
         </div>
@@ -40,14 +40,14 @@
       </div>
     </div>
 
-    <div class="fullheight-min">
+    <div class="fullheight-min" id="last-projects">
       <div class="oblique-title-container">
         <div class="oblique-black"></div>
         <h1 class="title">LAST PROJECTS</h1>
         <div class="oblique-black"></div>
       </div>
 
-      <div id="last-projects">
+      <div id="last-projects-container">
         <Project v-for="(project, index) in projects" 
           :key="'project' + index"
           :name="project.name"
@@ -59,7 +59,10 @@
         />
       </div>
 
-      <div>More</div>
+      <router-link class="button" to="/projects">
+        More
+        <i class="material-icons">arrow_right_alt</i>
+      </router-link>
     </div>
   </div>
 </template>
@@ -78,7 +81,7 @@ export default defineComponent({
   },
   data() {
     return {
-      projects: [Projects[0]]
+      projects: [Projects[1], Projects[0]]
     }
   }
 });
@@ -153,12 +156,21 @@ export default defineComponent({
 
 /* Presentation */
 
+#presentation {
+  display: grid;
+}
+
 .presentation-element {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
   padding: 10px 0px;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
 .presentation-text {
@@ -167,7 +179,6 @@ export default defineComponent({
 
 .presentation-icon {
   max-width: 200px;
-  justify-self: center;
 }
 
 .presentation-icon img {
@@ -178,8 +189,14 @@ export default defineComponent({
 /* Last projects */
 
 #last-projects {
+  display: grid;
+}
+
+#last-projects-container {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 </style>
