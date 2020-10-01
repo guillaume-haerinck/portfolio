@@ -3,8 +3,8 @@
     "name": "Chaos Dashboard",
     "year": 2020,
     "url": "https://chaosdashboard.guillaumehaerinck.com/",
-    "description": "",
-    "capture": "img/.png",
+    "description": "todo",
+    "capture": "img/chaos-dashboard/capture.png",
     "category": "Web",
     "tags": [
       "React"
@@ -14,8 +14,8 @@
     "name": "A Rogue Like",
     "year": 2020,
     "url": "https://gitlab.guillaumehaerinck.com/root/rogue-like",
-    "description": "",
-    "capture": "img/.png",
+    "description": "todo",
+    "capture": "img/a-rogue-like/capture.png",
     "category": "Game",
     "tags": [
       "Unreal", "C++"
@@ -25,8 +25,8 @@
     "name": "The Last Call",
     "year": 2020,
     "url": "https://vimeo.com/421542604",
-    "description": "",
-    "capture": "img/.png",
+    "description": "todo",
+    "capture": "img/the-last-call/capture.png",
     "category": "Animation",
     "tags": [
       "Unreal", "Blender"
@@ -36,8 +36,8 @@
     "name": "A Snowpiercer Scene",
     "year": 2020,
     "url": "https://vimeo.com/384904687",
-    "description": "",
-    "capture": "img/.png",
+    "description": "todo",
+    "capture": "img/snowpiercer/capture.png",
     "category": "Animation",
     "tags": [
       "Blender"
@@ -47,8 +47,8 @@
     "name": "Learn Vulkan",
     "year": 2020,
     "url": "https://github.com/guillaume-haerinck/learn-vulkan",
-    "description": "",
-    "capture": "img/.png",
+    "description": "Todo",
+    "capture": "img/learn-vulkan/capture.png",
     "category": "Tool",
     "tags": [
       "Vulkan", "C++"
@@ -58,19 +58,19 @@
     "name": "Cube Beast Editor",
     "year": 2020,
     "url": "https://github.com/guillaume-haerinck/cube-beast-editor",
-    "description": "",
-    "capture": "img/.png",
+    "description": "Todo",
+    "capture": "img/cube-beast-editor/capture.png",
     "category": "Tool",
     "tags": [
-      "C++", "ECS", "OpenGL"
+      "C++", "ECS", "OpenGL", "WebAssembly"
     ]
   },
   {
     "name": "Met ECS",
     "year": 2020,
     "url": "https://github.com/guillaume-haerinck/met-ecs",
-    "description": "",
-    "capture": "img/.png",
+    "description": "Todo",
+    "capture": "img/met-ecs/capture.png",
     "category": "Tool",
     "tags": [
       "ECS", "C++"
@@ -80,8 +80,8 @@
     "name": "Mirrors Lasers & Robots",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/imac-tower-defense",
-    "description": "",
-    "capture": "img/.png",
+    "description": "Todo",
+    "capture": "img/mirrors-lasers-robots/capture.png",
     "category": "Game",
     "tags": [
       "C++", "ECS", "OpenGL", "XAML"
@@ -91,19 +91,19 @@
     "name": "OpenGL Playground",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/opengl-playground",
-    "description": "",
-    "capture": "img/.png",
+    "description": "Todo",
+    "capture": "img/opengl-playground/capture.png",
     "category": "Tool",
     "tags": [
-      "C++", "ECS", "OpenGL"
+      "C++", "ECS", "OpenGL", "WebAssembly"
     ]
   },
   {
     "name": "DirectX 11 Playground",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/directx11-playground",
-    "description": "",
-    "capture": "img/.png",
+    "description": "Todo",
+    "capture": "img/dx11-playground/capture.png",
     "category": "Tool",
     "tags": [
       "C++", "DirectX"
@@ -124,8 +124,8 @@
     "name": "Which GUI",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/which-gui",
-    "description": "",
-    "capture": "img/.png",
+    "description": "Todo",
+    "capture": "img/which-gui/capture.jpg",
     "category": "Tool",
     "tags": [
       "Unreal", "Unity", "Vue", "React", "Angular", "XAML"
@@ -135,8 +135,8 @@
     "name": "Roll Goal",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/roll-goal",
-    "description": "",
-    "capture": "img/.png",
+    "description": "Todo",
+    "capture": "img/roll-goal/capture.jpg",
     "category": "Game",
     "tags": [
       "Unreal", "Unity", "Godot", "C++", "C#"
@@ -155,8 +155,8 @@
     "name": "L'échoppe de Ben",
     "year": 2018,
     "url": "https://vincent-le-ven.itch.io/ben-echoppe",
-    "description": "",
-    "capture": "img/.png",
+    "description": "Todo",
+    "capture": "img/echoppe-ben/capture.png",
     "category": "Game",
     "tags": [
       "Unity", "C#"
@@ -177,8 +177,8 @@
     "name": "Kanaga Wave",
     "year": 2017,
     "url": "https://globalgamejam.org/2017/games/kanaga-wave",
-    "description": "",
-    "capture": "img/.png",
+    "description": "Todo",
+    "capture": "img/kanaga-wave/capture.png",
     "category": "Game",
     "tags": [
       "Unity", "C#"

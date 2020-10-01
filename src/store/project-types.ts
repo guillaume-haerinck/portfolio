@@ -21,6 +21,7 @@ export enum ProjectTag {
     Python = 'Python',
     React = 'React',
     Angular = 'Angular',
-    Vue = 'Vue'
+    Vue = 'Vue',
+    WASM = 'WebAssembly'
 }
 export const ProjectTags = Object.values(ProjectTag);
