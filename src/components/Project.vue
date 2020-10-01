@@ -14,6 +14,8 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
+// TODO Image lazy loading squeletton animation
+
 export default defineComponent({
   name: 'Project',
   props: {

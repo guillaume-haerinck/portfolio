@@ -18,7 +18,6 @@ export enum ProjectTag {
     CPP = 'C++',
     XAML = 'XAML',
     CSharp = 'C#',
-    Python = 'Python',
     React = 'React',
     Angular = 'Angular',
     Vue = 'Vue',

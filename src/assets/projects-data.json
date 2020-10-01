@@ -3,7 +3,7 @@
     "name": "Chaos Dashboard",
     "year": 2020,
     "url": "https://chaosdashboard.guillaumehaerinck.com/",
-    "description": "todo",
+    "description": "A data-visualisation website about the worst kind of events of the year. Made with React.",
     "capture": "img/chaos-dashboard/capture.png",
     "category": "Web",
     "tags": [
@@ -14,7 +14,7 @@
     "name": "A Rogue Like",
     "year": 2020,
     "url": "https://gitlab.guillaumehaerinck.com/root/rogue-like",
-    "description": "todo",
+    "description": "A simple endless fight game made with procedural dungeon generation. Made with Unreal Engine",
     "capture": "img/a-rogue-like/capture.png",
     "category": "Game",
     "tags": [
@@ -25,7 +25,7 @@
     "name": "The Last Call",
     "year": 2020,
     "url": "https://vimeo.com/421542604",
-    "description": "todo",
+    "description": "A title sequence for an original movie. I modelled and textured the robot, and took Megascan assets in Unreal Engine for the universe",
     "capture": "img/the-last-call/capture.png",
     "category": "Animation",
     "tags": [
@@ -36,7 +36,7 @@
     "name": "A Snowpiercer Scene",
     "year": 2020,
     "url": "https://vimeo.com/384904687",
-    "description": "todo",
+    "description": "A small scene made with Blender about the Snowpiercer movie",
     "capture": "img/snowpiercer/capture.png",
     "category": "Animation",
     "tags": [
@@ -47,7 +47,7 @@
     "name": "Learn Vulkan",
     "year": 2020,
     "url": "https://github.com/guillaume-haerinck/learn-vulkan",
-    "description": "Todo",
+    "description": "A custom renderer made to learn and test Vulkan concepts",
     "capture": "img/learn-vulkan/capture.png",
     "category": "Tool",
     "tags": [
@@ -58,7 +58,7 @@
     "name": "Cube Beast Editor",
     "year": 2020,
     "url": "https://github.com/guillaume-haerinck/cube-beast-editor",
-    "description": "Todo",
+    "description": "A voxel-editor running on your desktop and your browser",
     "capture": "img/cube-beast-editor/capture.png",
     "category": "Tool",
     "tags": [
@@ -69,7 +69,7 @@
     "name": "Met ECS",
     "year": 2020,
     "url": "https://github.com/guillaume-haerinck/met-ecs",
-    "description": "Todo",
+    "description": "An Entity-Component-System library in C++ made to test out the templating langage",
     "capture": "img/met-ecs/capture.png",
     "category": "Tool",
     "tags": [
@@ -80,7 +80,7 @@
     "name": "Mirrors Lasers & Robots",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/imac-tower-defense",
-    "description": "Todo",
+    "description": "A small tower-defense game made in bare C++ with an ECS architecture",
     "capture": "img/mirrors-lasers-robots/capture.png",
     "category": "Game",
     "tags": [
@@ -91,7 +91,7 @@
     "name": "OpenGL Playground",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/opengl-playground",
-    "description": "Todo",
+    "description": "A simple OpenGL renderer with an Entity Component System architecture",
     "capture": "img/opengl-playground/capture.png",
     "category": "Tool",
     "tags": [
@@ -102,7 +102,7 @@
     "name": "DirectX 11 Playground",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/directx11-playground",
-    "description": "Todo",
+    "description": "A simple DirectX renderer with an Entity Component System architecture",
     "capture": "img/dx11-playground/capture.png",
     "category": "Tool",
     "tags": [
@@ -124,7 +124,7 @@
     "name": "Which GUI",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/which-gui",
-    "description": "Todo",
+    "description": "Adaptation of great User Interfaces in games using different technologies",
     "capture": "img/which-gui/capture.jpg",
     "category": "Tool",
     "tags": [
@@ -135,7 +135,7 @@
     "name": "Roll Goal",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/roll-goal",
-    "description": "Todo",
+    "description": "Re-creation of a small game across multiple game engines",
     "capture": "img/roll-goal/capture.jpg",
     "category": "Game",
     "tags": [
@@ -155,7 +155,7 @@
     "name": "L'échoppe de Ben",
     "year": 2018,
     "url": "https://vincent-le-ven.itch.io/ben-echoppe",
-    "description": "Todo",
+    "description": "Point'n click game made with Unity for the Digital Art Jam 2",
     "capture": "img/echoppe-ben/capture.png",
     "category": "Game",
     "tags": [
@@ -177,7 +177,7 @@
     "name": "Kanaga Wave",
     "year": 2017,
     "url": "https://globalgamejam.org/2017/games/kanaga-wave",
-    "description": "Todo",
+    "description": "A multiplayer game made in Unity during the Global Game Jam 2017",
     "capture": "img/kanaga-wave/capture.png",
     "category": "Game",
     "tags": [
