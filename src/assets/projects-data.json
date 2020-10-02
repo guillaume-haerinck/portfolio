@@ -3,7 +3,7 @@
     "name": "Chaos Dashboard",
     "year": 2020,
     "url": "https://chaosdashboard.guillaumehaerinck.com/",
-    "description": "A data-visualisation website about the worst kind of events of the year. Made with React.",
+    "description": "A data-visualisation website about the worst kind of events of the year. There are little games, demons and all sort of jokes. This nightmare-ish design was integrated with React",
     "capture": "img/chaos-dashboard/capture.png",
     "category": "Web",
     "tags": [
@@ -14,7 +14,7 @@
     "name": "A Rogue Like",
     "year": 2020,
     "url": "https://gitlab.guillaumehaerinck.com/root/rogue-like",
-    "description": "A simple endless fight game made with procedural dungeon generation. Made with Unreal Engine",
+    "description": "A simple endless 3D fight game made with procedural dungeon generation. It runs with Unreal Engine, we took free assets from its stores and animations from Mixamo",
     "capture": "img/a-rogue-like/capture.png",
     "category": "Game",
     "tags": [
@@ -25,7 +25,7 @@
     "name": "The Last Call",
     "year": 2020,
     "url": "https://vimeo.com/421542604",
-    "description": "A title sequence for an original movie. I modelled and textured the robot, and took Megascan assets in Unreal Engine for the universe",
+    "description": "A title sequence for an original movie. I modelled and textured the robot, and took Megascan assets in Unreal Engine for the universe. We took some motion-capture animations from Mixamo and applied modifications to them",
     "capture": "img/the-last-call/capture.png",
     "category": "Animation",
     "tags": [
@@ -36,7 +36,7 @@
     "name": "A Snowpiercer Scene",
     "year": 2020,
     "url": "https://vimeo.com/384904687",
-    "description": "A small scene made with Blender about the Snowpiercer movie",
+    "description": "A small scene made with Blender about the Snowpiercer movie. It is rendered in realtime to try out the power of the Evee renderer",
     "capture": "img/snowpiercer/capture.png",
     "category": "Animation",
     "tags": [
@@ -47,7 +47,7 @@
     "name": "Learn Vulkan",
     "year": 2020,
     "url": "https://github.com/guillaume-haerinck/learn-vulkan",
-    "description": "A custom renderer made to learn and test Vulkan concepts",
+    "description": "A custom renderer made to learn and test Vulkan concepts. It uses a lot of Object-Oriented-Programming to better understand the relationship between vulkan objects",
     "capture": "img/learn-vulkan/capture.png",
     "category": "Tool",
     "tags": [
@@ -58,18 +58,18 @@
     "name": "Cube Beast Editor",
     "year": 2020,
     "url": "https://github.com/guillaume-haerinck/cube-beast-editor",
-    "description": "A voxel-editor running on your desktop and your browser",
+    "description": "A voxel-editor running on your desktop and your browser. The renderer is OpenGL, but it builds in WebAssembly which can convert calls to webGL",
     "capture": "img/cube-beast-editor/capture.png",
     "category": "Tool",
     "tags": [
-      "C++", "ECS", "OpenGL", "WebAssembly"
+      "C++", "ECS", "OpenGL", "WebAssembly", "WebGL"
     ]
   },
   {
     "name": "Met ECS",
     "year": 2020,
     "url": "https://github.com/guillaume-haerinck/met-ecs",
-    "description": "An Entity-Component-System library in C++ made to test out the templating langage",
+    "description": "An Entity-Component-System library in C++ made to test out the templating langage. Its API is based on the entt library, but its far from being that performant",
     "capture": "img/met-ecs/capture.png",
     "category": "Tool",
     "tags": [
@@ -80,7 +80,7 @@
     "name": "Mirrors Lasers & Robots",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/imac-tower-defense",
-    "description": "A small tower-defense game made in bare C++ with an ECS architecture",
+    "description": "A small tower-defense game with made in bare C++ with an Entity Component System architecture. It renders with OpenGL but we use Microsoft's XAML through Noesis GUI for the user interface",
     "capture": "img/mirrors-lasers-robots/capture.png",
     "category": "Game",
     "tags": [
@@ -91,18 +91,18 @@
     "name": "OpenGL Playground",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/opengl-playground",
-    "description": "A simple OpenGL renderer with an Entity Component System architecture",
+    "description": "A simple OpenGL renderer with an Entity Component System architecture. Can run on your browser as it support WebAssembly builds",
     "capture": "img/opengl-playground/capture.png",
     "category": "Tool",
     "tags": [
-      "C++", "ECS", "OpenGL", "WebAssembly"
+      "C++", "ECS", "OpenGL", "WebAssembly", "WebGL"
     ]
   },
   {
     "name": "DirectX 11 Playground",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/directx11-playground",
-    "description": "A simple DirectX renderer with an Entity Component System architecture",
+    "description": "A simple DirectX 11 renderer with an Entity Component System architecture",
     "capture": "img/dx11-playground/capture.png",
     "category": "Tool",
     "tags": [
@@ -113,7 +113,7 @@
     "name": "Lolimac",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/lolimac",
-    "description": "Lolimac is an event-organisation website made with Angular. You can create, modify and join events made for IMAC students. Synchronisation with calendars is available as well.",
+    "description": "Lolimac is an event-organisation website made with Angular. You can create, modify and join events made for IMAC students. Synchronisation with calendars is available as well",
     "capture": "img/lolimac/capture.png",
     "category": "Web",
     "tags": [
@@ -124,38 +124,40 @@
     "name": "Which GUI",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/which-gui",
-    "description": "Adaptation of great User Interfaces in games using different technologies",
+    "description": "Adaptation of great user interfaces in games using different technologies. It compares web frameworks (Angular, Vue, React), game engines (Unreal, Godot, Unity) and QT philosophy",
     "capture": "img/which-gui/capture.jpg",
     "category": "Tool",
     "tags": [
-      "Unreal", "Unity", "Vue", "React", "Angular", "XAML"
+      "Unreal", "Unity", "Vue", "React", "Angular", "XAML", "QT"
     ]
   },
   {
     "name": "Roll Goal",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/roll-goal",
-    "description": "Re-creation of a small game across multiple game engines",
+    "description": "Re-creation of a small game across multiple game engines. Now using Unity (both in ECS and GameObject), Unreal Engine and Godot",
     "capture": "img/roll-goal/capture.jpg",
     "category": "Game",
     "tags": [
-      "Unreal", "Unity", "Godot", "C++", "C#"
+      "Unreal", "Unity", "Godot", "C++", "C#", "ECS"
     ]
   },
   {
     "name": "Coffee Conspiration",
     "year": 2018,
     "url": "https://github.com/guillaume-haerinck/imac-coffee-conspiration",
-    "description": "An inner-joke built with webpack and HTML Components. It is a game/story experience dedicated to surprise its audience and play with conspiration tropes.",
+    "description": "A parody website built with webpack and HTML Components. It is a game/story experience dedicated to surprise its audience and play with conspiration tropes",
     "capture": "img/coffee-conspiration/capture.png",
     "category": "Web",
-    "tags": []
+    "tags": [
+      "WebGL"
+    ]
   },
   {
     "name": "L'échoppe de Ben",
     "year": 2018,
     "url": "https://vincent-le-ven.itch.io/ben-echoppe",
-    "description": "Point'n click game made with Unity for the Digital Art Jam 2",
+    "description": "Point'n click game made with Unity for the Digital Art Jam 2. You visit the small chop made by the Artist Ben Vautier and try to discover its secrets",
     "capture": "img/echoppe-ben/capture.png",
     "category": "Game",
     "tags": [
@@ -166,7 +168,7 @@
     "name": "Infotrafic.com",
     "year": 2018,
     "url": "https://www.infotrafic.com/home",
-    "description": "A realtime-trafic map visualizer made for my employer Infotrafic. It is built with Angular and uses Node as backend. Uses progressive web app (PWA) structure and conventions.",
+    "description": "A realtime-trafic map visualizer made for my employer Infotrafic. It is built with Angular and uses Node.js as backend. Uses progressive web app (PWA) structure and conventions",
     "capture": "img/infotrafic/capture.png",
     "category": "Web",
     "tags": [
@@ -177,7 +179,7 @@
     "name": "Kanaga Wave",
     "year": 2017,
     "url": "https://globalgamejam.org/2017/games/kanaga-wave",
-    "description": "A multiplayer game made in Unity during the Global Game Jam 2017",
+    "description": "A 1 vs 1 game made in Unity during the Global Game Jam 2017. Your have to jump in rythm to make big waves in order to overflow your opponent on the opposite island",
     "capture": "img/kanaga-wave/capture.png",
     "category": "Game",
     "tags": [

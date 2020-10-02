@@ -8,6 +8,7 @@ export const ProjectCategories = Object.values(ProjectCategory);
 
 export enum ProjectTag {
     OpenGL = 'OpenGL',
+    WebGL = 'WebGL',
     Vulkan = 'Vulkan',
     DirectX = 'DirectX',
     ECS = 'ECS',
@@ -17,6 +18,7 @@ export enum ProjectTag {
     Blender = 'Blender',
     CPP = 'C++',
     XAML = 'XAML',
+    QT = 'QT',
     CSharp = 'C#',
     React = 'React',
     Angular = 'Angular',
