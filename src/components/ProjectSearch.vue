@@ -122,7 +122,12 @@ export default defineComponent({
     position: fixed;
     left: 0;
     z-index: 1;
-    min-height: calc(100vh - var(--menu-height));
+    height: calc(100vh - var(--menu-height));
+    overflow-y: scroll;
+  }
+
+  .tags:last-child {
+    margin-bottom: 60px;
   }
 }
 
