@@ -58,7 +58,7 @@
     "name": "Cube Beast Editor",
     "year": 2020,
     "url": "https://github.com/guillaume-haerinck/cube-beast-editor",
-    "description": "A voxel-editor running on your desktop and your browser. The renderer is OpenGL, but it builds in WebAssembly which can convert calls to webGL",
+    "description": "A voxel-editor running on your desktop and your browser. The renderer is OpenGL, but it builds in WebAssembly which converts calls to WebGL",
     "capture": "img/cube-beast-editor/capture.png",
     "category": "Tool",
     "tags": [
@@ -69,7 +69,7 @@
     "name": "Met ECS",
     "year": 2020,
     "url": "https://github.com/guillaume-haerinck/met-ecs",
-    "description": "An Entity-Component-System library in C++ made to test out the templating langage. Its API is based on the entt library, but its far from being that performant",
+    "description": "An Entity-Component-System library in C++ made to test out the templating langage. Its API is based on the entt library to compare performance easily",
     "capture": "img/met-ecs/capture.png",
     "category": "Tool",
     "tags": [
@@ -80,7 +80,7 @@
     "name": "Mirrors Lasers & Robots",
     "year": 2019,
     "url": "https://github.com/guillaume-haerinck/imac-tower-defense",
-    "description": "A small tower-defense game with made in bare C++ with an Entity Component System architecture. It renders with OpenGL but we use Microsoft's XAML through Noesis GUI for the user interface",
+    "description": "A small tower-defense game with made in C++ with an Entity Component System architecture. It renders with OpenGL but we use Microsoft's XAML through Noesis GUI for the user interface",
     "capture": "img/mirrors-lasers-robots/capture.png",
     "category": "Game",
     "tags": [
@@ -179,7 +179,7 @@
     "name": "Kanaga Wave",
     "year": 2017,
     "url": "https://globalgamejam.org/2017/games/kanaga-wave",
-    "description": "A 1 vs 1 game made in Unity during the Global Game Jam 2017. Your have to jump in rythm to make big waves in order to overflow your opponent on the opposite island",
+    "description": "A 1 vs 1 game made in Unity during the Global Game Jam 2017. You have to jump in rythm to make big waves in order to overflow your opponent on the other island",
     "capture": "img/kanaga-wave/capture.png",
     "category": "Game",
     "tags": [
