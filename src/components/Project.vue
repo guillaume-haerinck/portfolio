@@ -37,16 +37,42 @@ export default defineComponent({
   directives: {
     lazyload: {
       mounted(el: HTMLElement) {
-        const aTag = Array.from(el.children).find(
-          elem => elem.nodeName === "A"
-        ) as HTMLElement;
-        const imageElement = aTag.children[0] as HTMLImageElement;
+        const loadImage = () => {
+          const aTag = Array.from(el.children).find(
+            elem => elem.nodeName === "A"
+          ) as HTMLElement;
+          const imageElement = aTag.children[0] as HTMLImageElement;
 
-        if (imageElement) {
-          imageElement.addEventListener("load", () => {
-            el.classList.remove('squeleton-image');
+          if (imageElement) {
+            imageElement.addEventListener("load", () => {
+              el.classList.remove('squeleton-image');
+            });
+            imageElement.src = imageElement.dataset.url as string; 
+          }
+        }
+
+        const handleIntersect = (entries: any, observer: any) => {
+          entries.forEach((entry: any) => {
+            if (entry.isIntersecting) {
+              loadImage();
+              observer.unobserve(el);
+            }
           });
-          imageElement.src = imageElement.dataset.url as string; 
+        }
+
+        const createObserver = () => {
+          const options: IntersectionObserverInit = {
+            root: null,
+            threshold: 0
+          };
+          const observer = new IntersectionObserver(handleIntersect, options);
+          observer.observe(el);
+        }
+
+        if (window["IntersectionObserver"]) {
+          createObserver();
+        } else {
+          loadImage();
         }
       }
     }
