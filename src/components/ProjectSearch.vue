@@ -54,6 +54,7 @@ export default defineComponent({
   },
   methods: {
     toggleTag(tag: string) {
+      window.scrollTo(0, 0);
       const tagIndex = store.state.projectTags.indexOf(tag);
       if (tagIndex === -1)
         store.commit('addProjectTag', tag);
@@ -61,6 +62,7 @@ export default defineComponent({
         store.commit('removeProjectTag', tagIndex);
     },
     toggleCategory(category: string) {
+      window.scrollTo(0, 0);
       const categoryIndex = store.state.projectCategories.indexOf(category);
       if (categoryIndex === -1)
         store.commit('addProjectCategory', category);
@@ -89,6 +91,7 @@ export default defineComponent({
   max-width: var(--search-width);
   display: grid;
   align-content: start;
+  z-index: 3;
 }
 
 .overlay {
