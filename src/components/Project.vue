@@ -74,6 +74,17 @@ export default defineComponent({
         } else {
           loadImage();
         }
+      },
+      updated(el: HTMLElement) {
+        const aTag = Array.from(el.children).find(
+          elem => elem.nodeName === "A"
+        ) as HTMLElement;
+        const imageElement = aTag.children[0] as HTMLImageElement;
+
+        if (imageElement) {
+          el.classList.remove('squeleton-image');
+          imageElement.src = imageElement.dataset.url as string; 
+        }
       }
     }
   }
