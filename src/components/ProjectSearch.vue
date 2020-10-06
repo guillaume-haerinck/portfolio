@@ -93,6 +93,7 @@ export default defineComponent({
 
 .overlay {
   position: fixed;
+  z-index: 2;
   left: var(--search-width);
   background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
@@ -129,7 +130,11 @@ export default defineComponent({
   }
 
   .tags:last-child {
-    margin-bottom: 60px;
+    margin-bottom: 160px;
+  }
+
+  .oblique-white {
+    margin: 30px 0px !important;
   }
 }
 

@@ -26,8 +26,6 @@ import Project from '@/components/Project.vue'
 import ProjectSearch from '@/components/ProjectSearch.vue'
 import ProjectsData from '@/assets/projects-data.json'
 
-// TODO scroll on top on page load
-
 export default defineComponent({
   name: 'Projects',
   components: {
@@ -52,6 +50,9 @@ export default defineComponent({
         );
       }
     }
+  },
+  mounted() {
+    window.scrollTo(0, 0);
   }
 });
 </script>
