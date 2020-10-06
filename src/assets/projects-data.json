@@ -1,5 +1,16 @@
 [
   {
+    "name": "Universe Engine",
+    "year": 2020,
+    "url": "https://www.virtualarts.co.uk/engine",
+    "description": "I worked on the in-house game engine of Virtual Arts during an internship. My goal was to improve performance and fix rendering bugs with their Metal and Vulkan implementations",
+    "capture": "img/virtualarts/capture.png",
+    "category": "Tool",
+    "tags": [
+      "C++", "Vulkan"
+    ]
+  },
+  {
     "name": "ScanRig",
     "year": 2020,
     "url": "https://github.com/alicevision/ScanRig",
