@@ -10,7 +10,7 @@
         :key="'category-' + index"
         :name="category"
         :enabled="isCategoryEnabled(category)"
-        v-on:click="toggleCategory(category)"
+        v-on:click="toggleCategory(category); topScrollIfMobile()"
       />
     </div>
 
@@ -22,7 +22,7 @@
         :key="'tag-' + index"
         :name="tag"
         :enabled="isTagEnabled(tag)"
-        v-on:click="toggleTag(tag)"
+        v-on:click="toggleTag(tag); topScrollIfMobile()"
       />
     </div>
   </div>
@@ -53,8 +53,11 @@ export default defineComponent({
     }
   },
   methods: {
+    topScrollIfMobile() {
+      if (this.isMobile)
+        window.scrollTo(0, 0);
+    },
     toggleTag(tag: string) {
-      window.scrollTo(0, 0);
       const tagIndex = store.state.projectTags.indexOf(tag);
       if (tagIndex === -1)
         store.commit('addProjectTag', tag);
@@ -62,7 +65,6 @@ export default defineComponent({
         store.commit('removeProjectTag', tagIndex);
     },
     toggleCategory(category: string) {
-      window.scrollTo(0, 0);
       const categoryIndex = store.state.projectCategories.indexOf(category);
       if (categoryIndex === -1)
         store.commit('addProjectCategory', category);
