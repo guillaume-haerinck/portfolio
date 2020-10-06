@@ -61,6 +61,21 @@ export default defineComponent({
 
 .project-image {
   position: relative; /* needed for view height */
+  min-height: 180px;
+}
+
+.squeleton-image {
+  background-image: linear-gradient(90deg, #ddd 0px, #f6f1f1 120px, #ddd 180px);
+  background-size: 800px;
+  animation: squeleton 1.5s infinite linear;
+}
+@keyframes squeleton {
+  0% {
+    background-position: -60px;
+  }
+  40%, 100% {
+    background-position: 400px;
+  }
 }
 
 .project-image img {
