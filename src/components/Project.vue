@@ -1,8 +1,8 @@
 <template>
   <div class="project" :class="colorClass">
-    <div class="project-image">
+    <div class="project-image squeleton-image" v-lazyload>
       <i class="material-icons view" v-show="imgHover">visibility</i>
-      <a :href=url target="blank" @mouseover="imgHover = true" @mouseleave="imgHover = false"><img :src=capture alt="Project capture"></a>
+      <a :href=url target="blank" @mouseover="imgHover = true" @mouseleave="imgHover = false"><img :data-url=capture alt="Project capture"></a>
     </div>
     <div class="project-description">
       <h4>{{ name }}</h4>
@@ -14,7 +14,6 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
 
-// TODO Image lazy loading squeletton animation
 // TODO use a color code to match the category, no random
 // TODO improve design, maybe use logo and only show captures on click, what about displaying tags, and showing multiple links
 
@@ -33,6 +32,23 @@ export default defineComponent({
     return {
       colorClass: classes[index],
       imgHover: false
+    }
+  },
+  directives: {
+    lazyload: {
+      mounted(el: HTMLElement) {
+        const aTag = Array.from(el.children).find(
+          elem => elem.nodeName === "A"
+        ) as HTMLElement;
+        const imageElement = aTag.children[0] as HTMLImageElement;
+
+        if (imageElement) {
+          imageElement.addEventListener("load", () => {
+            el.classList.remove('squeleton-image');
+          });
+          imageElement.src = imageElement.dataset.url as string; 
+        }
+      }
     }
   }
 });
@@ -62,6 +78,10 @@ export default defineComponent({
 .project-image {
   position: relative; /* needed for view height */
   min-height: 180px;
+}
+
+.squeleton-image img {
+  visibility: hidden;
 }
 
 .squeleton-image {
