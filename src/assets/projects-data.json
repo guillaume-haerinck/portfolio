@@ -1,5 +1,16 @@
 [
   {
+    "name": "ScanRig",
+    "year": 2020,
+    "url": "https://github.com/alicevision/ScanRig",
+    "description": "ScanRig is a tool built with AliceVision to achieve high-quality photogrammetry at low-budget. You place your object in the center, and 3 cameras will turn around and take pictures of it",
+    "capture": "img/scanrig/capture.png",
+    "category": "Maker",
+    "tags": [
+      "C++", "Python", "QT", "Fusion360", "Blender", "Arduino"
+    ]
+  },
+  {
     "name": "Chaos Dashboard",
     "year": 2020,
     "url": "https://chaosdashboard.guillaumehaerinck.com/",
@@ -151,6 +162,17 @@
     "category": "Web",
     "tags": [
       "WebGL"
+    ]
+  },
+  {
+    "name": "Portal Box",
+    "year": 2020,
+    "url": "https://vimeo.com/267103924",
+    "description": "A puzzle-box built when I applied for my engineering school. You have to resolve a combination with two potentiometer in order to open the box",
+    "capture": "img/portal-box/capture.png",
+    "category": "Maker",
+    "tags": [
+      "Arduino"
     ]
   },
   {

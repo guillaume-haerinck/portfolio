@@ -15,6 +15,8 @@
 import { defineComponent } from 'vue'
 
 // TODO Image lazy loading squeletton animation
+// TODO use a color code to match the category, no random
+// TODO improve design, maybe use logo and only show captures on click, what about displaying tags, and showing multiple links
 
 export default defineComponent({
   name: 'Project',

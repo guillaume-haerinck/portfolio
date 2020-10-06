@@ -34,6 +34,8 @@ import Tag from './Tag.vue'
 import { store } from '@/store'
 import { ProjectTags, ProjectCategories } from '@/store/project-types'
 
+// TODO maybe tags and categories definitions on mouse overlay ? On mobile stay pressed to get definition ?
+
 export default defineComponent({
   name: 'ProjectSearch',
   components: {
