@@ -18,8 +18,13 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/Legals.vue') // lazy-loading
   },
   {
-    path: '/not-found',
-    name: 'not-found',
+    path: '/project-detail/:projectName',
+    name: 'project-detail/:projectName',
+    component: () => import('../views/Article.vue') // lazy-loading
+  },
+  {
+    path: '/:catchAll(.*)',
+    name: '404',
     component: () => import('../views/NotFound.vue') // lazy-loading
   }
 ]
