@@ -1,10 +1,9 @@
 <template>
-  <div class="article">
+  <div class="article readable fullheight-min">
     <span v-if="content.length >= 1" v-html="content"></span>
     <p v-else>Loading</p>
   </div>
 </template>
-
 
 <script lang="ts">
 import { defineComponent } from 'vue'
@@ -28,3 +27,10 @@ export default defineComponent({
   }
 });
 </script>
+
+<style scoped>
+.article {
+
+}
+
+</style>

@@ -48,6 +48,13 @@ export default defineComponent({
   display: grid;
 }
 
+.readable {
+  padding: 0 50px;
+  display: grid;
+  justify-self: center;
+  max-width: 950px;
+}
+
 /* Text styling */
 
 body {

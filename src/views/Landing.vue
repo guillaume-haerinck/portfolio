@@ -1,5 +1,5 @@
 <template>
-  <div class="landing">
+  <div class="landing readable">
     <div class="fullheight" id="first-screen">
       <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a software engineer student <br>based in Paris.</h1>
       <p id="description">Exploring computer graphics, I'm making projects related to realtime rendering, data-oriented design, web and user interface development.</p>
@@ -90,13 +90,6 @@ export default defineComponent({
 </script>
 
 <style scoped >
-.landing {
-  padding: 0 50px;
-  display: grid;
-  justify-self: center;
-  max-width: 950px;
-}
-
 /* First screen */
 
 #first-screen {
