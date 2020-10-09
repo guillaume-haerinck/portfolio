@@ -1,32 +1,32 @@
 export enum ProjectCategory {
-    Web = 'Web',
-    Game = 'Game',
     Animation = 'Animation',
+    Game = 'Game',
+    Maker = 'Maker',
     Tool = 'Tool',
-    Maker = 'Maker'
+    Web = 'Web'
 }
 export const ProjectCategories = Object.values(ProjectCategory);
 
 export enum ProjectTag {
+    Angular = 'Angular',
     Arduino = 'Arduino',
-    OpenGL = 'OpenGL',
-    WebGL = 'WebGL',
-    Vulkan = 'Vulkan',
-    DirectX = 'DirectX',
-    QT = 'QT',
-    ECS = 'ECS',
-    Unity = 'Unity',
-    Unreal = 'Unreal',
-    Godot = 'Godot',
     Blender = 'Blender',
-    Fusion = 'Fusion360',
-    XAML = 'XAML',
     CPP = 'C++',
     CSharp = 'C#',
+    DirectX = 'DirectX',
+    ECS = 'ECS',
+    Fusion = 'Fusion360',
+    Godot = 'Godot',
+    OpenGL = 'OpenGL',
     Python = 'Python',
+    QT = 'QT',
     React = 'React',
-    Angular = 'Angular',
+    Unity = 'Unity',
+    Unreal = 'Unreal',
     Vue = 'Vue',
-    WASM = 'WebAssembly'
+    Vulkan = 'Vulkan',
+    WebGL = 'WebGL',
+    WASM = 'WebAssembly',
+    XAML = 'XAML'
 }
 export const ProjectTags = Object.values(ProjectTag);
