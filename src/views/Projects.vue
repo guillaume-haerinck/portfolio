@@ -7,9 +7,8 @@
         :key="'project' + index"
         :name="project.name"
         :year="project.year"
-        :url="project.url"
+        :slug="project.slug"
         :description="project.description"
-        :capture="project.capture"
       />
     </div>
 

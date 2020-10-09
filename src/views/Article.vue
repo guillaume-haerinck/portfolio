@@ -14,6 +14,7 @@ import marked from 'marked'
 export default defineComponent({
   name: 'Article',
   mounted() {
+    window.scrollTo(0, 0);
     fetch('/articles/' + router.currentRoute.value.params.projectName + '.md')
       .then(res => res.text())
       .then(text => {
