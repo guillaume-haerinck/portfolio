@@ -14,6 +14,7 @@ export default defineComponent({
   name: 'Article',
   mounted() {
     window.scrollTo(0, 0);
+    // TODO only get local markdown if markdown field is empty, else get from the project data
     fetch('/articles/' + router.currentRoute.value.params.projectName + '.md')
       .then(res => res.text())
       .then(text => {

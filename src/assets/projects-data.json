@@ -3,198 +3,316 @@
     "name": "Universe Engine",
     "slug": "universe-engine",
     "year": 2020,
-    "github": "",
+    "markdown": "",
     "description": "I worked on the in-house game engine of Virtual Arts during an internship. My goal was to improve performance and fix rendering bugs with their Metal and Vulkan implementations",
     "category": "Tool",
+    "isPro": 1,
     "tags": [
       "C++", "Vulkan"
+    ],
+    "links": { 
+      "website": "https://www.virtualarts.co.uk/engine" 
+    },
+    "partners": [
+      { "fname": "Jules", "lname": "Fouchy", "linkedin": "", "role": "" },
+      { "fname": "Pierre", "lname": "Thiel", "linkedin": "", "role": "" }
     ]
   },
   {
     "name": "ScanRig",
     "slug": "scanrig",
     "year": 2020,
-    "github": "https://github.com/alicevision/ScanRig",
+    "markdown": "",
     "description": "ScanRig is a tool built with AliceVision to achieve high-quality photogrammetry at low-budget. You place your object in the center, and 3 cameras will turn around and take pictures of it",
     "category": "Maker",
+    "isPro": 1,
     "tags": [
       "C++", "Python", "QT", "Fusion360", "Blender", "Arduino"
+    ],
+    "links": { 
+      "repo": "https://github.com/alicevision/ScanRig",
+      "website": "https://alicevision.org/" 
+    },
+    "partners": [
+      { "fname": "Enguerrand", "lname": "De Smet", "linkedin": "https://www.linkedin.com/in/enguerrand-de-smet-1879a119b/", "role": "" },
+      { "fname": "Julien", "lname": "Haudegond", "linkedin": "https://www.linkedin.com/in/julien-haudegond/", "role": "" },
+      { "fname": "Mélissande", "lname": "Gaillot", "linkedin": "https://www.linkedin.com/in/m%C3%A9lissande-gaillot-634b42181/", "role": "" }
     ]
   },
   {
     "name": "Chaos Dashboard",
     "slug": "chaos-dashboard",
     "year": 2020,
-    "github": "https://github.com/LafLaurine/imac2-web-dashboard",
+    "markdown": "",
     "description": "A data-visualisation website about the worst kind of events of the year. There are little games, demons and all sort of jokes. This nightmare-ish design was integrated with React",
     "category": "Web",
+    "isPro": 0,
     "tags": [
       "React"
+    ],
+    "links": { 
+      "repo": "https://github.com/LafLaurine/imac2-web-dashboard", 
+      "demo": "https://chaosdashboard.guillaumehaerinck.com/" 
+    },
+    "partners": [
+      { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-826545148/", "role": "" },
+      { "fname": "Mathilde", "lname": "Dumoulin", "linkedin": "", "role": "" },
+      { "fname": "Mélissande", "lname": "Gaillot", "linkedin": "", "role": "" }
     ]
   },
   {
     "name": "A Rogue Like",
     "slug": "a-rogue-like",
     "year": 2020,
-    "github": "https://gitlab.guillaumehaerinck.com/root/rogue-like",
+    "markdown": "",
     "description": "A simple endless 3D fight game made with procedural dungeon generation. It runs with Unreal Engine, we took free assets from its stores and animations from Mixamo",
     "category": "Game",
+    "isPro": 0,
     "tags": [
       "Unreal", "C++"
+    ],
+    "links": { 
+      "repo": "https://gitlab.guillaumehaerinck.com/root/rogue-like" 
+    },
+    "partners": [
+      { "fname": "Enguerrand", "lname": "De Smet", "linkedin": "https://www.linkedin.com/in/enguerrand-de-smet-1879a119b/", "role": "" }
     ]
   },
   {
     "name": "The Last Call",
     "slug": "the-last-call",
     "year": 2020,
-    "github": "https://gitlab.guillaumehaerinck.com/root/the-last-call",
+    "markdown": "",
     "description": "A title sequence for an original movie. I modelled and textured the robot, and took Megascan assets in Unreal Engine for the universe. We took some motion-capture animations from Mixamo and applied modifications to them",
     "category": "Animation",
+    "isPro": 0,
     "tags": [
       "Unreal", "Blender"
-    ]
+    ],
+    "links": { 
+      "repo": "https://gitlab.guillaumehaerinck.com/root/the-last-call", 
+      "video": "https://vimeo.com/421542604" 
+    },
+    "partners": []
   },
   {
     "name": "A Snowpiercer Scene",
     "slug": "snowpiercer",
     "year": 2020,
-    "github": "",
+    "markdown": "",
     "description": "A small scene made with Blender about the Snowpiercer movie. It is rendered in realtime to try out the power of the Evee renderer",
     "category": "Animation",
+    "isPro": 0,
     "tags": [
       "Blender"
-    ]
+    ],
+    "links": { 
+      "video": "https://vimeo.com/384904687"
+    },
+    "partners": []
   },
   {
     "name": "Learn Vulkan",
     "slug": "learn-vulkan",
     "year": 2020,
-    "github": "https://github.com/guillaume-haerinck/learn-vulkan",
+    "markdown": "",
     "description": "A custom renderer made to learn and test Vulkan concepts. It uses a lot of Object-Oriented-Programming to better understand the relationship between vulkan objects",
     "category": "Tool",
+    "isPro": 0,
     "tags": [
       "Vulkan", "C++"
-    ]
+    ],
+    "links": {
+      "repo": "https://github.com/guillaume-haerinck/learn-vulkan"
+    },
+    "partners": []
   },
   {
     "name": "Cube Beast Editor",
     "slug": "cube-beast-editor",
     "year": 2020,
-    "github": "https://github.com/guillaume-haerinck/cube-beast-editor",
+    "markdown": "https://raw.githubusercontent.com/guillaume-haerinck/cube-beast-editor/master/doc/README.md",
     "description": "A voxel-editor running on your desktop and your browser. The renderer is OpenGL, but it builds in WebAssembly which converts calls to WebGL",
     "category": "Tool",
+    "isPro": 0,
     "tags": [
       "C++", "ECS", "OpenGL", "WebAssembly", "WebGL"
-    ]
+    ],
+    "links": { 
+      "repo": "https://github.com/guillaume-haerinck/cube-beast-editor"
+    },
+    "partners": []
   },
   {
     "name": "Met ECS",
     "slug": "met-ecs",
     "year": 2020,
-    "github": "https://github.com/guillaume-haerinck/met-ecs",
+    "markdown": "https://raw.githubusercontent.com/guillaume-haerinck/met-ecs/master/docs/README.md",
     "description": "An Entity-Component-System library in C++ made to test out the templating langage. Its API is based on the entt library to compare performance easily",
     "category": "Tool",
+    "isPro": 0,
     "tags": [
       "ECS", "C++"
-    ]
+    ],
+    "links": { 
+      "repo": "https://github.com/guillaume-haerinck/met-ecs" 
+    },
+    "partners": []
   },
   {
     "name": "Mirrors Lasers & Robots",
     "slug": "mirrors-lasers-robots",
     "year": 2019,
-    "github": "https://github.com/guillaume-haerinck/imac-tower-defense",
+    "markdown": "",
     "description": "A small tower-defense game with made in C++ with an Entity Component System architecture. It renders with OpenGL but we use Microsoft's XAML through Noesis GUI for the user interface",
     "category": "Game",
+    "isPro": 0,
     "tags": [
       "C++", "ECS", "OpenGL", "XAML"
+    ],
+    "links": { 
+      "repo": "https://github.com/guillaume-haerinck/imac-tower-defense"
+    },
+    "partners": [
+      { "fname": "Jules", "lname": "Fouchy", "linkedin": "", "role": "" }
     ]
   },
   {
     "name": "OpenGL Playground",
     "slug": "opengl-playground",
     "year": 2019,
-    "github": "https://github.com/guillaume-haerinck/opengl-playground",
+    "markdown": "",
     "description": "A simple OpenGL renderer with an Entity Component System architecture. Can run on your browser as it support WebAssembly builds",
     "category": "Tool",
+    "isPro": 0,
     "tags": [
       "C++", "ECS", "OpenGL", "WebAssembly", "WebGL"
-    ]
+    ],
+    "links": { 
+      "repo": "https://github.com/guillaume-haerinck/opengl-playground" 
+    },
+    "partners": []
   },
   {
     "name": "DirectX 11 Playground",
     "slug": "dx11-playground",
     "year": 2019,
-    "github": "https://github.com/guillaume-haerinck/directx11-playground",
+    "markdown": "",
     "description": "A simple DirectX 11 renderer with an Entity Component System architecture",
     "category": "Tool",
+    "isPro": 0,
     "tags": [
       "C++", "DirectX"
-    ]
+    ],
+    "links": { 
+      "repo": "https://github.com/guillaume-haerinck/directx11-playground" 
+    },
+    "partners": []
   },
   {
     "name": "Lolimac",
     "slug": "lolimac",
     "year": 2019,
-    "github": "https://github.com/guillaume-haerinck/lolimac",
+    "github": "",
     "description": "Lolimac is an event-organisation website made with Angular. You can create, modify and join events made for IMAC students. Synchronisation with calendars is available as well",
     "category": "Web",
+    "isPro": 0,
     "tags": [
       "Angular"
+    ],
+    "links": { 
+      "repo": "https://github.com/guillaume-haerinck/lolimac" 
+    },
+    "partners": [
+      { "fname": "Nicolas", "lname": "Lienart", "linkedin": "https://www.linkedin.com/in/nicolas-lienart/", "role": "" },
+      { "fname": "Antoine", "lname": "Libert", "linkedin": "", "role": "" }
     ]
   },
   {
     "name": "Which GUI",
     "slug": "which-gui",
     "year": 2019,
-    "github": "https://github.com/guillaume-haerinck/which-gui",
+    "markdown": "",
     "description": "Adaptation of great user interfaces in games using different technologies. It compares web frameworks (Angular, Vue, React), game engines (Unreal, Godot, Unity) and QT philosophy",
     "category": "Tool",
+    "isPro": 0,
     "tags": [
       "Unreal", "Unity", "Vue", "React", "Angular", "XAML", "QT"
-    ]
+    ],
+    "links": { 
+      "repo": "https://github.com/guillaume-haerinck/which-gui"
+    },
+    "partners": []
   },
   {
     "name": "Roll Goal",
     "slug": "roll-goal",
     "year": 2019,
-    "github": "https://github.com/guillaume-haerinck/roll-goal",
+    "github": "",
     "description": "Re-creation of a small game across multiple game engines. Now using Unity (both in ECS and GameObject), Unreal Engine and Godot",
     "category": "Game",
+    "isPro": 0,
     "tags": [
       "Unreal", "Unity", "Godot", "C++", "C#", "ECS"
-    ]
+    ],
+    "links": { 
+      "repo": "https://github.com/guillaume-haerinck/roll-goal" 
+    },
+    "partners": []
   },
   {
     "name": "Coffee Conspiration",
     "slug": "coffee-conspiration",
     "year": 2018,
-    "github": "https://github.com/guillaume-haerinck/imac-coffee-conspiration",
+    "markdown": "",
     "description": "A parody website built with webpack and HTML Components. It is a game/story experience dedicated to surprise its audience and play with conspiration tropes",
     "category": "Web",
+    "isPro": 0,
     "tags": [
       "WebGL"
+    ],
+    "links": { 
+      "repo": "https://github.com/guillaume-haerinck/imac-coffee-conspiration" 
+    },
+    "partners": [
+      { "fname": "Nicolas", "lname": "Lienart", "linkedin": "https://www.linkedin.com/in/nicolas-lienart/", "role": "" }
     ]
   },
   {
     "name": "Portal Box",
     "slug": "portal-box",
     "year": 2018,
-    "github": "https://github.com/guillaume-haerinck/mmi-portal-box",
+    "markdown": "",
     "description": "A puzzle-box built when I applied for my engineering school. You have to resolve a combination with two potentiometer in order to open the box",
     "category": "Maker",
+    "isPro": 0,
     "tags": [
       "Arduino"
-    ]
+    ],
+    "links": { 
+      "repo": "https://github.com/guillaume-haerinck/mmi-portal-box",
+      "video": "https://vimeo.com/267103924"
+    },
+    "partners": []
   },
   {
     "name": "L'échoppe de Ben",
     "slug": "echoppe-ben",
     "year": 2018,
-    "github": "https://github.com/guillaume-haerinck/jam-echoppe-de-ben",
+    "markdown": "",
     "description": "Point'n click game made with Unity for the Digital Art Jam 2. You visit the small chop made by the Artist Ben Vautier and try to discover its secrets",
     "category": "Game",
+    "isPro": 0,
     "tags": [
       "Unity", "C#"
+    ],
+    "links": { 
+      "repo": "https://github.com/guillaume-haerinck/jam-echoppe-de-ben", 
+      "website": "https://vincent-le-ven.itch.io/ben-echoppe"
+    },
+    "partners": [
+      { "fname": "Vincent", "lname": "Le Ven", "linkedin": "", "role": "" },
+      { "fname": "Arthur", "lname": "Dinant", "linkedin": "", "role": "" }
     ]
   },
   {
@@ -204,19 +322,35 @@
     "github": "",
     "description": "A realtime-trafic map visualizer made for my employer Infotrafic. It is built with Angular and uses Node.js as backend. Uses progressive web app (PWA) structure and conventions",
     "category": "Web",
+    "isPro": 1,
     "tags": [
       "Angular"
-    ]
+    ],
+    "links": {
+      "demo": "https://www.infotrafic.com/home", 
+      "website": "https://www.infotrafic.fr/" 
+    },
+    "partners": []
   },
   {
     "name": "Kanaga Wave",
     "slug": "kanaga-wave",
     "year": 2017,
-    "github": "https://github.com/guillaume-haerinck/jam-kanaga-wave",
+    "markdown": "",
     "description": "A 1 vs 1 game made in Unity during the Global Game Jam 2017. You have to jump in rythm to make big waves in order to overflow your opponent on the other island",
     "category": "Game",
+    "isPro": 0,
     "tags": [
       "Unity", "C#"
+    ],
+    "links": {
+      "repo": "https://github.com/guillaume-haerinck/jam-kanaga-wave", 
+      "website": "https://globalgamejam.org/2017/games/kanaga-wave"
+    },
+    "partners": [
+      { "fname": "Samy", "lname": "Badache", "linkedin": "", "role": "" },
+      { "fname": "Matthieu", "lname": "Chardon", "linkedin": "","role": "" },
+      { "fname": "Romain", "lname": "Loiseau", "linkedin": "", "role": "" }
     ]
   }
 ]
