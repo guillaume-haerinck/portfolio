@@ -33,14 +33,15 @@ export default defineComponent({
       return store.state.showSearchMenu;
     },
     projects() {
+      const data = Object.values(ProjectsData);
       if (store.state.projectCategories.length === 0 && store.state.projectTags.length === 0)
-        return ProjectsData; // No filter, show all
+        return data; // No filter, show all
       else if (store.state.projectTags.length === 0) // Filter by category only
-        return ProjectsData.filter(project => store.state.projectCategories.includes(project.category));
+        return data.filter(project => store.state.projectCategories.includes(project.category));
       else if (store.state.projectCategories.length === 0) // Filter by tag only
-        return ProjectsData.filter(project => store.state.projectTags.every((tag: string) => project.tags.includes(tag)));
+        return data.filter(project => store.state.projectTags.every((tag: string) => project.tags.includes(tag)));
       else { // All filters
-        return ProjectsData.filter(project => 
+        return data.filter(project => 
           store.state.projectCategories.includes(project.category) &&
           store.state.projectTags.every((tag: string) => project.tags.includes(tag))
         );

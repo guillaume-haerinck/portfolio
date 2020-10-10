@@ -80,7 +80,7 @@ export default defineComponent({
   },
   data() {
     return {
-      projects: [Projects[0], Projects[1]]
+      projects: [Projects["universe-engine"], Projects["scanrig"]]
     }
   }
 });

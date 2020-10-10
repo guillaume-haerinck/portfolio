@@ -7,17 +7,19 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { store } from '@/store'
 import router from '@/router'
 import marked from 'marked'
+import Projects from '@/assets/projects-data.json'
 
 export default defineComponent({
   name: 'Article',
   mounted() {
-    console.log(store.state.savedProject);
+    const name = router.currentRoute.value.params.projectName as string;
+    const project = (Projects as any)[name];
+    console.log(project);
     window.scrollTo(0, 0);
     // TODO only get local markdown if markdown field is empty, else get from the project data
-    fetch('/articles/' + router.currentRoute.value.params.projectName + '.md')
+    fetch('/articles/' + name + '.md')
       .then(res => res.text())
       .then(text => {
         this.content = marked(text);

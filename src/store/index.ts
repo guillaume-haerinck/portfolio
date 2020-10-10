@@ -6,8 +6,7 @@ export const store = createStore({
     projectTags: [],
     projectCategories: [],
     isMobile: false,
-    showSearchMenu: true,
-    savedProject: {}
+    showSearchMenu: true
   },
   mutations: {
     addProjectTags(state: any, tags: ProjectTag[]) {
@@ -33,9 +32,6 @@ export const store = createStore({
     },
     setShowSearchMenu(state: any, value: boolean) {
       state.showSearchMenu = value;
-    },
-    saveProject(state: any, project: any) {
-      state.savedProject = project;
     }
   }
 });

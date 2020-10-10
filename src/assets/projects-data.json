@@ -1,5 +1,5 @@
-[
-  {
+{
+  "universe-engine": {
     "name": "Universe Engine",
     "slug": "universe-engine",
     "year": 2020,
@@ -18,7 +18,7 @@
       { "fname": "Pierre", "lname": "Thiel", "linkedin": "", "role": "" }
     ]
   },
-  {
+  "scanrig": {
     "name": "ScanRig",
     "slug": "scanrig",
     "year": 2020,
@@ -39,7 +39,7 @@
       { "fname": "Mélissande", "lname": "Gaillot", "linkedin": "https://www.linkedin.com/in/m%C3%A9lissande-gaillot-634b42181/", "role": "" }
     ]
   },
-  {
+  "chaos-dashboard": {
     "name": "Chaos Dashboard",
     "slug": "chaos-dashboard",
     "year": 2020,
@@ -60,7 +60,7 @@
       { "fname": "Mélissande", "lname": "Gaillot", "linkedin": "", "role": "" }
     ]
   },
-  {
+  "a-rogue-like": {
     "name": "A Rogue Like",
     "slug": "a-rogue-like",
     "year": 2020,
@@ -78,7 +78,7 @@
       { "fname": "Enguerrand", "lname": "De Smet", "linkedin": "https://www.linkedin.com/in/enguerrand-de-smet-1879a119b/", "role": "" }
     ]
   },
-  {
+  "the-last-call": {
     "name": "The Last Call",
     "slug": "the-last-call",
     "year": 2020,
@@ -95,7 +95,7 @@
     },
     "partners": []
   },
-  {
+  "snowpiercer": {
     "name": "A Snowpiercer Scene",
     "slug": "snowpiercer",
     "year": 2020,
@@ -111,7 +111,7 @@
     },
     "partners": []
   },
-  {
+  "learn-vulkan": {
     "name": "Learn Vulkan",
     "slug": "learn-vulkan",
     "year": 2020,
@@ -127,7 +127,7 @@
     },
     "partners": []
   },
-  {
+  "cube-beast-editor": {
     "name": "Cube Beast Editor",
     "slug": "cube-beast-editor",
     "year": 2020,
@@ -143,7 +143,7 @@
     },
     "partners": []
   },
-  {
+  "met-ecs": {
     "name": "Met ECS",
     "slug": "met-ecs",
     "year": 2020,
@@ -159,7 +159,7 @@
     },
     "partners": []
   },
-  {
+  "mirrors-lasers-robots": {
     "name": "Mirrors Lasers & Robots",
     "slug": "mirrors-lasers-robots",
     "year": 2019,
@@ -177,7 +177,7 @@
       { "fname": "Jules", "lname": "Fouchy", "linkedin": "", "role": "" }
     ]
   },
-  {
+  "opengl-playground": {
     "name": "OpenGL Playground",
     "slug": "opengl-playground",
     "year": 2019,
@@ -193,7 +193,7 @@
     },
     "partners": []
   },
-  {
+  "dx11-playground": {
     "name": "DirectX 11 Playground",
     "slug": "dx11-playground",
     "year": 2019,
@@ -209,7 +209,7 @@
     },
     "partners": []
   },
-  {
+  "lolimac": {
     "name": "Lolimac",
     "slug": "lolimac",
     "year": 2019,
@@ -228,7 +228,7 @@
       { "fname": "Antoine", "lname": "Libert", "linkedin": "", "role": "" }
     ]
   },
-  {
+  "which-gui": {
     "name": "Which GUI",
     "slug": "which-gui",
     "year": 2019,
@@ -244,7 +244,7 @@
     },
     "partners": []
   },
-  {
+  "roll-goal": {
     "name": "Roll Goal",
     "slug": "roll-goal",
     "year": 2019,
@@ -260,7 +260,7 @@
     },
     "partners": []
   },
-  {
+  "coffee-conspiration": {
     "name": "Coffee Conspiration",
     "slug": "coffee-conspiration",
     "year": 2018,
@@ -278,7 +278,7 @@
       { "fname": "Nicolas", "lname": "Lienart", "linkedin": "https://www.linkedin.com/in/nicolas-lienart/", "role": "" }
     ]
   },
-  {
+  "portal-box": {
     "name": "Portal Box",
     "slug": "portal-box",
     "year": 2018,
@@ -295,7 +295,7 @@
     },
     "partners": []
   },
-  {
+  "echoppe-ben": {
     "name": "L'échoppe de Ben",
     "slug": "echoppe-ben",
     "year": 2018,
@@ -315,7 +315,7 @@
       { "fname": "Arthur", "lname": "Dinant", "linkedin": "", "role": "" }
     ]
   },
-  {
+  "infotrafic": {
     "name": "Infotrafic.com",
     "slug": "infotrafic",
     "year": 2018,
@@ -332,7 +332,7 @@
     },
     "partners": []
   },
-  {
+  "kanaga-wave": {
     "name": "Kanaga Wave",
     "slug": "kanaga-wave",
     "year": 2017,
@@ -353,4 +353,4 @@
       { "fname": "Romain", "lname": "Loiseau", "linkedin": "", "role": "" }
     ]
   }
-]
+}
