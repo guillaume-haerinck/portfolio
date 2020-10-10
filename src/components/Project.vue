@@ -2,7 +2,7 @@
   <div class="project" :class="colorClass">
     <div class="project-image squeleton-image" v-lazyload>
       <i class="material-icons view" v-show="imgHover">visibility</i>
-      <router-link :to="'/project-detail/' + project.slug" @mouseover="imgHover = true" @mouseleave="imgHover = false">
+      <router-link :to="'/project-detail/' + project.slug" @click="saveProject" @mouseover="imgHover = true" @mouseleave="imgHover = false">
         <img :data-url="'/img/' + project.slug + '/capture.png'" alt="Project capture">
       </router-link>
     </div>
@@ -15,6 +15,7 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import { store } from '@/store'
 
 // TODO use a color code to match the category, no random
 // TODO improve design, maybe use logo and only show captures on click, what about displaying tags, and showing multiple links
@@ -30,6 +31,11 @@ export default defineComponent({
     return {
       colorClass: classes[index],
       imgHover: false
+    }
+  },
+  methods: {
+    saveProject() {
+      store.commit('saveProject', this.project);
     }
   },
   directives: {
