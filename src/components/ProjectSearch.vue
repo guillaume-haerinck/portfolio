@@ -32,6 +32,7 @@
 import { defineComponent } from 'vue'
 import Tag from './Tag.vue'
 import { store } from '@/store'
+import router from '@/router'
 import { ProjectTags, ProjectCategories } from '@/store/project-types'
 
 // TODO maybe tags and categories definitions on mouse overlay ? On mobile stay pressed to get definition ?
@@ -47,6 +48,19 @@ export default defineComponent({
       categories: ProjectCategories
     }
   },
+  mounted() {
+    const categories = router.currentRoute.value.query.categories as string;
+    if (categories != '') {
+      const catArray = categories.split(';').filter(cat => cat != '');
+      store.commit('addProjectCategories', catArray);
+    }
+
+    const tags = router.currentRoute.value.query.tags as string;
+    if (tags != '') {
+      const tagArray = tags.split(';').filter(tag => tag != '');
+      store.commit('addProjectTags', tagArray);
+    }
+  },
   computed: {
     isMobile() {
       return store.state.isMobile;
@@ -59,17 +73,31 @@ export default defineComponent({
     },
     toggleTag(tag: string) {
       const tagIndex = store.state.projectTags.indexOf(tag);
-      if (tagIndex === -1)
+      const lastCategories = (router.currentRoute.value.query.categories) ? router.currentRoute.value.query.categories : '';
+      const lastTags = (router.currentRoute.value.query.tags) ? router.currentRoute.value.query.tags : '';
+      if (tagIndex === -1) {
         store.commit('addProjectTag', tag);
-      else
+        router.push({query: { categories: lastCategories, tags: lastTags + tag + ';' }});
+      }
+      else {
         store.commit('removeProjectTag', tagIndex);
+        const cleanedRoute = router.currentRoute.value.fullPath.replace(tag + ';', '');
+        router.push(cleanedRoute);
+      }
     },
     toggleCategory(category: string) {
       const categoryIndex = store.state.projectCategories.indexOf(category);
-      if (categoryIndex === -1)
+      const lastCategories = (router.currentRoute.value.query.categories) ? router.currentRoute.value.query.categories : '';
+      const lastTags = (router.currentRoute.value.query.tags) ? router.currentRoute.value.query.tags : '';
+      if (categoryIndex === -1) {
         store.commit('addProjectCategory', category);
-      else
+        router.push({query: { categories: lastCategories + category + ';', tags: lastTags }});
+      }
+      else {
         store.commit('removeProjectCategory', categoryIndex);
+        const cleanedRoute = router.currentRoute.value.fullPath.replace(category + ';', '');
+        router.push(cleanedRoute);
+      }
     },
     isCategoryEnabled(category: string): boolean {
       return store.state.projectCategories.includes(category);

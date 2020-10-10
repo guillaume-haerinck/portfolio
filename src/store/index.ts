@@ -9,11 +9,17 @@ export const store = createStore({
     showSearchMenu: true
   },
   mutations: {
+    addProjectTags(state: any, tags: ProjectTag[]) {
+      tags.forEach(tag => state.projectTags.push(tag));
+    },
     addProjectTag(state: any, tag: ProjectTag) {
       state.projectTags.push(tag);
     },
     removeProjectTag(state: any, tagIndex: number) {
       state.projectTags.splice(tagIndex, 1);
+    },
+    addProjectCategories(state: any, categories: ProjectCategory[]) {
+      categories.forEach(cat => state.projectCategories.push(cat));
     },
     addProjectCategory(state: any, category: ProjectCategory) {
       state.projectCategories.push(category);
