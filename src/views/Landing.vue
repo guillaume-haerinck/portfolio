@@ -50,10 +50,7 @@
       <div id="last-projects-container">
         <Project v-for="(project, index) in projects" 
           :key="'project' + index"
-          :name="project.name"
-          :year="project.year"
-          :slug="project.slug"
-          :description="project.description"
+          :project="project"
         />
       </div>
 

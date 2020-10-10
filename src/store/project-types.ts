@@ -30,3 +30,5 @@ export enum ProjectTag {
     XAML = 'XAML'
 }
 export const ProjectTags = Object.values(ProjectTag);
+
+// links type : repo; website; demo; video

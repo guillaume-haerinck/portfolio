@@ -5,10 +5,7 @@
     <div class="project-list" v-if="projects.length != 0">
       <Project v-for="(project, index) in projects" 
         :key="'project' + index"
-        :name="project.name"
-        :year="project.year"
-        :slug="project.slug"
-        :description="project.description"
+        :project="project"
       />
     </div>
 

@@ -2,13 +2,13 @@
   <div class="project" :class="colorClass">
     <div class="project-image squeleton-image" v-lazyload>
       <i class="material-icons view" v-show="imgHover">visibility</i>
-      <router-link :to="'/project-detail/' + slug" @mouseover="imgHover = true" @mouseleave="imgHover = false">
-        <img :data-url="'/img/' + slug + '/capture.png'" alt="Project capture">
+      <router-link :to="'/project-detail/' + project.slug" @mouseover="imgHover = true" @mouseleave="imgHover = false">
+        <img :data-url="'/img/' + project.slug + '/capture.png'" alt="Project capture">
       </router-link>
     </div>
     <div class="project-description">
-      <h4>{{ name }}</h4>
-      <p>{{ description }}</p>
+      <h4>{{ project.name }}</h4>
+      <p>{{ project.description }}</p>
     </div>
   </div>
 </template>
@@ -22,10 +22,7 @@ import { defineComponent } from 'vue'
 export default defineComponent({
   name: 'Project',
   props: {
-    name: String,
-    year: Number,
-    slug: String,
-    description: String
+    project: {}
   },
   data() {
     const classes = ['red', 'blue', 'green', 'yellow', 'orange'];
