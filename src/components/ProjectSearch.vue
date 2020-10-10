@@ -50,13 +50,13 @@ export default defineComponent({
   },
   mounted() {
     const categories = router.currentRoute.value.query.categories as string;
-    if (categories != '') {
+    if (categories) {
       const catArray = categories.split(';').filter(cat => cat != '');
       store.commit('addProjectCategories', catArray);
     }
 
     const tags = router.currentRoute.value.query.tags as string;
-    if (tags != '') {
+    if (tags) {
       const tagArray = tags.split(';').filter(tag => tag != '');
       store.commit('addProjectTags', tagArray);
     }
