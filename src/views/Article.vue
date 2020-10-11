@@ -20,7 +20,7 @@
       <a target="blank" v-if=project.links.demo :href=project.links.demo><i class="material-icons">directions_run</i></a>
     </div>
 
-    <h1 class="article-title">{{ project.name }}</h1>
+    <h1 class="article-title">{{ project.name }} ({{ project.year }})</h1>
 
     <small class="partners" v-if="project.partners.length > 0">
       In collaboration with
@@ -103,6 +103,17 @@ export default defineComponent({
 
 .article-title, .partners, .links {
   text-align: center;
+}
+
+.partners a {
+  text-decoration: none;
+  color: black;
+  border-bottom: 3px solid blueviolet;
+  padding-bottom: 2px;
+}
+
+.partners a:hover  {
+  color: blueviolet;
 }
 
 .links i {
