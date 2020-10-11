@@ -48,8 +48,8 @@
       </div>
 
       <div id="last-projects-container">
-        <Project v-for="(project, index) in projects" 
-          :key="'project' + index"
+        <Project v-for="project in projects" 
+          :key="'project-' + project.name"
           :project="project"
         />
       </div>

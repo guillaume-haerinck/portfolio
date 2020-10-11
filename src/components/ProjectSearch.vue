@@ -6,8 +6,8 @@
 
     <h2>Categories</h2>
     <div class="tags">
-      <Tag v-for="(category, index) in categories"
-        :key="'category-' + index"
+      <Tag v-for="category in categories"
+        :key="'category-' + category"
         :name="category"
         :enabled="isCategoryEnabled(category)"
         v-on:click="toggleCategory(category); topScrollIfMobile()"
@@ -18,8 +18,8 @@
 
     <h2>Tags</h2>
     <div class="tags">
-      <Tag v-for="(tag, index) in tags"
-        :key="'tag-' + index"
+      <Tag v-for="tag in tags"
+        :key="'tag-' + tag"
         :name="tag"
         :enabled="isTagEnabled(tag)"
         v-on:click="toggleTag(tag); topScrollIfMobile()"

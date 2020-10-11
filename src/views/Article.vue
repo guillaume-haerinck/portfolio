@@ -5,8 +5,8 @@
     </div>
     
     <div class="tags">
-      <Tag v-for="(tag, index) in project.tags" 
-        :key="'tag-' + index"
+      <Tag v-for="tag in project.tags" 
+        :key="'tag-' + tag"
         :name=tag
         color="black"
         @click="moveToTagSearch(tag)"
@@ -24,7 +24,7 @@
 
     <small class="partners" v-if="project.partners.length > 0">
       In collaboration with
-      <template v-for="(partner, index) in project.partners" :key="'partner-' + index" >
+      <template v-for="partner in project.partners" :key="'partner-' + partner.lname" >
         <a v-if="partner.linkedin" :href=partner.linkedin target="blank" class="linkable-partner">
           {{ partner.lname }} {{ partner.fname }}
         </a>
