@@ -39,7 +39,7 @@ export default defineComponent({
     moveToProjectsAndToggleSearch() {
       const isProjects = router.currentRoute.value.path === '/projects';
       if (!isProjects) {
-        router.push('projects');
+        router.push('/projects');
         store.commit('setShowSearchMenu', true);
       } else {
         store.commit('setShowSearchMenu', !store.state.showSearchMenu);

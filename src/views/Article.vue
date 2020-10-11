@@ -14,6 +14,13 @@
     </div>
 
     <h1 class="article-title">{{ project.name }}</h1>
+    <small class="links">
+      <a target="blank" v-if=project.links.repo :href=project.links.repo>Repository</a>
+      <a target="blank" v-if=project.links.video :href=project.links.video>Video</a>
+      <a target="blank" v-if=project.links.website :href=project.links.website>Website</a>
+      <a target="blank" v-if=project.links.demo :href=project.links.demo>Demo</a>
+    </small>
+
     <small class="partners" v-if="project.partners.length > 0">
       In collaboration with
       <template v-for="(partner, index) in project.partners" :key="'partner-' + index" >
@@ -59,7 +66,7 @@ export default defineComponent({
   },
   data() {
     return {
-      project: { partners: []},
+      project: { partners: [], links: {}},
       content: ""
     }
   },
@@ -93,7 +100,7 @@ export default defineComponent({
   justify-content: center;
 }
 
-.article-title, .partners {
+.article-title, .partners, .links {
   text-align: center;
 }
 
