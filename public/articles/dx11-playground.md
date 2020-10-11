@@ -1,3 +1,1 @@
-# DirectX 11 Playground
-
-Todo
+Project description is coming soon !

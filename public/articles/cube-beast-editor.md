@@ -1,3 +1,1 @@
-# Cube Beast Editor
-
-Todo 
+Project description is coming soon !

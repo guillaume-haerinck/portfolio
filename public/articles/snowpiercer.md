@@ -1,3 +1,1 @@
-# Snowpiercer
-
-Todo
+Project description is coming soon !

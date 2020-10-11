@@ -1,3 +1,1 @@
-# A Rogue Like
-
-Todo
+Project description is coming soon !

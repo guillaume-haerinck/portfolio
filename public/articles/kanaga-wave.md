@@ -1,3 +1,1 @@
-# Kanaga Wave
-
-Todo
+Project description is coming soon !

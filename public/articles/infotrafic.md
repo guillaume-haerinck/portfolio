@@ -1,3 +1,1 @@
-# Infotrafic.com
-
-Todo
+Project description is coming soon !

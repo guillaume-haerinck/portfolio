@@ -1,3 +1,1 @@
-# Lolimac
-
-Todo
+Project description is coming soon !

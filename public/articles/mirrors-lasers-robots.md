@@ -1,3 +1,1 @@
-# Mirrors, Lasers & Robots
-
-Todo
+Project description is coming soon !

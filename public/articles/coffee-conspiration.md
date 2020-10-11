@@ -1,3 +1,1 @@
-# Coffee Conspiration
-
-Todo
+Project description is coming soon !

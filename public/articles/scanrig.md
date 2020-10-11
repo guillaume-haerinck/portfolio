@@ -1,3 +1,1 @@
-# Scan Rig
-
-Todo
+Project description is coming soon !

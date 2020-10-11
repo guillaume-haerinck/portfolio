@@ -1,3 +1,1 @@
-# Met ECS
-
-Todo
+Project description is coming soon !

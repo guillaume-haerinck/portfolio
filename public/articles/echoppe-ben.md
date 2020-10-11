@@ -1,3 +1,1 @@
-# L'échoppe de Ben
-
-Todo
+Project description is coming soon !

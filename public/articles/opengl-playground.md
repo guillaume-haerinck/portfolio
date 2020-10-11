@@ -1,3 +1,1 @@
-# OpenGL Playground
-
-Todo
+Project description is coming soon !

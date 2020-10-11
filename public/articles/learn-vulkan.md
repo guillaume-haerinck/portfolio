@@ -1,3 +1,1 @@
-# Learn Vulkan
-
-Todo
+Project description is coming soon !
