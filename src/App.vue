@@ -54,6 +54,11 @@ export default defineComponent({
   justify-self: center;
   max-width: 950px;
 }
+@media screen and (max-width: 650px) {
+  .readable {
+    padding: 0 15px;
+  }
+}
 
 /* Text styling */
 

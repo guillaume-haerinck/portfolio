@@ -196,10 +196,4 @@ export default defineComponent({
   align-items: flex-start;
 }
 
-@media screen and (max-width: 650px) {
-  .landing {
-    padding: 0 15px;
-  }
-}
-
 </style>
