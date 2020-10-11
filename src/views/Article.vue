@@ -1,9 +1,9 @@
 <template>
   <div class="article readable fullheight-min">
-    <div>
+    <div class="article-image">
       <img :src="'/img/' + project.slug + '/capture.png'" alt="Project capture">
     </div>
-    <h1>{{ project.name }}</h1>
+    
     <div class="tags">
       <Tag v-for="(tag, index) in project.tags" 
         :key="'tag-' + index"
@@ -11,6 +11,14 @@
         @click="moveToTagSearch(tag)"
       />
     </div>
+
+    <h1 class="article-title">{{ project.name }}</h1>
+    <small class="partners" v-if="project.partners.length > 0">
+      In collaboration with 
+      <a v-for="(partner, index) in project.partners" :key="'partner-' + index" :href=partner.linkedin target="blank">
+        {{ partner.lname }} {{ partner.fname }}
+      </a>
+    </small>
 
     <span v-if="content.length >= 1" v-html="content"></span>
     <p v-else>Loading</p>
@@ -58,7 +66,28 @@ export default defineComponent({
 
 <style scoped>
 .article {
+  align-content: flex-start;
+}
 
+.article-image {
+  justify-self: center;
+}
+
+.article-image img {
+  max-width: 100%;
+  max-height: 250px;
+  margin: 25px 0;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+.article-title, .partners {
+  text-align: center;
 }
 
 </style>

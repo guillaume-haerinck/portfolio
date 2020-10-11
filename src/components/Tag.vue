@@ -19,6 +19,7 @@ export default defineComponent({
 <style scoped>
 .tag {
   border: 2px solid white;
+  color: white;
   border-radius: 30px;
   text-align: center;
   margin-bottom: 5px;
