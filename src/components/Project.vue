@@ -2,7 +2,7 @@
   <div class="project" :class="colorClass">
     <div class="project-image squeleton-image" v-lazyload>
       <i class="material-icons view" v-show="imgHover">visibility</i>
-      <router-link :to="'/project-detail/' + project.slug" @mouseover="imgHover = true" @mouseleave="imgHover = false">
+      <router-link :to="'/project-detail/' + project.slug" @click="cleanSearch" @mouseover="imgHover = true" @mouseleave="imgHover = false">
         <img :data-url="'/img/' + project.slug + '/capture.png'" alt="Project capture">
       </router-link>
     </div>
@@ -31,6 +31,11 @@ export default defineComponent({
     return {
       colorClass: classes[index],
       imgHover: false
+    }
+  },
+  methods: {
+    cleanSearch() {
+      store.commit('clearSearch');
     }
   },
   directives: {

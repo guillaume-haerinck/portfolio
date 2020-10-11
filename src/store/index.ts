@@ -27,6 +27,10 @@ export const store = createStore({
     removeProjectCategory(state: any, categoryIndex: number) {
       state.projectCategories.splice(categoryIndex, 1);
     },
+    clearSearch(state: any) {
+      state.projectCategories = [];
+      state.projectTags = [];
+    },
     setIsMobile(state: any, value: boolean) {
       state.isMobile = value;
     },
