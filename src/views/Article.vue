@@ -8,6 +8,7 @@
       <Tag v-for="(tag, index) in project.tags" 
         :key="'tag-' + index"
         :name=tag
+        color="black"
         @click="moveToTagSearch(tag)"
       />
     </div>
@@ -38,7 +39,7 @@ import router from '@/router'
 import marked from 'marked'
 import Projects from '@/assets/projects-data.json'
 
-// TODO intro text with people, date, image, tags, links
+// TODO links and year
 
 export default defineComponent({
   name: 'Article',

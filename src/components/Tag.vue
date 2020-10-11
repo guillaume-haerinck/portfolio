@@ -1,5 +1,5 @@
 <template>
-  <div class="tag" :class="{ enabled: enabled }">
+  <div class="tag" :class="[{enabled: enabled}, color ]">
     <p>{{ name }}</p>
   </div>
 </template>
@@ -11,15 +11,15 @@ export default defineComponent({
   name: 'Tag',
   props: {
     name: String,
-    enabled: Boolean
+    enabled: Boolean,
+    color: { type: String, value: 'white' }
   }
 });
 </script>
 
 <style scoped>
 .tag {
-  border: 2px solid white;
-  color: white;
+  border: 2px solid;
   border-radius: 30px;
   text-align: center;
   margin-bottom: 5px;
@@ -42,5 +42,8 @@ export default defineComponent({
   border-color: lightgreen;
   background-color: lightgreen;
 }
+
+.white { color: white; border-color: white; }
+.black { color: black; border-color: black; }
 
 </style>
