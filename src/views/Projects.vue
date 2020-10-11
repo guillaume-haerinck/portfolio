@@ -22,6 +22,8 @@ import Project from '@/components/Project.vue'
 import ProjectSearch from '@/components/ProjectSearch.vue'
 import ProjectsData from '@/assets/projects-data.json'
 
+// FIXME when search is active, clicked project do not correspond to the move
+
 export default defineComponent({
   name: 'Projects',
   components: {

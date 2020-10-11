@@ -25,7 +25,7 @@
     <small class="partners" v-if="project.partners.length > 0">
       In collaboration with
       <template v-for="(partner, index) in project.partners" :key="'partner-' + index" >
-        <a v-if="partner.linkedin" :href=partner.linkedin target="blank">
+        <a v-if="partner.linkedin" :href=partner.linkedin target="blank" class="linkable-partner">
           {{ partner.lname }} {{ partner.fname }}
         </a>
         <a v-else>
@@ -108,11 +108,14 @@ export default defineComponent({
 .partners a {
   text-decoration: none;
   color: black;
-  border-bottom: 3px solid blueviolet;
   padding-bottom: 2px;
 }
 
-.partners a:hover  {
+.linkable-partner {
+  border-bottom: 3px solid blueviolet;
+}
+
+.linkable-partner:hover {
   color: blueviolet;
 }
 
