@@ -3,8 +3,8 @@
     <ProjectSearch v-if="showSearchMenu" />
 
     <div class="project-list" v-if="projects.length != 0">
-      <Project v-for="(project, index) in projects" 
-        :key="'project' + index"
+      <Project v-for="project in projects" 
+        :key="'project-' + project.name"
         :project="project"
       />
     </div>
