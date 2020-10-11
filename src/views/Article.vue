@@ -14,10 +14,16 @@
 
     <h1 class="article-title">{{ project.name }}</h1>
     <small class="partners" v-if="project.partners.length > 0">
-      In collaboration with 
-      <a v-for="(partner, index) in project.partners" :key="'partner-' + index" :href=partner.linkedin target="blank">
-        {{ partner.lname }} {{ partner.fname }}
-      </a>
+      In collaboration with
+      <template v-for="(partner, index) in project.partners" :key="'partner-' + index" >
+        <a v-if="partner.linkedin" :href=partner.linkedin target="blank">
+          {{ partner.lname }} {{ partner.fname }}
+        </a>
+        <a v-else>
+          {{ partner.lname }} {{ partner.fname }}
+        </a>
+        <template v-if="project.partners.length - 1 != index">, </template>
+      </template>
     </small>
 
     <span v-if="content.length >= 1" v-html="content"></span>
@@ -52,7 +58,7 @@ export default defineComponent({
   },
   data() {
     return {
-      project: {},
+      project: { partners: []},
       content: ""
     }
   },
