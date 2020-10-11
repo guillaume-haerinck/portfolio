@@ -14,10 +14,10 @@
     </div>
 
     <div class="links">
-      <a target="blank" v-if=project.links.repo :href=project.links.repo><i class="material-icons">code</i></a>
-      <a target="blank" v-if=project.links.video :href=project.links.video><i class="material-icons">ondemand_video</i></a>
-      <a target="blank" v-if=project.links.website :href=project.links.website><i class="material-icons">language</i></a>
-      <a target="blank" v-if=project.links.demo :href=project.links.demo><i class="material-icons">directions_run</i></a>
+      <a target="_blank" v-if=project.links.repo :href=project.links.repo><i class="material-icons">code</i></a>
+      <a target="_blank" v-if=project.links.video :href=project.links.video><i class="material-icons">ondemand_video</i></a>
+      <a target="_blank" v-if=project.links.website :href=project.links.website><i class="material-icons">language</i></a>
+      <a target="_blank" v-if=project.links.demo :href=project.links.demo><i class="material-icons">directions_run</i></a>
     </div>
 
     <h1 class="article-title">{{ project.name }} ({{ project.year }})</h1>
@@ -25,7 +25,7 @@
     <small class="partners" v-if="project.partners.length > 0">
       In collaboration with
       <template v-for="partner in project.partners" :key="'partner-' + partner.lname" >
-        <a v-if="partner.linkedin" :href=partner.linkedin target="blank" class="linkable-partner">
+        <a v-if="partner.linkedin" :href=partner.linkedin target="_blank" class="linkable-partner">
           {{ partner.lname }} {{ partner.fname }}
         </a>
         <a v-else>

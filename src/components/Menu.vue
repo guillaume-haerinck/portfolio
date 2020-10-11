@@ -15,7 +15,7 @@
         <i class="material-icons">work</i>
         Projects
       </router-link>
-      <a class="menu-item" href="https://learn-computer-graphics.github.io/blog/" target="blank">
+      <a class="menu-item" href="https://learn-computer-graphics.github.io/blog/" target="_blank">
         <i class="material-icons">book</i>
         Blog
       </a>

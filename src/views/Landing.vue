@@ -5,10 +5,10 @@
       <p id="description">Exploring computer graphics, I'm making projects related to realtime rendering, data-oriented design, web and user interface development.</p>
 
       <div id="links">
-        <p><a id="linkedin" href="https://www.linkedin.com/in/guillaumehaerinck/" target="blank">linkedin</a></p>
-        <p><a id="vimeo" href="https://vimeo.com/guillaumehaerinck" target="blank">vimeo</a></p>
-        <p><a id="cv" href="https://www.guillaumehaerinck.com/cv-en.pdf" target="blank">cv</a></p>
-        <p><a id="github" href="https://github.com/guillaume-haerinck" target="blank">github</a></p>
+        <p><a id="linkedin" href="https://www.linkedin.com/in/guillaumehaerinck/" target="_blank">linkedin</a></p>
+        <p><a id="vimeo" href="https://vimeo.com/guillaumehaerinck" target="_blank">vimeo</a></p>
+        <p><a id="cv" href="https://www.guillaumehaerinck.com/cv-en.pdf" target="_blank">cv</a></p>
+        <p><a id="github" href="https://github.com/guillaume-haerinck" target="_blank">github</a></p>
       </div>
     </div>
 
