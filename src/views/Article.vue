@@ -13,13 +13,14 @@
       />
     </div>
 
+    <div class="links">
+      <a target="blank" v-if=project.links.repo :href=project.links.repo><i class="material-icons">description</i></a>
+      <a target="blank" v-if=project.links.video :href=project.links.video><i class="material-icons">ondemand_video</i></a>
+      <a target="blank" v-if=project.links.website :href=project.links.website><i class="material-icons">language</i></a>
+      <a target="blank" v-if=project.links.demo :href=project.links.demo><i class="material-icons">directions_run</i></a>
+    </div>
+
     <h1 class="article-title">{{ project.name }}</h1>
-    <small class="links">
-      <a target="blank" v-if=project.links.repo :href=project.links.repo>Repository</a>
-      <a target="blank" v-if=project.links.video :href=project.links.video>Video</a>
-      <a target="blank" v-if=project.links.website :href=project.links.website>Website</a>
-      <a target="blank" v-if=project.links.demo :href=project.links.demo>Demo</a>
-    </small>
 
     <small class="partners" v-if="project.partners.length > 0">
       In collaboration with
@@ -102,6 +103,20 @@ export default defineComponent({
 
 .article-title, .partners, .links {
   text-align: center;
+}
+
+.links i {
+  margin: 30px 10px 0px 10px;
+  background-color: white;
+  color: black;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 1.5em;
+}
+
+.links i:hover {
+  color: gray;
 }
 
 </style>
