@@ -24,7 +24,7 @@
 
     <small class="partners" v-if="project.partners.length > 0">
       In collaboration with
-      <template v-for="partner in project.partners" :key="'partner-' + partner.lname" >
+      <template v-for="(partner, index) in project.partners" :key="'partner-' + partner.lname" >
         <a v-if="partner.linkedin" :href=partner.linkedin target="_blank" class="linkable-partner">
           {{ partner.lname }} {{ partner.fname }}
         </a>
