@@ -9,8 +9,8 @@
       />
     </div>
 
-    <div v-else>
-      <p>No project match !</p>
+    <div class="no-match" v-else>
+      <i class="material-icons">find_in_page</i><p>No project match !</p>
     </div>
   </div>
 </template>
@@ -57,8 +57,11 @@ export default defineComponent({
 </script>
 
 <style scoped >
-.projects-with-search {
+.projects {
   display: grid;
+}
+
+.projects-with-search {
   grid-template-columns: calc(var(--search-width) + 5px) 1fr;
 }
 
@@ -68,6 +71,18 @@ export default defineComponent({
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+}
+
+.no-match {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.no-match .material-icons {
+  font-size: 3em;
 }
 
 @media screen and (max-width: 650px) {

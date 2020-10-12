@@ -67,6 +67,12 @@ export default defineComponent({
     }
   },
   methods: {
+    isCategoryEnabled(category: string): boolean {
+      return store.state.projectCategories.includes(category);
+    },
+    isTagEnabled(tag: string): boolean {
+      return store.state.projectTags.includes(tag);
+    },
     topScrollIfMobile() {
       if (this.isMobile)
         window.scrollTo(0, 0);
@@ -81,7 +87,7 @@ export default defineComponent({
       }
       else {
         store.commit('removeProjectTag', tagIndex);
-        const cleanedRoute = router.currentRoute.value.fullPath.replace(tag + ';', '');
+        const cleanedRoute = router.currentRoute.value.fullPath.replace('%23', '#').replace(tag + ';', '');
         router.push(cleanedRoute);
       }
     },
@@ -98,12 +104,6 @@ export default defineComponent({
         const cleanedRoute = router.currentRoute.value.fullPath.replace(category + ';', '');
         router.push(cleanedRoute);
       }
-    },
-    isCategoryEnabled(category: string): boolean {
-      return store.state.projectCategories.includes(category);
-    },
-    isTagEnabled(tag: string): boolean {
-      return store.state.projectTags.includes(tag);
     },
     close() {
       store.commit('setShowSearchMenu', false);
