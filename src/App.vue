@@ -35,11 +35,13 @@ export default defineComponent({
   },
   watch: {
     $route(to) {
-      (window as any).gtag('event', 'page_view', {
-        page_title: to.name,
-        page_location: to.fullPath,
-        page_path: to.path
-      });
+      if (process.env.NODE_ENV === 'production') {
+        (window as any).gtag('event', 'page_view', {
+          page_title: to.name,
+          page_location: to.fullPath,
+          page_path: to.path
+        });
+      }
     }
   }
 });
@@ -73,7 +75,7 @@ export default defineComponent({
 
 body {
   background-color: #f4f4f4;
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   font-size: 1.2em;
   margin: 0;
   padding: 0;

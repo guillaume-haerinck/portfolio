@@ -35,7 +35,7 @@
       </template>
     </small>
 
-    <span v-if="content.length >= 1" v-html="content"></span>
+    <div class="article-content" v-if="content.length >= 1" v-html="content"></div>
     <p v-else>Loading</p>
   </div>
 </template>
@@ -48,6 +48,7 @@ import marked from 'marked'
 import Projects from '@/assets/projects-data.json'
 
 // TODO year and if pro project
+// TODO track event if user go check the repo https://developers.google.com/analytics/devguides/collection/gtagjs/events
 
 export default defineComponent({
   name: 'Article',
@@ -79,7 +80,7 @@ export default defineComponent({
 });
 </script>
 
-<style scoped>
+<style>
 .article {
   align-content: flex-start;
 }
@@ -105,14 +106,21 @@ export default defineComponent({
   text-align: center;
 }
 
+.partners {
+  line-height: 150%;
+}
+
 .partners a {
   text-decoration: none;
   color: black;
-  padding-bottom: 2px;
+}
+
+.linkable-partner a:hover {
+  color: blueviolet;
 }
 
 .linkable-partner {
-  border-bottom: 3px solid blueviolet;
+  border-bottom: 2px solid blueviolet;
 }
 
 .linkable-partner:hover {
@@ -131,6 +139,38 @@ export default defineComponent({
 
 .links i:hover {
   color: gray;
+}
+
+/* Markdown custom styling */
+
+.article-content figcaption {
+  text-align: center;
+}
+
+.article-content a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 1px;
+  border-bottom: 2px solid blueviolet;
+}
+
+.article-content a:hover {
+  color: blueviolet;
+}
+
+.article-content p {
+  font-size: 1.1em;
+  font-weight: 300;
+  line-height: 180%;
+}
+
+.article-content img {
+  width: 100%;
+  max-width: 600px;
+}
+
+.article-content strong {
+  font-weight: 500;
 }
 
 </style>
