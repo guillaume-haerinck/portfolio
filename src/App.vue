@@ -47,7 +47,7 @@ export default defineComponent({
 });
 </script>
 
-<style >
+<style>
 :root {
   --default-padding: 20px;
   --menu-height: 50px;

@@ -4,7 +4,7 @@
       <img :src="'/img/' + project.slug + '/capture.png'" alt="Project capture">
     </div>
     
-    <div class="tags">
+    <div class="article-tags">
       <Tag v-for="tag in project.tags" 
         :key="'tag-' + tag"
         :name=tag
@@ -95,7 +95,7 @@ export default defineComponent({
   margin: 25px 0;
 }
 
-.tags {
+.article-tags {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
