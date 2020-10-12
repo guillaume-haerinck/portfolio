@@ -32,6 +32,15 @@ export default defineComponent({
   },
   unmounted() {
     window.removeEventListener('resize', this.updateMobileState);
+  },
+  watch: {
+    $route(to) {
+      (window as any).gtag('event', 'page_view', {
+        page_title: to.name,
+        page_location: to.fullPath,
+        page_path: to.path
+      });
+    }
   }
 });
 </script>

@@ -23,6 +23,10 @@
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
       gtag('config', 'UA-109942569-1');
+      gtag('config', 'GA_MEASUREMENT_ID', {
+        send_page_view: false
+      });
+      window.gtag = gtag;
     </script>
   </head>
   <body>
