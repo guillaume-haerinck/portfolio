@@ -47,7 +47,7 @@ import router from '@/router'
 import marked from 'marked'
 import Projects from '@/assets/projects-data.json'
 
-// TODO links and year
+// TODO year and if pro project
 
 export default defineComponent({
   name: 'Article',

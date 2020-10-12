@@ -2,7 +2,7 @@
   <div class="landing readable">
     <div class="fullheight" id="first-screen">
       <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a software engineer student <br>based in Paris.</h1>
-      <p id="description">Exploring computer graphics, I'm making projects related to realtime rendering, data-oriented design, web and user interface development.</p>
+      <p id="description">Exploring computer graphics, I'm making projects related to realtime rendering, data-oriented design, tools and user interface development.</p>
 
       <div id="links">
         <p><a id="linkedin" href="https://www.linkedin.com/in/guillaumehaerinck/" target="_blank">linkedin</a></p>
@@ -21,21 +21,31 @@
 
       <div class="presentation-element wrap-reverse">
         <div class="backgrounded presentation-text green">
-          <p>While I focus on graphics and software programming, I have an artistic background which allows me to understand the needs of many fields involved in a creative pipeline</p>
+          <p>As a developer, I have the ability to delve into the details of a codebase while maintaining a high overview of it (and I take a lot of notes)</p>
         </div>
 
         <div class="presentation-icon">
-          <img src="img/meeting.png" alt="Meeting icon">
+          <img src="img/analysis.png" alt="Magnifying glass icon">
         </div>
       </div>
 
       <div class="presentation-element">
         <div class="presentation-icon">
-          <img src="img/business-and-finance.png" alt="Business icon">
+          <img src="img/artist.png" alt="Paint icon">
         </div>
 
         <div class="backgrounded presentation-text blue">
-          <p>I do my best to keep up to date with the innovations of the industry. Writing documentation, blog posts and tutorials is also something I really like</p>
+          <p>I have an artistic knowledge which gives me an additional point of view when I work on a project and collaborate with artists</p>
+        </div>
+      </div>
+
+      <div class="presentation-element wrap-reverse">
+        <div class="backgrounded presentation-text red">
+          <p>Performance and maintenability of my code are two key indicators that I care about and always aim to improve upon</p>
+        </div>
+
+        <div class="presentation-icon">
+          <img src="img/milometer.png" alt="Meter icon">
         </div>
       </div>
     </div>
@@ -69,8 +79,6 @@ import Projects from '@/assets/projects-data.json'
 
 import { defineComponent } from 'vue'
 
-// TODO update cv
-// TODO add google analytics
 // TODO add what I'm working on
 
 export default defineComponent({
@@ -162,7 +170,10 @@ export default defineComponent({
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  padding: 10px 0px;
+}
+
+.presentation-element p {
+  margin: 0;
 }
 
 .wrap-reverse {
@@ -174,7 +185,7 @@ export default defineComponent({
 }
 
 .presentation-icon {
-  max-width: 200px;
+  max-width: 125px;
 }
 
 .presentation-icon img {
