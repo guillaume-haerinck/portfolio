@@ -91,6 +91,7 @@ export default defineComponent({
   flex-wrap: wrap;
   align-self: center;
   justify-content: center;
+  align-items: center;
 }
 
 .menu-item i {

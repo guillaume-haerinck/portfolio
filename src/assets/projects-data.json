@@ -273,7 +273,8 @@
       "WebGL"
     ],
     "links": { 
-      "repo": "https://github.com/guillaume-haerinck/imac-coffee-conspiration" 
+      "repo": "https://github.com/guillaume-haerinck/imac-coffee-conspiration",
+      "demo": "https://coffee-conspiration.guillaumehaerinck.com/"
     },
     "partners": [
       { "fname": "Nicolas", "lname": "Lienart", "linkedin": "https://www.linkedin.com/in/nicolas-lienart/", "role": "" }

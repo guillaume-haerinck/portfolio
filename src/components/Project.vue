@@ -118,7 +118,7 @@ export default defineComponent({
 
 .project-image {
   position: relative; /* needed for view height */
-  min-height: 180px;
+  min-height: 100px;
 }
 
 .squeleton-image img {
