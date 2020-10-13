@@ -11,7 +11,7 @@ The goal of the in-house engine is to beat Unity Engine performance for Virtual 
     <figcaption>Augmented Reality vs. Virtual Reality <a href="https://medium.com/@arstudioz11/augmented-reality-vs-virtual-reality-8b3502e63637">@Medium</a></figcaption>
 </p>
 
-
+*[Work in progress, cherry picking part from an internal post-mortem]*
 
 ## The render pipeline
 
@@ -34,4 +34,4 @@ The goal of the in-house engine is to beat Unity Engine performance for Virtual 
 
 ## Conclusion
 
-Todo
+Content to come !

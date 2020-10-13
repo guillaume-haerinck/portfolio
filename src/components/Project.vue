@@ -7,7 +7,7 @@
       </router-link>
     </div>
     <div class="project-description">
-      <h4>{{ project.name }}</h4>
+      <h3>{{ project.name }}</h3>
       <p>{{ project.description }}</p>
     </div>
   </div>
@@ -143,8 +143,14 @@ export default defineComponent({
   width: 100%;
 }
 
-.project h4, .project p {
+.project p {
   margin: 0;
+  font-size: 1.1em;
+}
+
+.project h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.1em;
 }
 
 .project-description {

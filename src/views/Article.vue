@@ -158,7 +158,7 @@ export default defineComponent({
   color: blueviolet;
 }
 
-.article-content p {
+.article-content p, .article-content li {
   font-size: 1.1em;
   font-weight: 300;
   line-height: 180%;

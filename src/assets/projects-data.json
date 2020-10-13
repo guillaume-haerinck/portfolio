@@ -31,7 +31,8 @@
     ],
     "links": { 
       "repo": "https://github.com/alicevision/ScanRig",
-      "website": "https://alicevision.org/" 
+      "website": "https://alicevision.org/",
+      "video": "https://vimeo.com/411076799"
     },
     "partners": [
       { "fname": "Enguerrand", "lname": "De Smet", "linkedin": "https://www.linkedin.com/in/enguerrand-de-smet-1879a119b/", "role": "" },
@@ -52,7 +53,7 @@
     ],
     "links": { 
       "repo": "https://github.com/LafLaurine/imac2-web-dashboard", 
-      "demo": "https://chaosdashboard.guillaumehaerinck.com/" 
+      "demo": "https://chaosdashboard.guillaumehaerinck.com/"
     },
     "partners": [
       { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-826545148/", "role": "" },
