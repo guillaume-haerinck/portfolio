@@ -145,6 +145,7 @@ export default defineComponent({
 
 .article-content figcaption {
   text-align: center;
+  margin-top: -20px;
 }
 
 .article-content a {

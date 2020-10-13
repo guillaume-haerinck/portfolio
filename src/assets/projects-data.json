@@ -140,7 +140,8 @@
       "C++", "ECS", "OpenGL", "WebAssembly", "WebGL"
     ],
     "links": { 
-      "repo": "https://github.com/guillaume-haerinck/cube-beast-editor"
+      "repo": "https://github.com/guillaume-haerinck/cube-beast-editor",
+      "demo": "https://cube-beast.guillaumehaerinck.com/"
     },
     "partners": []
   },

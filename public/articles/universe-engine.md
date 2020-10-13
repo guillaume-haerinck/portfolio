@@ -1,6 +1,6 @@
 While making **real time 3D applications** has never been easier, the tools that we use to make them are now way more complex than what they used to be. These kinds of softwares have to deal with a large amount of programming areas, and bear with strict performance constraints. I believe these projects to be the **ultimate learning playground** for a software engineer.
 
-My goal during this **4-months internship** at [Virtual Arts](https://www.virtualarts.co.uk/) was to understand how to architect and maintain this kind of project, and what were the tools and management styles available to make this happen.
+My learning objective during this **4-months internship** at [Virtual Arts](https://www.virtualarts.co.uk/) was to understand how to architect and maintain this kind of project, and what were the tools and management styles available to make this happen.
 
 ## The Unity scene exporter
 
