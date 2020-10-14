@@ -29,7 +29,7 @@
           {{ partner.fname }} {{ partner.lname }}
         </a>
         <a v-else>
-          {{ partner.lname }} {{ partner.fname }}
+          {{ partner.fname }} {{ partner.lname }}
         </a>
         <template v-if="project.partners.length - 1 != index">, </template>
       </template>
