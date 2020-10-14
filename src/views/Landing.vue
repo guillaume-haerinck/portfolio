@@ -21,7 +21,7 @@
 
       <div class="presentation-element wrap-reverse">
         <div class="backgrounded presentation-text green">
-          <p>As a developer, I have the ability to delve into the details of a codebase while maintaining a high overview of it (and I take a lot of notes)</p>
+          <p>Great ideas are constantly shared accross the game developer community so I do my best to keep updated and use these in my projects</p>
         </div>
 
         <div class="presentation-icon">
@@ -35,13 +35,13 @@
         </div>
 
         <div class="backgrounded presentation-text blue">
-          <p>I have an artistic knowledge which gives me an additional point of view when I work on a project and collaborate with artists</p>
+          <p>I have an artistic knowledge which is a big help when I work on the visuals and collaborate with artists</p>
         </div>
       </div>
 
       <div class="presentation-element wrap-reverse">
         <div class="backgrounded presentation-text red">
-          <p>Performance and maintenability of my code are two key indicators that I care about and always aim to improve upon</p>
+          <p>Performance and maintenability are important to me which is why I always try to get closer to the metal and see how things works</p>
         </div>
 
         <div class="presentation-icon">
