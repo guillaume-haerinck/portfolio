@@ -1,1 +1,4 @@
-Project description is coming soon !
+As a lot of people, I was impressed by the User Interface design and animation from [Persona 5](https://medium.com/@ousiadroid/what-you-can-learn-from-persona-5s-ui-design-4a4a646245b1). With some experience in user-interface development through multiple tools, I though that implementing video-game UIs would be a great way to compare them.
+
+[More description coming soon]
+

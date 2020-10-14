@@ -41,7 +41,7 @@
 
       <div class="presentation-element wrap-reverse">
         <div class="backgrounded presentation-text red">
-          <p>Performance and maintenability are important to me which is why I always try to get closer to the metal and see how things works</p>
+          <p>Performance is crucial to me which is why I always try to get closer to the metal and see how things really works</p>
         </div>
 
         <div class="presentation-icon">
