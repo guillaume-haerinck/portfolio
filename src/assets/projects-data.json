@@ -94,7 +94,9 @@
       "repo": "https://gitlab.guillaumehaerinck.com/root/the-last-call", 
       "video": "https://vimeo.com/421542604" 
     },
-    "partners": []
+    "partners": [
+      { "fname": "Louisa", "lname": "Chikar", "linkedin": "https://www.linkedin.com/in/louisa-chikar-0771141b7/", "role": "" }
+    ]
   },
   "snowpiercer": {
     "name": "A Snowpiercer Scene",
@@ -110,7 +112,9 @@
     "links": { 
       "video": "https://vimeo.com/384904687"
     },
-    "partners": []
+    "partners": [
+      { "fname": "Barbarra", "lname": "Guyonneau", "linkedin": "https://www.linkedin.com/in/barbara-guyonneau-4b0777135/", "role": "" }
+    ]
   },
   "learn-vulkan": {
     "name": "Learn Vulkan",
@@ -143,7 +147,9 @@
       "repo": "https://github.com/guillaume-haerinck/cube-beast-editor",
       "demo": "https://cube-beast.guillaumehaerinck.com/"
     },
-    "partners": []
+    "partners": [
+      { "fname": "Gaelle", "lname": "Vallet", "linkedin": "https://www.linkedin.com/in/gaelle-vallet58/", "role": "" }
+    ]
   },
   "met-ecs": {
     "name": "Met ECS",
@@ -176,7 +182,8 @@
       "repo": "https://github.com/guillaume-haerinck/imac-tower-defense"
     },
     "partners": [
-      { "fname": "Jules", "lname": "Fouchy", "linkedin": "", "role": "" }
+      { "fname": "Jules", "lname": "Fouchy", "linkedin": "", "role": "" },
+      { "fname": "Cyrielle", "lname": "Lassarre", "linkedin": "https://www.linkedin.com/in/cyrielle-lassarre/", "role": "" }
     ]
   },
   "opengl-playground": {
