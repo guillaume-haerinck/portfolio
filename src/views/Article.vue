@@ -26,7 +26,7 @@
       In collaboration with
       <template v-for="(partner, index) in project.partners" :key="'partner-' + partner.lname" >
         <a v-if="partner.linkedin" :href=partner.linkedin target="_blank" class="linkable-partner">
-          {{ partner.lname }} {{ partner.fname }}
+          {{ partner.fname }} {{ partner.lname }}
         </a>
         <a v-else>
           {{ partner.lname }} {{ partner.fname }}
