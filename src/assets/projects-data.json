@@ -73,7 +73,7 @@
       "Unreal", "C++"
     ],
     "links": { 
-      "repo": "https://gitlab.guillaumehaerinck.com/root/rogue-like" 
+      "repo": "https://gitlab.com/guillaume-haerinck/rogue-like" 
     },
     "partners": [
       { "fname": "Enguerrand", "lname": "De Smet", "linkedin": "https://www.linkedin.com/in/enguerrand-de-smet-1879a119b/", "role": "" }
@@ -91,7 +91,7 @@
       "Unreal", "Blender"
     ],
     "links": { 
-      "repo": "https://gitlab.guillaumehaerinck.com/root/the-last-call", 
+      "repo": "https://gitlab.com/guillaume-haerinck/the-last-call", 
       "video": "https://vimeo.com/421542604" 
     },
     "partners": [

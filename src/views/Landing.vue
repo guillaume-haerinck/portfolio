@@ -21,7 +21,7 @@
 
       <div class="presentation-element wrap-reverse">
         <div class="backgrounded presentation-text green">
-          <p>Great ideas are constantly shared accross the game developer community so I do my best to keep updated and use these in my projects</p>
+          <p>Great ideas are constantly shared accross the game development community so I do my best to keep updated and use these in my projects</p>
         </div>
 
         <div class="presentation-icon">
