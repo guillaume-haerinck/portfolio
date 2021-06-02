@@ -1,4 +1,38 @@
 {
+  "evil-age": {
+    "name": "Evil Age",
+    "slug": "evil-age",
+    "year": 2021,
+    "markdown": "",
+    "description": "AI simulation of a medieval village made in Unreal Engine 4",
+    "category": "Game",
+    "isPro": 0,
+    "tags": [
+      "Unreal", "C++"
+    ],
+    "links": {
+      "repo": "https://gitlab.com/guillaume-haerinck/evil-age"
+    },
+    "partners": [
+    ]
+  },
+  "sakari": {
+    "name": "Sakari",
+    "slug": "sakari",
+    "year": 2021,
+    "markdown": "",
+    "description": "Unity3D puzzle game in 3rd person based on a time-rewind mechanic",
+    "category": "Game",
+    "isPro": 0,
+    "tags": [
+      "Unity", "C#"
+    ],
+    "links": {
+      "repo": "https://gitlab.com/LafLaurine/sakari"
+    },
+    "partners": [
+    ]
+  },
   "universe-engine": {
     "name": "Universe Engine",
     "slug": "universe-engine",
