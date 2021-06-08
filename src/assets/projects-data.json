@@ -14,6 +14,7 @@
       "repo": "https://gitlab.com/guillaume-haerinck/evil-age"
     },
     "partners": [
+      { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-826545148/", "role": "" }
     ]
   },
   "sakari": {
@@ -31,6 +32,10 @@
       "repo": "https://gitlab.com/LafLaurine/sakari"
     },
     "partners": [
+      { "fname": "Enguerrand", "lname": "De Smet", "linkedin": "https://www.linkedin.com/in/enguerrand-de-smet-1879a119b/", "role": "" },
+      { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-826545148/", "role": "" },
+      { "fname": "Antoine", "lname": "Libert", "linkedin": "", "role": "" },
+      { "fname": "Jules", "lname": "Fouchy", "linkedin": "", "role": "" }
     ]
   },
   "universe-engine": {

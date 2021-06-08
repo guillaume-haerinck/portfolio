@@ -1,8 +1,8 @@
 <template>
   <div class="landing readable">
     <div class="fullheight" id="first-screen">
-      <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a software engineer student <br>based in Paris.</h1>
-      <p id="description">Exploring computer graphics, I'm making projects related to realtime rendering, data-oriented design, tools and user interface development.</p>
+      <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a software engineer<br>based in Paris.</h1>
+      <p id="description">Exploring computer graphics, I'm making projects in the Game Industry. Dealing with subjects such as tools, ux, engine and gameplay programming.</p>
 
       <div id="links">
         <p><a id="linkedin" href="https://www.linkedin.com/in/guillaumehaerinck/" target="_blank">linkedin</a></p>
@@ -88,7 +88,7 @@ export default defineComponent({
   },
   data() {
     return {
-      projects: [Projects["universe-engine"], Projects["scanrig"]]
+      projects: [Projects["evil-age"], Projects["sakari"]]
     }
   }
 });

@@ -3,7 +3,7 @@
     <Menu />
     <router-view/>
     <div id="footer">
-      <p><small>Guillaume Haerinck - 2020</small></p>
+      <p><small>Guillaume Haerinck - 2021</small></p>
     </div>
   </div>
 </template>
