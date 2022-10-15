@@ -8,26 +8,17 @@ export enum ProjectCategory {
 export const ProjectCategories = Object.values(ProjectCategory);
 
 export enum ProjectTag {
-    Angular = 'Angular',
     Arduino = 'Arduino',
     Blender = 'Blender',
     CPP = 'C++',
     CSharp = 'C#',
-    DirectX = 'DirectX',
+    GraphicProg = 'GraphicProg',
     ECS = 'ECS',
-    Fusion = 'Fusion360',
-    Godot = 'Godot',
-    OpenGL = 'OpenGL',
     Python = 'Python',
     QT = 'QT',
-    React = 'React',
     Unity = 'Unity',
     Unreal = 'Unreal',
-    Vue = 'Vue',
-    Vulkan = 'Vulkan',
-    WebGL = 'WebGL',
-    WASM = 'WebAssembly',
-    XAML = 'XAML'
+    WPF = 'WPF'
 }
 export const ProjectTags = Object.values(ProjectTag);
 

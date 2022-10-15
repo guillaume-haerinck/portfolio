@@ -3,8 +3,8 @@ import { ProjectTag, ProjectCategory } from './project-types'
 
 export const store = createStore({
   state: {
-    projectTags: [],
-    projectCategories: [],
+    projectTags: [] as ProjectTag[],
+    projectCategories: [] as ProjectCategory[],
     isMobile: false,
     showSearchMenu: true
   },
