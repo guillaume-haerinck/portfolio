@@ -4,6 +4,18 @@
 
     <h1 class="title">SEARCH</h1>
 
+    <h2>Contexts</h2>
+    <div class="tags">
+      <Tag v-for="context in contexts"
+        :key="'context-' + context"
+        :name="context"
+        :enabled="isContextEnabled(context)"
+        v-on:click="toggleContext(context); topScrollIfMobile()"
+      />
+    </div>
+
+    <div class="oblique-white"></div>
+
     <h2>Categories</h2>
     <div class="tags">
       <Tag v-for="category in categories"
@@ -33,7 +45,7 @@ import { defineComponent } from 'vue'
 import Tag from './Tag.vue'
 import { store } from '@/store'
 import router from '@/router'
-import { ProjectTags, ProjectCategories, ProjectCategory, ProjectTag } from '@/store/project-types'
+import { ProjectTags, ProjectCategories, ProjectCategory, ProjectTag, ProjectContexts, ProjectContext } from '@/store/project-types'
 
 export default defineComponent({
   name: 'ProjectSearch',
@@ -43,21 +55,12 @@ export default defineComponent({
   data() {
     return {
       tags: ProjectTags,
-      categories: ProjectCategories
+      categories: ProjectCategories,
+      contexts: ProjectContexts,
     }
   },
   mounted() {
-    const categories = router.currentRoute.value.query.categories as string;
-    if (categories) {
-      const catArray = categories.split(';').filter(cat => cat != '');
-      store.commit('addProjectCategories', catArray);
-    }
-
-    const tags = router.currentRoute.value.query.tags as string;
-    if (tags) {
-      const tagArray = tags.split(';').filter(tag => tag != '');
-      store.commit('addProjectTags', tagArray);
-    }
+    this.applyUrlFilters();
   },
   computed: {
     isMobile() {
@@ -65,6 +68,16 @@ export default defineComponent({
     }
   },
   methods: {
+    applyUrlFilters() {
+      const tags = router.currentRoute.value.query.tags as string;
+      if (tags) {
+        const tagArray = tags.split(';').filter(tag => tag != '');
+        store.commit('addProjectTags', tagArray);
+      }
+    },
+    isContextEnabled(context: string): boolean {
+      return store.state.selectedProjectContexts.includes(context as ProjectContext);
+    },
     isCategoryEnabled(category: string): boolean {
       return store.state.selectedProjectCategories.includes(category as ProjectCategory);
     },
@@ -77,30 +90,32 @@ export default defineComponent({
     },
     toggleTag(tag: string) {
       const tagIndex = store.state.selectedProjectTags.indexOf(tag as ProjectTag);
-      const lastCategories = (router.currentRoute.value.query.categories) ? router.currentRoute.value.query.categories : '';
-      const lastTags = (router.currentRoute.value.query.tags) ? router.currentRoute.value.query.tags : '';
-      if (tagIndex === -1) {
+      const isDisabled = tagIndex === -1;
+      if (isDisabled) {
         store.commit('addProjectTag', tag);
-        router.push({query: { categories: lastCategories, tags: lastTags + tag + ';' }});
       }
       else {
         store.commit('removeProjectTag', tagIndex);
-        const cleanedRoute = router.currentRoute.value.fullPath.replace('%23', '#').replace(tag + ';', '');
-        router.push(cleanedRoute);
       }
     },
     toggleCategory(category: string) {
       const categoryIndex = store.state.selectedProjectCategories.indexOf(category as ProjectCategory);
-      const lastCategories = (router.currentRoute.value.query.categories) ? router.currentRoute.value.query.categories : '';
-      const lastTags = (router.currentRoute.value.query.tags) ? router.currentRoute.value.query.tags : '';
-      if (categoryIndex === -1) {
+      const isDisabled = categoryIndex === -1;
+      if (isDisabled) {
         store.commit('addProjectCategory', category);
-        router.push({query: { categories: lastCategories + category + ';', tags: lastTags }});
       }
       else {
         store.commit('removeProjectCategory', categoryIndex);
-        const cleanedRoute = router.currentRoute.value.fullPath.replace(category + ';', '');
-        router.push(cleanedRoute);
+      }
+    },
+    toggleContext(context: string) {
+      const contextIndex = store.state.selectedProjectContexts.indexOf(context as ProjectContext);
+      const isDisabled = contextIndex === -1;
+      if (isDisabled) {
+        store.commit('addProjectContext', context);
+      }
+      else {
+        store.commit('removeProjectContext', contextIndex);
       }
     },
     close() {
@@ -144,7 +159,7 @@ export default defineComponent({
 .project-search .oblique-white {
   max-width: 252px;
   justify-self: center;
-  margin: 60px 0;
+  margin: 20px 0;
 }
 
 .project-search h2 {
@@ -162,10 +177,6 @@ export default defineComponent({
 
   .tags:last-child {
     margin-bottom: 160px;
-  }
-
-  .oblique-white {
-    margin: 30px 0px !important;
   }
 }
 

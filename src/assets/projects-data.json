@@ -350,7 +350,7 @@
     "year": 2017,
     "description": "A 1 vs 1 game made in Unity during the Global Game Jam 2017. You have to jump in rythm to make big waves in order to overflow your opponent on the other island",
     "category": "Game",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "Unity", "C#"
     ],

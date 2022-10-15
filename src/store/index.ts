@@ -27,16 +27,20 @@ export const store = createStore({
     removeProjectTag(state: AppState, tagIndex: number) {
       state.selectedProjectTags.splice(tagIndex, 1);
     },
-    addProjectCategories(state: AppState, categories: ProjectCategory[]) {
-      categories.forEach(cat => state.selectedProjectCategories.push(cat));
-    },
     addProjectCategory(state: AppState, category: ProjectCategory) {
       state.selectedProjectCategories.push(category);
     },
     removeProjectCategory(state: AppState, categoryIndex: number) {
       state.selectedProjectCategories.splice(categoryIndex, 1);
     },
+    addProjectContext(state: AppState, context: ProjectContext) {
+      state.selectedProjectContexts.push(context);
+    },
+    removeProjectContext(state: AppState, contextIndex: number) {
+      state.selectedProjectContexts.splice(contextIndex, 1);
+    },
     clearSearch(state: AppState) {
+      state.selectedProjectContexts = [];
       state.selectedProjectCategories = [];
       state.selectedProjectTags = [];
     },
