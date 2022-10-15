@@ -1,8 +1,8 @@
 <template>
   <div class="landing readable">
-    <div class="fullheight" id="first-screen">
+    <div id="first-screen">
       <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a Tools engineer<br>based in Paris.</h1>
-      <p id="description">Currently working at Ubisoft on the Snowdrop game engine, and making some open-source contribution when the time is bright 🎶</p>
+      <p id="description">Currently working at Ubisoft on the Snowdrop game engine and making some open-source contribution when the time is bright 🎶</p>
 
       <div id="links">
         <p><a id="cv" href="https://www.guillaumehaerinck.com/cv-en.pdf" target="_blank">resume</a></p>
@@ -11,7 +11,7 @@
       </div>
     </div>
 
-    <div class="fullheight last-projects">
+    <div class="last-projects">
       <div class="oblique-title-container">
         <div class="oblique-black"></div>
         <h1 class="title">PROFESSIONAL HIGHLIGHTS</h1>
@@ -26,10 +26,10 @@
       </div>
     </div>
 
-    <div class="fullheight-min last-projects">
+    <div class="last-projects">
       <div class="oblique-title-container">
         <div class="oblique-black"></div>
-        <h1 class="title">OPEN SOURCE CONTRIBUTION</h1>
+        <h1 class="title">OPEN SOURCE CONTRIBUTIONS</h1>
         <div class="oblique-black"></div>
       </div>
 
@@ -76,6 +76,7 @@ export default defineComponent({
   display: grid;
   align-content: center;
   justify-self: center;
+  margin: 50px 0;
 }
 
 #description {
@@ -84,7 +85,6 @@ export default defineComponent({
 }
 
 #links {
-  margin: 10vh 0;
   padding-left: 5px;
   display: flex;
   justify-content: left;
@@ -151,6 +151,12 @@ export default defineComponent({
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+}
+
+@media screen and (max-width: 650px) {
+  #first-screen {
+    margin: 25px 0;
+  }
 }
 
 </style>
