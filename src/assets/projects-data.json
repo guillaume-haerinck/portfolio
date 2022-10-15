@@ -3,10 +3,9 @@
     "name": "Evil Age",
     "slug": "evil-age",
     "year": 2021,
-    "markdown": "",
     "description": "AI simulation of a medieval village made in Unreal Engine 4",
     "category": "Game",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "Unreal", "C++"
     ],
@@ -21,10 +20,9 @@
     "name": "Sakari",
     "slug": "sakari",
     "year": 2021,
-    "markdown": "",
     "description": "Unity3D puzzle game in 3rd person based on a time-rewind mechanic",
     "category": "Game",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "Unity", "C#"
     ],
@@ -42,15 +40,14 @@
     "name": "Universe Engine",
     "slug": "universe-engine",
     "year": 2020,
-    "markdown": "",
     "description": "I worked on the in-house game engine of Virtual Arts during an internship. My goal was to improve performance and fix rendering bugs with their Metal and Vulkan implementations",
     "category": "Tool",
-    "isPro": 1,
+    "context": "Professional",
     "tags": [
       "C++", "GraphicProg"
     ],
     "links": { 
-      "website": "https://www.virtualarts.co.uk/engine" 
+      "website": "https://www.virtualarts.co.uk/" 
     },
     "partners": [
       { "fname": "Jules", "lname": "Fouchy", "linkedin": "", "role": "" },
@@ -61,10 +58,9 @@
     "name": "ScanRig",
     "slug": "scanrig",
     "year": 2020,
-    "markdown": "",
     "description": "ScanRig is a tool built with AliceVision to achieve high-quality photogrammetry at low-budget. You place your object in the center, and 3 cameras will turn around and take pictures of it",
     "category": "Maker",
-    "isPro": 1,
+    "context": "Professional",
     "tags": [
       "C++", "Python", "QT", "Blender", "Arduino"
     ],
@@ -83,10 +79,9 @@
     "name": "Chaos Dashboard",
     "slug": "chaos-dashboard",
     "year": 2020,
-    "markdown": "",
     "description": "A data-visualisation website about the worst kind of events of the year. There are little games, demons and all sort of jokes. This nightmare-ish design was integrated with React",
     "category": "Web",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "GraphicProg"
     ],
@@ -104,10 +99,9 @@
     "name": "A Rogue Like",
     "slug": "a-rogue-like",
     "year": 2020,
-    "markdown": "",
     "description": "A simple endless 3D fight game made with procedural dungeon generation. It runs with Unreal Engine, we took free assets from its stores and animations from Mixamo",
     "category": "Game",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "Unreal", "C++"
     ],
@@ -122,10 +116,9 @@
     "name": "The Last Call",
     "slug": "the-last-call",
     "year": 2020,
-    "markdown": "",
     "description": "A title sequence for an original movie. I modelled and textured the robot, and took Megascan assets in Unreal Engine for the universe. We took some motion-capture animations from Mixamo and applied modifications to them",
     "category": "Animation",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "Unreal", "Blender"
     ],
@@ -141,10 +134,9 @@
     "name": "A Snowpiercer Scene",
     "slug": "snowpiercer",
     "year": 2020,
-    "markdown": "",
     "description": "A small scene made with Blender about the Snowpiercer movie. It is rendered in realtime to try out the power of the Evee renderer",
     "category": "Animation",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "Blender"
     ],
@@ -159,10 +151,9 @@
     "name": "Learn Vulkan",
     "slug": "learn-vulkan",
     "year": 2020,
-    "markdown": "",
     "description": "A custom renderer made to learn and test Vulkan concepts. It uses a lot of Object-Oriented-Programming to better understand the relationship between vulkan objects",
     "category": "Tool",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "GraphicProg", "C++"
     ],
@@ -178,7 +169,7 @@
     "markdown": "https://raw.githubusercontent.com/guillaume-haerinck/cube-beast-editor/master/doc/README.md",
     "description": "A voxel-editor running on your desktop and your browser. The renderer is OpenGL, but it builds in WebAssembly which converts calls to WebGL",
     "category": "Tool",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "C++", "ECS", "GraphicProg"
     ],
@@ -197,7 +188,7 @@
     "markdown": "https://raw.githubusercontent.com/guillaume-haerinck/met-ecs/master/docs/README.md",
     "description": "An Entity-Component-System library in C++ made to test out the templating langage. Its API is based on the entt library to compare performance easily",
     "category": "Tool",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "ECS", "C++"
     ],
@@ -210,10 +201,9 @@
     "name": "Mirrors Lasers & Robots",
     "slug": "mirrors-lasers-robots",
     "year": 2019,
-    "markdown": "",
     "description": "A small tower-defense game with made in C++ with an Entity Component System architecture. It renders with OpenGL but we use Microsoft's XAML through Noesis GUI for the user interface",
     "category": "Game",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "C++", "ECS", "GraphicProg", "WPF"
     ],
@@ -229,10 +219,9 @@
     "name": "OpenGL Playground",
     "slug": "opengl-playground",
     "year": 2019,
-    "markdown": "",
     "description": "A simple OpenGL renderer with an Entity Component System architecture. Can run on your browser as it support WebAssembly builds",
     "category": "Tool",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "C++", "ECS", "GraphicProg"
     ],
@@ -245,10 +234,9 @@
     "name": "DirectX 11 Playground",
     "slug": "dx11-playground",
     "year": 2019,
-    "markdown": "",
     "description": "A simple DirectX 11 renderer with an Entity Component System architecture",
     "category": "Tool",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "C++", "GraphicProg"
     ],
@@ -261,10 +249,9 @@
     "name": "Which GUI",
     "slug": "which-gui",
     "year": 2019,
-    "markdown": "",
     "description": "Adaptation of great user interfaces in games using different technologies. It compares web frameworks (Angular, Vue, React), game engines (Unreal, Godot, Unity) and QT philosophy",
     "category": "Tool",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "Unreal", "Unity", "WPF", "QT"
     ],
@@ -277,10 +264,9 @@
     "name": "Roll Goal",
     "slug": "roll-goal",
     "year": 2019,
-    "github": "",
     "description": "Re-creation of a small game across multiple game engines. Now using Unity (both in ECS and GameObject), Unreal Engine and Godot",
     "category": "Game",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "Unreal", "Unity", "C++", "C#", "ECS"
     ],
@@ -293,10 +279,9 @@
     "name": "Coffee Conspiration",
     "slug": "coffee-conspiration",
     "year": 2018,
-    "markdown": "",
     "description": "A parody website built with webpack and HTML Components. It is a game/story experience dedicated to surprise its audience and play with conspiration tropes",
     "category": "Web",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "GraphicProg"
     ],
@@ -312,10 +297,9 @@
     "name": "Portal Box",
     "slug": "portal-box",
     "year": 2018,
-    "markdown": "",
     "description": "A puzzle-box built when I applied for my engineering school. You have to resolve a combination with two potentiometer in order to open the box",
     "category": "Maker",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "Arduino"
     ],
@@ -329,10 +313,9 @@
     "name": "L'échoppe de Ben",
     "slug": "echoppe-ben",
     "year": 2018,
-    "markdown": "",
     "description": "Point'n click game made with Unity for the Digital Art Jam 2. You visit the small chop made by the Artist Ben Vautier and try to discover its secrets",
     "category": "Game",
-    "isPro": 0,
+    "context": "Student",
     "tags": [
       "Unity", "C#"
     ],
@@ -349,10 +332,9 @@
     "name": "Infotrafic.com",
     "slug": "infotrafic",
     "year": 2018,
-    "github": "",
     "description": "A realtime-trafic map visualizer made for my employer Infotrafic. It is built with Angular and uses Node.js as backend. Uses progressive web app (PWA) structure and conventions",
     "category": "Web",
-    "isPro": 1,
+    "context": "Professional",
     "tags": [
       "GraphicProg"
     ],
@@ -366,7 +348,6 @@
     "name": "Kanaga Wave",
     "slug": "kanaga-wave",
     "year": 2017,
-    "markdown": "",
     "description": "A 1 vs 1 game made in Unity during the Global Game Jam 2017. You have to jump in rythm to make big waves in order to overflow your opponent on the other island",
     "category": "Game",
     "isPro": 0,

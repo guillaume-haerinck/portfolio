@@ -1,3 +1,10 @@
+export enum ProjectContext {
+    Professional = 'Professional',
+    Contribution = 'Contribution',
+    Student = 'Student',
+}
+export const ProjectContexts = Object.values(ProjectContext);
+
 export enum ProjectCategory {
     Animation = 'Animation',
     Game = 'Game',
