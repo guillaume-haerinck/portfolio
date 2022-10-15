@@ -21,8 +21,7 @@ import { store } from '@/store'
 import Project from '@/components/Project.vue'
 import ProjectSearch from '@/components/ProjectSearch.vue'
 import ProjectsData from '@/assets/projects-data.json'
-
-// FIXME when search is active, clicked project do not correspond to the move
+import { ProjectCategory } from '@/store/project-types'
 
 export default defineComponent({
   name: 'Projects',
@@ -35,19 +34,18 @@ export default defineComponent({
       return store.state.showSearchMenu;
     },
     projects() {
-      const data = Object.values(ProjectsData);
-      if (store.state.projectCategories.length === 0 && store.state.projectTags.length === 0)
-        return data; // No filter, show all
-      else if (store.state.projectTags.length === 0) // Filter by category only
-        return data.filter(project => store.state.projectCategories.includes(project.category));
-      else if (store.state.projectCategories.length === 0) // Filter by tag only
-        return data.filter(project => store.state.projectTags.every((tag: string) => project.tags.includes(tag)));
-      else { // All filters
-        return data.filter(project => 
-          store.state.projectCategories.includes(project.category) &&
-          store.state.projectTags.every((tag: string) => project.tags.includes(tag))
-        );
+      let data = Object.values(ProjectsData);
+      if (store.state.selectedProjectCategories.length > 0)
+      {
+        data = data.filter(project => store.state.selectedProjectCategories.includes(project.category as ProjectCategory));
       }
+
+      if (store.state.selectedProjectTags.length > 0)
+      {
+        data = data.filter(project => store.state.selectedProjectTags.every((tag: string) => project.tags.includes(tag)));
+      }
+
+      return data;
     }
   },
   mounted() {

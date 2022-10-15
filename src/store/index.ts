@@ -1,40 +1,49 @@
 import { createStore } from 'vuex'
-import { ProjectTag, ProjectCategory } from './project-types'
+import { ProjectTag, ProjectCategory, ProjectContext } from './project-types'
+
+export interface AppState {
+  selectedProjectTags: ProjectTag[];
+  selectedProjectCategories:  ProjectCategory[];
+  selectedProjectContexts: ProjectContext[];
+  isMobile: boolean;
+  showSearchMenu: boolean;
+}
 
 export const store = createStore({
   state: {
-    projectTags: [] as ProjectTag[],
-    projectCategories: [] as ProjectCategory[],
+    selectedProjectTags: [],
+    selectedProjectCategories: [],
+    selectedProjectContexts: [],
     isMobile: false,
     showSearchMenu: true
-  },
+  } as AppState,
   mutations: {
-    addProjectTags(state: any, tags: ProjectTag[]) {
-      tags.forEach(tag => state.projectTags.push(tag));
+    addProjectTags(state: AppState, tags: ProjectTag[]) {
+      tags.forEach(tag => state.selectedProjectTags.push(tag));
     },
-    addProjectTag(state: any, tag: ProjectTag) {
-      state.projectTags.push(tag);
+    addProjectTag(state: AppState, tag: ProjectTag) {
+      state.selectedProjectTags.push(tag);
     },
-    removeProjectTag(state: any, tagIndex: number) {
-      state.projectTags.splice(tagIndex, 1);
+    removeProjectTag(state: AppState, tagIndex: number) {
+      state.selectedProjectTags.splice(tagIndex, 1);
     },
-    addProjectCategories(state: any, categories: ProjectCategory[]) {
-      categories.forEach(cat => state.projectCategories.push(cat));
+    addProjectCategories(state: AppState, categories: ProjectCategory[]) {
+      categories.forEach(cat => state.selectedProjectCategories.push(cat));
     },
-    addProjectCategory(state: any, category: ProjectCategory) {
-      state.projectCategories.push(category);
+    addProjectCategory(state: AppState, category: ProjectCategory) {
+      state.selectedProjectCategories.push(category);
     },
-    removeProjectCategory(state: any, categoryIndex: number) {
-      state.projectCategories.splice(categoryIndex, 1);
+    removeProjectCategory(state: AppState, categoryIndex: number) {
+      state.selectedProjectCategories.splice(categoryIndex, 1);
     },
-    clearSearch(state: any) {
-      state.projectCategories = [];
-      state.projectTags = [];
+    clearSearch(state: AppState) {
+      state.selectedProjectCategories = [];
+      state.selectedProjectTags = [];
     },
-    setIsMobile(state: any, value: boolean) {
+    setIsMobile(state: AppState, value: boolean) {
       state.isMobile = value;
     },
-    setShowSearchMenu(state: any, value: boolean) {
+    setShowSearchMenu(state: AppState, value: boolean) {
       state.showSearchMenu = value;
     }
   }

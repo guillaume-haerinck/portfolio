@@ -33,7 +33,7 @@ import { defineComponent } from 'vue'
 import Tag from './Tag.vue'
 import { store } from '@/store'
 import router from '@/router'
-import { ProjectTags, ProjectCategories } from '@/store/project-types'
+import { ProjectTags, ProjectCategories, ProjectCategory, ProjectTag } from '@/store/project-types'
 
 export default defineComponent({
   name: 'ProjectSearch',
@@ -66,17 +66,17 @@ export default defineComponent({
   },
   methods: {
     isCategoryEnabled(category: string): boolean {
-      return store.state.projectCategories.includes(category);
+      return store.state.selectedProjectCategories.includes(category as ProjectCategory);
     },
     isTagEnabled(tag: string): boolean {
-      return store.state.projectTags.includes(tag);
+      return store.state.selectedProjectTags.includes(tag as ProjectTag);
     },
     topScrollIfMobile() {
       if (this.isMobile)
         window.scrollTo(0, 0);
     },
     toggleTag(tag: string) {
-      const tagIndex = store.state.projectTags.indexOf(tag);
+      const tagIndex = store.state.selectedProjectTags.indexOf(tag as ProjectTag);
       const lastCategories = (router.currentRoute.value.query.categories) ? router.currentRoute.value.query.categories : '';
       const lastTags = (router.currentRoute.value.query.tags) ? router.currentRoute.value.query.tags : '';
       if (tagIndex === -1) {
@@ -90,7 +90,7 @@ export default defineComponent({
       }
     },
     toggleCategory(category: string) {
-      const categoryIndex = store.state.projectCategories.indexOf(category);
+      const categoryIndex = store.state.selectedProjectCategories.indexOf(category as ProjectCategory);
       const lastCategories = (router.currentRoute.value.query.categories) ? router.currentRoute.value.query.categories : '';
       const lastTags = (router.currentRoute.value.query.tags) ? router.currentRoute.value.query.tags : '';
       if (categoryIndex === -1) {
