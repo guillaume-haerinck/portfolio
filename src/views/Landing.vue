@@ -1,13 +1,12 @@
 <template>
   <div class="landing readable">
     <div class="fullheight" id="first-screen">
-      <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a software engineer<br>based in Paris.</h1>
-      <p id="description">Exploring computer graphics, I'm making projects in the Game Industry. Dealing with subjects such as tools, ux, engine and gameplay programming.</p>
+      <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a Tools engineer<br>based in Paris.</h1>
+      <p id="description">Currently working at Ubisoft on the Snowdrop game engine, and making some open-source contribution when the time is bright 🎶</p>
 
       <div id="links">
+        <p><a id="cv" href="https://www.guillaumehaerinck.com/cv-en.pdf" target="_blank">resume</a></p>
         <p><a id="linkedin" href="https://www.linkedin.com/in/guillaumehaerinck/" target="_blank">linkedin</a></p>
-        <p><a id="vimeo" href="https://vimeo.com/guillaumehaerinck" target="_blank">vimeo</a></p>
-        <p><a id="cv" href="https://www.guillaumehaerinck.com/cv-en.pdf" target="_blank">cv</a></p>
         <p><a id="github" href="https://github.com/guillaume-haerinck" target="_blank">github</a></p>
       </div>
     </div>
