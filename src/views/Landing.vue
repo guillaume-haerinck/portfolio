@@ -79,8 +79,6 @@ import Projects from '@/assets/projects-data.json'
 
 import { defineComponent } from 'vue'
 
-// TODO add what I'm working on
-
 export default defineComponent({
   name: 'Landing',
   components: {

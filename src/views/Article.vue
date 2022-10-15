@@ -47,9 +47,6 @@ import router from '@/router'
 import marked from 'marked'
 import Projects from '@/assets/projects-data.json'
 
-// TODO year and if pro project
-// TODO track event if user go check the repo https://developers.google.com/analytics/devguides/collection/gtagjs/events
-
 export default defineComponent({
   name: 'Article',
   components: {
