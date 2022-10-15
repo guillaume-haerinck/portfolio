@@ -1,18 +1,20 @@
 export enum ProjectContext {
+    NONE = '',
     Professional = 'Professional',
     Contribution = 'Contribution',
     Student = 'Student',
 }
-export const ProjectContexts = Object.values(ProjectContext);
+export const ProjectContexts = Object.values(ProjectContext).filter(context => context != '');
 
 export enum ProjectCategory {
+    NONE = '',
     Animation = 'Animation',
     Game = 'Game',
     Maker = 'Maker',
     Tool = 'Tool',
     Web = 'Web'
 }
-export const ProjectCategories = Object.values(ProjectCategory);
+export const ProjectCategories = Object.values(ProjectCategory).filter(cat => cat != '');
 
 export enum ProjectTag {
     Arduino = 'Arduino',

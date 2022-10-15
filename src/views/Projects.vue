@@ -35,13 +35,12 @@ export default defineComponent({
     },
     projects() {
       let data = Object.values(ProjectsData);
-      if (store.state.selectedProjectContexts.length > 0)
-        data = data.filter(project => store.state.selectedProjectContexts.includes(project.context as ProjectContext));
+      if (store.state.selectedProjectContext != ProjectContext.NONE)
+        data = data.filter(project => store.state.selectedProjectContext == project.context as ProjectContext);
 
-      if (store.state.selectedProjectCategories.length > 0)
-        data = data.filter(project => store.state.selectedProjectCategories.includes(project.category as ProjectCategory));
+      if (store.state.selectedProjectCategory != ProjectCategory.NONE)
+        data = data.filter(project => store.state.selectedProjectCategory == project.category as ProjectCategory);
 
-      // project has to match all projects tags instead of only one
       if (store.state.selectedProjectTags.length > 0)
         data = data.filter(project => store.state.selectedProjectTags.every((tag: string) => project.tags.includes(tag)));
 

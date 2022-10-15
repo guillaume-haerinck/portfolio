@@ -4,7 +4,7 @@
 
     <h1 class="title">SEARCH</h1>
 
-    <h2>Contexts</h2>
+    <h2>Context</h2>
     <div class="tags">
       <Tag v-for="context in contexts"
         :key="'context-' + context"
@@ -16,7 +16,7 @@
 
     <div class="oblique-white"></div>
 
-    <h2>Categories</h2>
+    <h2>Category</h2>
     <div class="tags">
       <Tag v-for="category in categories"
         :key="'category-' + category"
@@ -76,10 +76,10 @@ export default defineComponent({
       }
     },
     isContextEnabled(context: string): boolean {
-      return store.state.selectedProjectContexts.includes(context as ProjectContext);
+      return store.state.selectedProjectContext == context as ProjectContext;
     },
     isCategoryEnabled(category: string): boolean {
-      return store.state.selectedProjectCategories.includes(category as ProjectCategory);
+      return store.state.selectedProjectCategory == category as ProjectCategory;
     },
     isTagEnabled(tag: string): boolean {
       return store.state.selectedProjectTags.includes(tag as ProjectTag);
@@ -99,23 +99,19 @@ export default defineComponent({
       }
     },
     toggleCategory(category: string) {
-      const categoryIndex = store.state.selectedProjectCategories.indexOf(category as ProjectCategory);
-      const isDisabled = categoryIndex === -1;
-      if (isDisabled) {
-        store.commit('addProjectCategory', category);
+      if (this.isCategoryEnabled(category)) {
+        store.commit('clearSelectedProjectCategory');
       }
       else {
-        store.commit('removeProjectCategory', categoryIndex);
+        store.commit('selectProjectCategory', category);
       }
     },
     toggleContext(context: string) {
-      const contextIndex = store.state.selectedProjectContexts.indexOf(context as ProjectContext);
-      const isDisabled = contextIndex === -1;
-      if (isDisabled) {
-        store.commit('addProjectContext', context);
+      if (this.isContextEnabled(context)) {
+        store.commit('clearSelectedProjectContext');
       }
       else {
-        store.commit('removeProjectContext', contextIndex);
+        store.commit('selectProjectContext', context);
       }
     },
     close() {

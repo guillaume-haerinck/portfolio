@@ -3,8 +3,8 @@ import { ProjectTag, ProjectCategory, ProjectContext } from './project-types'
 
 export interface AppState {
   selectedProjectTags: ProjectTag[];
-  selectedProjectCategories:  ProjectCategory[];
-  selectedProjectContexts: ProjectContext[];
+  selectedProjectCategory: ProjectCategory;
+  selectedProjectContext: ProjectContext;
   isMobile: boolean;
   showSearchMenu: boolean;
 }
@@ -12,8 +12,8 @@ export interface AppState {
 export const store = createStore({
   state: {
     selectedProjectTags: [],
-    selectedProjectCategories: [],
-    selectedProjectContexts: [],
+    selectedProjectCategory: ProjectCategory.NONE,
+    selectedProjectContext: ProjectContext.NONE,
     isMobile: false,
     showSearchMenu: true
   } as AppState,
@@ -27,21 +27,21 @@ export const store = createStore({
     removeProjectTag(state: AppState, tagIndex: number) {
       state.selectedProjectTags.splice(tagIndex, 1);
     },
-    addProjectCategory(state: AppState, category: ProjectCategory) {
-      state.selectedProjectCategories.push(category);
+    selectProjectCategory(state: AppState, category: ProjectCategory) {
+      state.selectedProjectCategory = category;
     },
-    removeProjectCategory(state: AppState, categoryIndex: number) {
-      state.selectedProjectCategories.splice(categoryIndex, 1);
+    clearSelectedProjectCategory(state: AppState) {
+      state.selectedProjectCategory = ProjectCategory.NONE;
     },
-    addProjectContext(state: AppState, context: ProjectContext) {
-      state.selectedProjectContexts.push(context);
+    selectProjectContext(state: AppState, context: ProjectContext) {
+      state.selectedProjectContext = context;
     },
-    removeProjectContext(state: AppState, contextIndex: number) {
-      state.selectedProjectContexts.splice(contextIndex, 1);
+    clearSelectedProjectContext(state: AppState) {
+      state.selectedProjectContext = ProjectContext.NONE;
     },
     clearSearch(state: AppState) {
-      state.selectedProjectContexts = [];
-      state.selectedProjectCategories = [];
+      state.selectedProjectContext = ProjectContext.NONE;
+      state.selectedProjectCategory = ProjectCategory.NONE;
       state.selectedProjectTags = [];
     },
     setIsMobile(state: AppState, value: boolean) {
