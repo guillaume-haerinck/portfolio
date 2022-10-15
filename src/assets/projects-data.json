@@ -1,4 +1,36 @@
 {
+  "sparks-of-hope": {
+    "name": "Mario + Rabbids : Sparks of Hope",
+    "slug": "sparks-of-hope",
+    "year": 2022,
+    "description": "TODO",
+    "category": "Game",
+    "context": "Professional",
+    "tags": [
+      "ECS", "C++"
+    ],
+    "links": {
+      "video": "https://www.youtube.com/watch?v=FN48p_QXBUk"
+    },
+    "partners": [
+    ]
+  },
+  "open-3d-engine": {
+    "name": "Open 3D Engine",
+    "slug": "open-engine",
+    "year": 2022,
+    "description": "TODO",
+    "category": "Tool",
+    "context": "Contribution",
+    "tags": [
+      "QT", "C++"
+    ],
+    "links": {
+      "video": "https://www.youtube.com/watch?v=CQmjAxr7LZs"
+    },
+    "partners": [
+    ]
+  },
   "evil-age": {
     "name": "Evil Age",
     "slug": "evil-age",
