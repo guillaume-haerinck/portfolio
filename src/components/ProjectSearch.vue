@@ -162,13 +162,17 @@ export default defineComponent({
   margin-top: 0;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 730px) {
   .project-search {
     position: fixed;
     left: 0;
     z-index: 1;
-    height: calc(100vh - var(--menu-height));
-    overflow-y: scroll;
+    height: 100%;
+    overflow-y: auto;
+  }
+
+  .overlay {
+    height: 100%;
   }
 
   .tags:last-child {

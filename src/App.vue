@@ -20,7 +20,7 @@ export default defineComponent({
   },
   methods: {
     updateMobileState() {
-      if (window.innerWidth < 650)
+      if (window.innerWidth < 730)
         store.commit('setIsMobile', true);
       else
         store.commit('setIsMobile', false);
@@ -65,7 +65,7 @@ export default defineComponent({
   justify-self: center;
   max-width: 950px;
 }
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 730px) {
   .readable {
     padding: 0 15px;
   }

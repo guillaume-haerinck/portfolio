@@ -70,6 +70,11 @@ export default defineComponent({
 </script>
 
 <style scoped >
+
+.landing {
+  margin-bottom: 10px;
+}
+
 /* First screen */
 
 #first-screen {
@@ -153,7 +158,7 @@ export default defineComponent({
   align-items: flex-start;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 730px) {
   #first-screen {
     margin: 25px 0;
   }

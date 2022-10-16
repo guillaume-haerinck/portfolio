@@ -95,8 +95,8 @@ export default defineComponent({
 <style scoped>
 
 .project {
-  max-width: 400px;
-  margin: 20px;
+  width: 400px;
+  margin: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -107,7 +107,7 @@ export default defineComponent({
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
-  height: calc(100% - 5px);
+  height: 100%;
   font-size: 50px;
   pointer-events: none;
   color: white;
@@ -115,7 +115,14 @@ export default defineComponent({
 
 .project-image {
   position: relative; /* needed for view height */
-  min-height: 100px;
+  height: 200px;
+  overflow: hidden;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .squeleton-image img {
@@ -136,10 +143,6 @@ export default defineComponent({
   }
 }
 
-.project-image img {
-  width: 100%;
-}
-
 .project p {
   margin: 0;
   font-size: 1.1em;
@@ -152,6 +155,12 @@ export default defineComponent({
 
 .project-description {
   padding: 15px;
+}
+
+@media screen and (max-width: 730px) {
+  .project {
+    width: 325px;
+  }
 }
 
 </style>

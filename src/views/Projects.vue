@@ -68,6 +68,7 @@ export default defineComponent({
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  margin: 10px 0;
 }
 
 .no-match {
@@ -82,9 +83,10 @@ export default defineComponent({
   font-size: 3em;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 730px) {
   .projects-with-search {
     display: unset;
   }
 }
+
 </style>

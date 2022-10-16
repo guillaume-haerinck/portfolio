@@ -111,7 +111,7 @@ export default defineComponent({
   color: mediumturquoise;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 730px) {
   .menu {
     grid-template-columns: 4fr 1fr;
   }
