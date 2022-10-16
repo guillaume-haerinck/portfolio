@@ -9,7 +9,7 @@ export const ProjectContexts = Object.values(ProjectContext).filter(context => c
 export enum ProjectCategory {
     NONE = '',
     Animation = 'Animation',
-    Game = 'Game',
+    Gameplay = 'Gameplay',
     Maker = 'Maker',
     Tool = 'Tool',
     Web = 'Web'
