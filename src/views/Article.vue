@@ -44,7 +44,7 @@
 import { defineComponent } from 'vue'
 import Tag from '@/components/Tag.vue'
 import router from '@/router'
-import marked from 'marked'
+import { marked } from 'marked'
 import Projects from '@/assets/projects-data.json'
 
 export default defineComponent({
