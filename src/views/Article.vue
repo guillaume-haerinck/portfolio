@@ -1,7 +1,7 @@
 <template>
   <div class="article readable fullheight-min">
     <div class="article-image">
-      <img :src="'/img/' + project.slug + '/capture.png'" alt="Project capture">
+      <img :src="'/img/' + project.slug + '/capture.webp'" alt="Project capture">
     </div>
     
     <div class="article-tags">
