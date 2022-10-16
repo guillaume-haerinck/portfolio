@@ -3,7 +3,7 @@
     "name": "Mario + Rabbids : Sparks of Hope",
     "slug": "sparks-of-hope",
     "year": 2022,
-    "description": "TODO",
+    "description": "A Turn-based action RPG made by Ubisoft on Switch. I was in the Tools team improving the Snowdrop engine in C++.",
     "category": "Game",
     "context": "Professional",
     "tags": [
@@ -19,7 +19,7 @@
     "name": "Open 3D Engine",
     "slug": "open-engine",
     "year": 2022,
-    "description": "TODO",
+    "description": "A free AAA game engine built from the source code of Amazon Lumberyard. I help with editor-related issues in my spare time.",
     "category": "Tool",
     "context": "Contribution",
     "tags": [
