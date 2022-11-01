@@ -1,1 +1,5 @@
-[More description coming soon]
+The Open 3D Engine (O3DE) was released by Amazon in 2021 under the *- very permissive -* Apache 2.0 open-source License. This game engine is a new release of **Amazon Lumberyard** ([New World](https://www.newworld.com/en-us/)) which itself was based on the **[Cry Engine 3](https://www.cryengine.com/)** ([Crysis](https://www.crysis.com/), Ryse sons of rome).
+
+While some parts, like the renderer, were re-written from scratch and still needs to be battle tested, it does no change the fact that we got a **AAA-grade engine** available for free and forever. For now it is being actively developed by the Amazon game team and backed-up by big names of the industry ([Epic Games](https://www.o3de.org/blog/posts/epic-joins-o3df/), Adobe, Microsoft, etc).
+
+For me this project is both a great opportunity to learn from another codebase and to try out new areas of game engine development. I already made [some improvements](https://github.com/o3de/o3de/pulls?q=is%3Apr+author%3Aguillaume-haerinck) to the code base and I'm looking forward to make more 😁.

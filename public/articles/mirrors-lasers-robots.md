@@ -1,1 +1,3 @@
-On going project description, the post-mortem in French is available [here](https://github.com/guillaume-haerinck/imac-tower-defense/blob/master/doc/rapport.md).
+A tower-defense game made in C++ with the help of [EnTT](https://github.com/skypjack/entt) ecs library. **We wanted the player to be very active between each turn**, so we based the gameplay on rotating mirror reflecting lasers : when a wave is incomming, the player do not have enough mirrors to cover the whole area, he has to rotate them by hand.
+
+We made a custom 2D renderer in OpenGL, but we wanted to try out [NoesisGUI](https://www.noesisengine.com/) to use the **XAML language to make the GUI elements** (as in a WPF application). The post-mortem in French is available [here](https://github.com/guillaume-haerinck/imac-tower-defense/blob/master/doc/rapport.md).

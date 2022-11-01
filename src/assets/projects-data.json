@@ -179,7 +179,7 @@
       "video": "https://vimeo.com/384904687"
     },
     "partners": [
-      { "fname": "Barbarra", "lname": "Guyonneau", "linkedin": "https://www.linkedin.com/in/barbara-guyonneau-4b0777135/", "role": "" }
+      { "fname": "Barbara", "lname": "Guyonneau", "linkedin": "https://www.linkedin.com/in/barbara-guyonneau-4b0777135/", "role": "" }
     ]
   },
   "learn-vulkan": {
@@ -243,10 +243,11 @@
       "C++", "ECS", "GraphicProg", "WPF"
     ],
     "links": { 
-      "repo": "https://github.com/guillaume-haerinck/imac-tower-defense"
+      "repo": "https://github.com/guillaume-haerinck/imac-tower-defense",
+      "video": "https://vimeo.com/385595523"
     },
     "partners": [
-      { "fname": "Jules", "lname": "Fouchy", "linkedin": "", "role": "" },
+      { "fname": "Jules", "lname": "Fouchy", "linkedin": "https://www.linkedin.com/in/jules-fouchy-b6a91b221/", "role": "" },
       { "fname": "Cyrielle", "lname": "Lassarre", "linkedin": "https://www.linkedin.com/in/cyrielle-lassarre/", "role": "" }
     ]
   },
