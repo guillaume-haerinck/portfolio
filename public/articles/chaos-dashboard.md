@@ -1,1 +1,1 @@
-Ongoing project description, but post-mortem in French is available [here](https://github.com/LafLaurine/imac2-web-dashboard/blob/master/doc/POST-MORTEM.pdf).
+We wanted to have fun making an old-fashionned looking website, powered by modern web framework, and dedicated to border-line statistics. You can find the post-mortem in French [here](https://github.com/LafLaurine/imac2-web-dashboard/blob/master/doc/POST-MORTEM.pdf).

@@ -1,19 +1,19 @@
-This project aim is to make more **accessible, automated and easy the capture of an object** in all of its angles. The pictures generated are then used with a photogrammetry software like [Meshroom](https://alicevision.org/#meshroom) to **create a 3D model**. We worked as [IMAC students](https://www.ingenieur-imac.fr/) in collaboration with [AliceVision](https://alicevision.org/) to make this prototype happen.
+ScanRig aims to make **accessible, automated and easy the capture of an object** in all of its angles. The pictures generated are then used with a photogrammetry software like [Meshroom](https://alicevision.org/#meshroom) to **create a 3D model**. We worked as [IMAC students](https://www.ingenieur-imac.fr/) in collaboration with [AliceVision](https://alicevision.org/) to make this prototype happen.
 
 ## How it works
 
-There are 3 cameras attached to an arm. This arm is rotating around a static objects. **While the arm is moving we capture photos**. There is a software built with QT to handle the cameras and the engine setting. We also built custom lighting to **allow the use of photometry** and create normal maps of the object, in this setup, the arm will wait at the 4 cardinal angles in order to take pictures while the lighting setup updates.
+There are 3 cameras attached to a rotative arm. **While the arm is moving we capture photos of an object placed in the center**. A software built with QT handle the cameras and the arm speed. We also built custom lighting to **allow the use of photometry** in order to create normal maps of the object. In this setup the arm will wait at the 4 cardinal angles in order to take pictures while the lighting setup updates.
 
 ## My roles
 
 - Created a C++ library (with a python wrapper) to handle any kind of Camera on Windows and on Linux,
-- Modelled the various versions of the Rig with Fusion360,
-- Helped making the QT software to pilot everything,
+- Modeled the various versions of the Rig with Fusion360,
+- Participated on the QT software to pilot everything,
 - Made various technical tests to check the camera capabilities,
 - Cut holes, saw wood and many other things to create the prototype.
 
-*[More content to come, there is a 40-pages report waiting to be translated in english]*
+## Side notes
 
-## Conclusion
+Upon working on a prototype you often have to **consider second-hand usages for some rigs in order to reduce the cost** (our first prototype was made out of curtain rod...). The experience was very refreshing in this regard, as finding backdoors is more of an hacker-activity than a software developer one 😄. 
 
-Working on a prototype is an exiting journey as you have to be both a bit crazy to find ideas but plan everything ahead so that you reduce the amount of problem to overcome. I particularly enjoyed the two roles of being a developer but also a maker and have to assemble pieces together.
+The fact that we had to think about the whole pipeline (imagine the setup, but also assemble it and code the related software) also really resonated with me as you had to **gather feedback during each step** and really plan everything ahead to find defects before it is too late.
