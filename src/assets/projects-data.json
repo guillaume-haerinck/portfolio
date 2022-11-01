@@ -67,8 +67,8 @@
     "partners": [
       { "fname": "Enguerrand", "lname": "De Smet", "linkedin": "https://www.linkedin.com/in/enguerrand-de-smet-1879a119b/", "role": "" },
       { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-826545148/", "role": "" },
-      { "fname": "Antoine", "lname": "Libert", "linkedin": "", "role": "" },
-      { "fname": "Jules", "lname": "Fouchy", "linkedin": "", "role": "" }
+      { "fname": "Antoine", "lname": "Libert", "linkedin": "https://www.linkedin.com/in/antoine-libert/", "role": "" },
+      { "fname": "Jules", "lname": "Fouchy", "linkedin": "https://www.linkedin.com/in/jules-fouchy-b6a91b221/", "role": "" }
     ]
   },
   "universe-engine": {
@@ -85,7 +85,7 @@
       "website": "https://www.virtualarts.co.uk/" 
     },
     "partners": [
-      { "fname": "Jules", "lname": "Fouchy", "linkedin": "", "role": "" },
+      { "fname": "Jules", "lname": "Fouchy", "linkedin": "https://www.linkedin.com/in/jules-fouchy-b6a91b221/", "role": "" },
       { "fname": "Pierre", "lname": "Thiel", "linkedin": "", "role": "" }
     ]
   },
@@ -127,7 +127,7 @@
     "partners": [
       { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-826545148/", "role": "" },
       { "fname": "Mathilde", "lname": "Dumoulin", "linkedin": "", "role": "" },
-      { "fname": "Eva", "lname": "Benharira", "linkedin": "", "role": "" }
+      { "fname": "Eva", "lname": "Benharira", "linkedin": "https://www.linkedin.com/in/eva-benharira-ingenieure-creative/", "role": "" }
     ]
   },
   "a-rogue-like": {
