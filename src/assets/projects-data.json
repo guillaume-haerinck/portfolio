@@ -7,10 +7,11 @@
     "category": "Tool",
     "context": "Professional",
     "tags": [
-      "ECS", "C++", "C#"
+      "ECS", "C++", "C#", "WPF"
     ],
     "links": {
-      "video": "https://www.youtube.com/watch?v=FN48p_QXBUk"
+      "video": "https://www.youtube.com/watch?v=FN48p_QXBUk",
+      "website": "https://www.ubisoft.com/fr-fr/game/mario-rabbids/sparks-of-hope"
     },
     "partners": [
     ]
@@ -26,7 +27,9 @@
       "QT", "C++"
     ],
     "links": {
-      "video": "https://www.youtube.com/watch?v=CQmjAxr7LZs"
+      "video": "https://www.youtube.com/watch?v=CQmjAxr7LZs",
+      "website": "https://www.o3de.org/",
+      "repo": "https://github.com/o3de/o3de/pulls?q=is%3Apr+author%3Aguillaume-haerinck"
     },
     "partners": [
     ]
