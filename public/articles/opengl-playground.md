@@ -1,1 +1,1 @@
-This project is an experimentation to see how the **Entity Component System** architecture would fit OpenGL state-machine design (a similar project was made with [DirectX 11](https://www.guillaumehaerinck.com/#/project-detail/dx11-playground).
+This project is an experimentation to see how the **Entity Component System** architecture would fit OpenGL state-machine design (a similar project was made with [DirectX 11](https://www.guillaumehaerinck.com/#/project-detail/dx11-playground)).
