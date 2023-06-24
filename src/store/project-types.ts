@@ -1,7 +1,7 @@
 export enum ProjectContext {
     NONE = '',
     Professional = 'Professional',
-    Contribution = 'Contribution',
+    Hobby = 'Hobby',
     Student = 'Student',
 }
 export const ProjectContexts = Object.values(ProjectContext).filter(context => context != '');

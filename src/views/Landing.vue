@@ -29,12 +29,12 @@
     <div class="last-projects">
       <div class="oblique-title-container">
         <div class="oblique-black"></div>
-        <h1 class="title">OPEN SOURCE CONTRIBUTIONS</h1>
+        <h1 class="title">HOBBY PROJECTS</h1>
         <div class="oblique-black"></div>
       </div>
 
       <div class="last-projects-container">
-        <Project v-for="project in contributionProjects" 
+        <Project v-for="project in hobbyProjects" 
           :key="'project-' + project.name"
           :project="project"
         />
@@ -63,7 +63,7 @@ export default defineComponent({
   data() {
     return {
       professionalProjects: [Projects["sparks-of-hope"], Projects["scanrig"]],
-      contributionProjects: [Projects["open-engine"]]
+      hobbyProjects: [Projects["open-engine"], Projects["harmless-delivery"]]
     }
   }
 });

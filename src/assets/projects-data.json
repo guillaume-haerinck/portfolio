@@ -1,4 +1,39 @@
 {
+  "tlou-spot-picking": {
+    "name": "The last of us : Spot picking system",
+    "slug": "tlou-spot-picking",
+    "year": 2023,
+    "description": "Show delay-gather and time-slice optimization techniques in C++. Based on articles by Naughty Dog developer 'Ming-Lun Allen Chou'",
+    "category": "Gameplay",
+    "context": "Hobby",
+    "tags": [
+      "Unreal", "C++"
+    ],
+    "links": {
+      "repo": "https://gitlab.com/learn-computer-graphics/the-last-of-us-spot-picking"
+    },
+    "partners": [
+    ]
+  },
+  "harmless-delivery": {
+    "name": "(H)armless Delivery",
+    "slug": "harmless-delivery",
+    "year": 2023,
+    "description": "Mix golf and quick action logic in this small game made for the LudumDare 53",
+    "category": "Gameplay",
+    "context": "Hobby",
+    "tags": [
+      "Unity", "C#"
+    ],
+    "links": {
+      "repo": "https://gitlab.com/learn-computer-graphics/ludumdare53",
+      "website": "https://ldjam.com/events/ludum-dare/53/harmless-delivery",
+      "demo": "https://guillaume-haerinck.itch.io/harmless-delivery"
+    },
+    "partners": [
+      { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-ia/", "role": "" }
+    ]
+  },
   "sparks-of-hope": {
     "name": "Mario + Rabbids : Sparks of Hope",
     "slug": "sparks-of-hope",
@@ -22,7 +57,7 @@
     "year": 2022,
     "description": "A free AAA game engine built from the source code of Amazon Lumberyard. I help with editor-related issues in my spare time",
     "category": "Tool",
-    "context": "Contribution",
+    "context": "Hobby",
     "tags": [
       "QT", "C++"
     ],
@@ -32,23 +67,6 @@
       "repo": "https://github.com/o3de/o3de/pulls?q=is%3Apr+author%3Aguillaume-haerinck"
     },
     "partners": [
-    ]
-  },
-  "evil-age": {
-    "name": "Evil Age",
-    "slug": "evil-age",
-    "year": 2021,
-    "description": "AI simulation of a medieval village made in Unreal Engine 4",
-    "category": "Gameplay",
-    "context": "Student",
-    "tags": [
-      "Unreal", "C++"
-    ],
-    "links": {
-      "repo": "https://gitlab.com/guillaume-haerinck/evil-age"
-    },
-    "partners": [
-      { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-826545148/", "role": "" }
     ]
   },
   "sakari": {
@@ -66,7 +84,7 @@
     },
     "partners": [
       { "fname": "Enguerrand", "lname": "De Smet", "linkedin": "https://www.linkedin.com/in/enguerrand-de-smet-1879a119b/", "role": "" },
-      { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-826545148/", "role": "" },
+      { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-ia/", "role": "" },
       { "fname": "Antoine", "lname": "Libert", "linkedin": "https://www.linkedin.com/in/antoine-libert/", "role": "" },
       { "fname": "Jules", "lname": "Fouchy", "linkedin": "https://www.linkedin.com/in/jules-fouchy-b6a91b221/", "role": "" }
     ]
@@ -125,26 +143,9 @@
       "demo": "https://chaosdashboard.guillaumehaerinck.com/"
     },
     "partners": [
-      { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-826545148/", "role": "" },
+      { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-ia/", "role": "" },
       { "fname": "Mathilde", "lname": "Dumoulin", "linkedin": "", "role": "" },
       { "fname": "Eva", "lname": "Benharira", "linkedin": "https://www.linkedin.com/in/eva-benharira-ingenieure-creative/", "role": "" }
-    ]
-  },
-  "a-rogue-like": {
-    "name": "A Rogue Like",
-    "slug": "a-rogue-like",
-    "year": 2020,
-    "description": "A simple endless 3D fight game made with procedural dungeon generation. It runs with Unreal Engine, we took free assets from its stores and animations from Mixamo",
-    "category": "Gameplay",
-    "context": "Student",
-    "tags": [
-      "Unreal", "C++"
-    ],
-    "links": { 
-      "repo": "https://gitlab.com/guillaume-haerinck/rogue-like" 
-    },
-    "partners": [
-      { "fname": "Enguerrand", "lname": "De Smet", "linkedin": "https://www.linkedin.com/in/enguerrand-de-smet-1879a119b/", "role": "" }
     ]
   },
   "the-last-call": {
@@ -278,36 +279,6 @@
     ],
     "links": { 
       "repo": "https://github.com/guillaume-haerinck/directx11-playground" 
-    },
-    "partners": []
-  },
-  "which-gui": {
-    "name": "Which GUI",
-    "slug": "which-gui",
-    "year": 2019,
-    "description": "Adaptation of great user interfaces in games using different technologies. It compares web frameworks (Angular, Vue, React), game engines (Unreal, Godot, Unity) and QT philosophy",
-    "category": "Tool",
-    "context": "Student",
-    "tags": [
-      "Unreal", "Unity", "WPF", "QT"
-    ],
-    "links": { 
-      "repo": "https://github.com/guillaume-haerinck/which-gui"
-    },
-    "partners": []
-  },
-  "roll-goal": {
-    "name": "Roll Goal",
-    "slug": "roll-goal",
-    "year": 2019,
-    "description": "Re-creation of a small game across multiple game engines. Now using Unity (both in ECS and GameObject), Unreal Engine and Godot",
-    "category": "Gameplay",
-    "context": "Student",
-    "tags": [
-      "Unreal", "Unity", "C++", "C#", "ECS"
-    ],
-    "links": { 
-      "repo": "https://github.com/guillaume-haerinck/roll-goal" 
     },
     "partners": []
   },
