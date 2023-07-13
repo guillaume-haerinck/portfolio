@@ -1,11 +1,11 @@
 <template>
   <div class="landing readable">
     <div id="first-screen">
-      <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a Tools engineer<br>based in Paris.</h1>
-      <p id="description">Currently working at Ubisoft on the Snowdrop game engine and making some open-source contribution when the sun is bright 🎶</p>
+      <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a C++ Software Engineer<br>based in Canada</h1>
+      <p id="description">Currently working at Frima with Unreal Engine and making some open-source contribution when the sun is bright 🎶</p>
 
       <div id="links">
-        <p><a id="cv" href="https://www.guillaumehaerinck.com/cv-en.pdf" target="_blank">resume</a></p>
+        <p><a id="cv" href="https://www.guillaumehaerinck.com/resume.pdf" target="_blank">resume</a></p>
         <p><a id="linkedin" href="https://www.linkedin.com/in/guillaumehaerinck/" target="_blank">linkedin</a></p>
         <p><a id="github" href="https://github.com/guillaume-haerinck" target="_blank">github</a></p>
       </div>
