@@ -32,3 +32,9 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Webp conversion
+
+```
+cwebp capture.png -resize 400 0 -o capture.webp
+```

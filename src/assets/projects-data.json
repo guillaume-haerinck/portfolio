@@ -1,4 +1,24 @@
 {
+  "the-greedy-tank": {
+    "name": "The Greedy Tank",
+    "slug": "the-greedy-tank",
+    "year": 2023,
+    "description": "A small game about resource gathering made during the Frima game jam",
+    "category": "Gameplay",
+    "context": "Hobby",
+    "tags": [
+      "Unreal", "C++"
+    ],
+    "links": {
+      "repo": "https://github.com/Betshet/TheTower",
+      "website": "https://betshet.itch.io/the-greedy-tank"
+    },
+    "partners": [
+      { "fname": "Romain", "lname": "Bachelier", "linkedin": "https://www.linkedin.com/in/romain-bachelier", "role": "" },
+      { "fname": "Pierre", "lname": "Cudennec", "linkedin": "https://www.linkedin.com/in/pierre-cudennec-4a0351133", "role": "" },
+      { "fname": "Valentin", "lname": "Plantard-Wahl", "linkedin": "https://www.linkedin.com/in/valentin-plantard-wahl-27a129224", "role": "" }
+    ]
+  },
   "tlou-spot-picking": {
     "name": "The last of us : Spot picking system",
     "slug": "tlou-spot-picking",

@@ -1,0 +1,1 @@
+A small game made with colleagues in 48 hours at Frima. The theme of the jam was "temporary alliances". We came up with the idea of getting fuel for a tank that is targetting you. You can dodge its attacks and that allows you to get more resources.
