@@ -119,7 +119,8 @@
     "tags": [
       "C++", "GraphicProg", "C#"
     ],
-    "links": { 
+    "links": {
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/LGJxlQbkPa4?si=gSF-dIoQAmiKCv_3\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
       "website": "https://www.virtualarts.co.uk/" 
     },
     "partners": [
@@ -383,7 +384,8 @@
     ],
     "links": {
       "repo": "https://github.com/guillaume-haerinck/jam-kanaga-wave", 
-      "website": "https://globalgamejam.org/2017/games/kanaga-wave"
+      "website": "https://globalgamejam.org/2017/games/kanaga-wave",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/m7l8lXTcfq8?si=4tqOmeeC5HHuHRaM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
     },
     "partners": [
       { "fname": "Samy", "lname": "Badache", "linkedin": "", "role": "" },
