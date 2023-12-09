@@ -31,7 +31,8 @@
       "Unreal", "C++"
     ],
     "links": {
-      "repo": "https://gitlab.com/learn-computer-graphics/the-last-of-us-spot-picking"
+      "repo": "https://gitlab.com/learn-computer-graphics/the-last-of-us-spot-picking",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/_y62xGa1pUE?si=UG7yYuMNQTf5uErc\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
     },
     "partners": [
     ]
