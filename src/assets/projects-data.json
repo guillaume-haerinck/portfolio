@@ -165,7 +165,8 @@
     ],
     "links": { 
       "repo": "https://github.com/LafLaurine/imac2-web-dashboard", 
-      "demo": "https://chaosdashboard.guillaumehaerinck.com/"
+      "demo": "https://chaosdashboard.guillaumehaerinck.com/",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/mmZn9rp9Ov8?si=ylLnX4tSFhgfYEQk\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
     },
     "partners": [
       { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-ia/", "role": "" },
@@ -321,7 +322,8 @@
     ],
     "links": { 
       "repo": "https://github.com/guillaume-haerinck/imac-coffee-conspiration",
-      "demo": "https://coffee-conspiration.guillaumehaerinck.com/"
+      "demo": "https://coffee-conspiration.guillaumehaerinck.com/",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/rXJ3amRlR3Y?si=4GsZxaXG-X3ROV1F\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
     },
     "partners": [
       { "fname": "Nicolas", "lname": "Lienart", "linkedin": "https://www.linkedin.com/in/nicolas-lienart/", "role": "" }
