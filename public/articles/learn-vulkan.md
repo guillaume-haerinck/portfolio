@@ -1,1 +1,1 @@
-Vulkan API being so low level, I wanted to make an **easy-to-understand project** where I could come back to from time to time when I needed a reminder about its inner working. 
+Vulkan API being so low level, I wanted to make an **easy-to-understand project** where I could come back to from time to time when I needed a reminder about its inner working. (a similar project was made with <a target="_blank" href="https://www.guillaumehaerinck.com/#/project-detail/dx11-playground">DirectX 11 using an ECS architecture</a>)

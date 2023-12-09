@@ -11,7 +11,8 @@
     ],
     "links": {
       "repo": "https://github.com/Betshet/TheTower",
-      "website": "https://betshet.itch.io/the-greedy-tank"
+      "website": "https://betshet.itch.io/the-greedy-tank",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/_CS3Ib0dOxQ?si=I-VkrqoqiwKHjBKq\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
     },
     "partners": [
       { "fname": "Romain", "lname": "Bachelier", "linkedin": "https://www.linkedin.com/in/romain-bachelier", "role": "" },
@@ -48,7 +49,8 @@
     "links": {
       "repo": "https://gitlab.com/learn-computer-graphics/ludumdare53",
       "website": "https://ldjam.com/events/ludum-dare/53/harmless-delivery",
-      "demo": "https://guillaume-haerinck.itch.io/harmless-delivery"
+      "demo": "https://guillaume-haerinck.itch.io/harmless-delivery",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/sGcepL4PMeE?si=3NxB_ww6MZZRT1gI\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
     },
     "partners": [
       { "fname": "Laurine", "lname": "Lafontaine", "linkedin": "https://www.linkedin.com/in/laurine-lafontaine-ia/", "role": "" }
@@ -100,7 +102,8 @@
       "Unity", "C#"
     ],
     "links": {
-      "repo": "https://gitlab.com/LafLaurine/sakari"
+      "repo": "https://gitlab.com/LafLaurine/sakari",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/MTUfCKjPvsM?si=UHJCDH_vphG87Qfu\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
     },
     "partners": [
       { "fname": "Enguerrand", "lname": "De Smet", "linkedin": "https://www.linkedin.com/in/enguerrand-de-smet-1879a119b/", "role": "" },
