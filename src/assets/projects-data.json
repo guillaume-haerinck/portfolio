@@ -65,7 +65,7 @@
       "ECS", "C++", "C#", "WPF"
     ],
     "links": {
-      "video": "https://www.youtube.com/watch?v=FN48p_QXBUk",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/FN48p_QXBUk?si=xBJzuqzDuWOcfp_F\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
       "website": "https://www.ubisoft.com/fr-fr/game/mario-rabbids/sparks-of-hope"
     },
     "partners": [
@@ -82,7 +82,7 @@
       "QT", "C++"
     ],
     "links": {
-      "video": "https://www.youtube.com/watch?v=CQmjAxr7LZs",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/CQmjAxr7LZs?si=QYfldEu1tG1_Utkp\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
       "website": "https://www.o3de.org/",
       "repo": "https://github.com/o3de/o3de/pulls?q=is%3Apr+author%3Aguillaume-haerinck"
     },
@@ -140,7 +140,7 @@
     "links": { 
       "repo": "https://github.com/alicevision/ScanRig",
       "website": "https://alicevision.org/",
-      "video": "https://vimeo.com/411076799"
+      "video": "<iframe src=\"https://player.vimeo.com/video/411076799?h=91f6cac3e9&title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
     },
     "partners": [
       { "fname": "Enguerrand", "lname": "De Smet", "linkedin": "https://www.linkedin.com/in/enguerrand-de-smet-1879a119b/", "role": "" },
@@ -180,7 +180,7 @@
     ],
     "links": { 
       "repo": "https://gitlab.com/guillaume-haerinck/the-last-call", 
-      "video": "https://vimeo.com/421542604" 
+      "video": "<iframe src=\"https://player.vimeo.com/video/421542604?h=f8f1c9fcec&title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>" 
     },
     "partners": [
       { "fname": "Louisa", "lname": "Chikar", "linkedin": "https://www.linkedin.com/in/louisa-chikar-0771141b7/", "role": "" }
@@ -197,7 +197,7 @@
       "Blender"
     ],
     "links": { 
-      "video": "https://vimeo.com/384904687"
+      "video": "<iframe src=\"https://player.vimeo.com/video/384904687?h=43f4793a6f&title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
     },
     "partners": [
       { "fname": "Barbara", "lname": "Guyonneau", "linkedin": "https://www.linkedin.com/in/barbara-guyonneau-4b0777135/", "role": "" }
@@ -265,7 +265,7 @@
     ],
     "links": { 
       "repo": "https://github.com/guillaume-haerinck/imac-tower-defense",
-      "video": "https://vimeo.com/385595523"
+      "video": "<iframe src=\"https://player.vimeo.com/video/385595523?h=3a0c9d2316&title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
     },
     "partners": [
       { "fname": "Jules", "lname": "Fouchy", "linkedin": "https://www.linkedin.com/in/jules-fouchy-b6a91b221/", "role": "" },
@@ -332,7 +332,7 @@
     ],
     "links": { 
       "repo": "https://github.com/guillaume-haerinck/mmi-portal-box",
-      "video": "https://vimeo.com/267103924"
+      "video": "<iframe src=\"https://player.vimeo.com/video/267103924?h=c37aca13cc&title=0&byline=0&portrait=0\" width=\"640\" height=\"360\" frameborder=\"0\" allow=\"autoplay; fullscreen; picture-in-picture\" allowfullscreen></iframe>"
     },
     "partners": []
   },

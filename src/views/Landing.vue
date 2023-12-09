@@ -1,7 +1,7 @@
 <template>
   <div class="landing readable">
     <div id="first-screen">
-      <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a C++ Software Engineer<br>based in Canada</h1>
+      <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a C++ Software Engineer<br>originating from France</h1>
       <p id="description">Currently working at Frima with Unreal Engine and making some open-source contribution when the sun is bright 🎶</p>
 
       <div id="links">

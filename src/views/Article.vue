@@ -1,6 +1,7 @@
 <template>
   <div class="article readable fullheight-min">
-    <div class="article-image">
+    <div v-if=project.links.video class="article-image" v-html="project.links.video" ></div>
+    <div v-else class="article-image">
       <img :src="'/img/' + project.slug + '/capture.webp'" alt="Project capture">
     </div>
     
@@ -14,10 +15,9 @@
     </div>
 
     <div class="links">
-      <a target="_blank" v-if=project.links.repo :href=project.links.repo><i class="material-icons">code</i></a>
-      <a target="_blank" v-if=project.links.video :href=project.links.video><i class="material-icons">ondemand_video</i></a>
-      <a target="_blank" v-if=project.links.website :href=project.links.website><i class="material-icons">language</i></a>
-      <a target="_blank" v-if=project.links.demo :href=project.links.demo><i class="material-icons">directions_run</i></a>
+      <a target="_blank" class="linkable-partner" v-if=project.links.repo :href=project.links.repo><i class="material-icons">code</i>Source</a>
+      <a target="_blank" class="linkable-partner" v-if=project.links.website :href=project.links.website><i class="material-icons">ondemand_video</i>Website</a>
+      <a target="_blank" class="linkable-partner" v-if=project.links.demo :href=project.links.demo><i class="material-icons">play_arrow</i>Play</a>
     </div>
 
     <h1 class="article-title">{{ project.name }} ({{ project.year }})</h1>
@@ -84,12 +84,17 @@ export default defineComponent({
 
 .article-image {
   justify-self: center;
+  margin: 25px 0;
 }
 
 .article-image img {
   max-width: 100%;
   max-height: 250px;
-  margin: 25px 0;
+}
+
+.article-image iframe {
+  max-width: 100%;
+  max-height: 350px;
 }
 
 .article-tags {
@@ -124,18 +129,21 @@ export default defineComponent({
   color: blueviolet;
 }
 
-.links i {
-  margin: 30px 10px 0px 10px;
-  background-color: white;
-  color: black;
-  border-radius: 50px;
-  padding: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  font-size: 1.5em;
+.links {
+  margin: 15px 0px 5px 0px;
 }
 
-.links i:hover {
-  color: gray;
+.links a {
+  text-decoration: none;
+  color: black;
+  margin: 0px 10px;
+  padding-bottom: 2px;
+}
+
+.links i {
+  position: relative;
+  top: 6px;
+  margin-right: 3px;
 }
 
 /* Markdown custom styling */
