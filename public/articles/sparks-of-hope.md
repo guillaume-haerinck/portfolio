@@ -1,4 +1,4 @@
-Mario + The Lapins Crétins : Sparks of Hope is a Nintendo Switch game released in 2022 by Ubisoft. I worked for nearly 2 years on this game as a Junior Tools Programmer in Paris. The project was made under the Snowdrop Engine so most of **my work was in C++** but **I also maintained other production tools using C# under the WPF framework**.
+Mario + The Lapins Crétins : Sparks of Hope is a Nintendo Switch game released in 2022 by Ubisoft. I worked for 2 years on this game as a Junior Tools Programmer in Paris. The project was made under the Snowdrop Engine so most of **my work was in C++** but **I also maintained other production tools using C# under the WPF framework**.
 
 ## My missions
 

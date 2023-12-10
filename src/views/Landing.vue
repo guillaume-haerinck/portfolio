@@ -62,7 +62,7 @@ export default defineComponent({
   },
   data() {
     return {
-      professionalProjects: [Projects["sparks-of-hope"], Projects["scanrig"]],
+      professionalProjects: [Projects["fortnite"], Projects["sparks-of-hope"]],
       hobbyProjects: [Projects["open-engine"], Projects["harmless-delivery"]]
     }
   }

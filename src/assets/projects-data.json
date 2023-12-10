@@ -20,6 +20,23 @@
       { "fname": "Valentin", "lname": "Plantard-Wahl", "linkedin": "https://www.linkedin.com/in/valentin-plantard-wahl-27a129224", "role": "" }
     ]
   },
+  "fortnite": {
+    "name": "Fortnite",
+    "slug": "fortnite",
+    "year": 2023,
+    "description": "The famous live service game known for its battle-royale mode. I am working on the mobile and streaming support in C++",
+    "category": "Gameplay",
+    "context": "Professional",
+    "tags": [
+      "Unreal", "C++"
+    ],
+    "links": {
+      "website": "https://frimastudio.com/project/fortnite/",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Wjij-OX9RKI?si=Wo5ViVZxbHbS-Phg\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
+    },
+    "partners": [
+    ]
+  },
   "tlou-spot-picking": {
     "name": "The last of us : Spot picking system",
     "slug": "tlou-spot-picking",
@@ -302,7 +319,7 @@
     "category": "Tool",
     "context": "Student",
     "tags": [
-      "C++", "GraphicProg"
+      "C++", "GraphicProg", "ECS"
     ],
     "links": { 
       "repo": "https://github.com/guillaume-haerinck/directx11-playground",
