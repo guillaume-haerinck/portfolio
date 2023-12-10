@@ -237,7 +237,8 @@
       "GraphicProg", "C++"
     ],
     "links": {
-      "repo": "https://github.com/guillaume-haerinck/learn-vulkan"
+      "repo": "https://github.com/guillaume-haerinck/learn-vulkan",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/ag9nhrXqTtY?si=qE-fT5c2I8jY7VHM\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>"
     },
     "partners": []
   },

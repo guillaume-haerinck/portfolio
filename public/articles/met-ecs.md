@@ -1,1 +1,1 @@
-A custom ECS library made with C++. You can find the post-mortem (in english) [here](https://github.com/guillaume-haerinck/met-ecs/tree/master/docs).
+A custom ECS library made with C++ with a lot of templating. You can find the post-mortem (in english) [here](https://github.com/guillaume-haerinck/met-ecs/tree/master/docs). It was developped to support the <a target="_blank" href="https://www.guillaumehaerinck.com/#/project-detail/cube-beast-editor">Cube Beast project</a>.

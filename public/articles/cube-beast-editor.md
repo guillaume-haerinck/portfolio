@@ -1,1 +1,1 @@
-A basic voxel editor powered by a custom C++ ECS-library and runnable on the web. You can find the post-mortem (in english) [here](https://github.com/guillaume-haerinck/cube-beast-editor/tree/master/doc).
+A basic voxel editor powered by the <a target="_blank" href="https://www.guillaumehaerinck.com/#/project-detail/met-ecs">custom-made "MET" ECS-library</a> and runnable on the web via web assembly. You can find the post-mortem (in english) [here](https://github.com/guillaume-haerinck/cube-beast-editor/tree/master/doc).
