@@ -1,0 +1,1 @@
+A game made in Godot engine in the span of 3 days with colleagues at Cloud Imperium. You have to type the correct letters in order to unsummon the enemy creatures. I worked on the game design, programming and general team organization.

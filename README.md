@@ -1,5 +1,7 @@
 # portfolio
 
+Uses node.js 16
+
 ## Project setup
 ```
 npm install

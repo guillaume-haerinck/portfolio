@@ -1,4 +1,44 @@
 {
+  "the-unsummoning": {
+    "name": "The Unsummoning",
+    "slug": "the-unsummoning",
+    "year": 2024,
+    "description": "A 2d side scrolling game-jam game made in Godot where you kill enemies by typing their names",
+    "category": "Gameplay",
+    "context": "Hobby",
+    "tags": [
+      "C++"
+    ],
+    "links": {
+      "repo": "https://github.com/jonas2602/TheSchmenJam2024_04",
+      "website": "https://ldjam.com/events/ludum-dare/55/$384276",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/1ejtL6-gcUI?si=yOMAOkDZJL9mCPSQ\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    },
+    "partners": [
+      { "fname": "Jonas", "lname": "Schneider", "linkedin": "https://www.linkedin.com/in/jonas-schneider-b89bb0133", "role": "" },
+      { "fname": "Baran", "lname": "Surucu", "linkedin": "https://www.linkedin.com/in/baransurucu", "role": "" },
+      { "fname": "Albin", "lname": "Engstrom", "linkedin": "https://www.linkedin.com/in/albin-engstr%C3%B6m-bb0aa9208", "role": "" },
+      { "fname": "Inshal", "lname": "Uddin", "linkedin": "https://www.linkedin.com/in/muhammadinshal", "role": "" },
+      { "fname": "Louis", "lname": "Varon", "linkedin": "https://www.linkedin.com/in/louis-varon-sothar", "role": "" },
+      { "fname": "Tobias", "lname": "Gronvall", "linkedin": "https://www.linkedin.com/in/tobias-gr%C3%B6nvall", "role": "" }
+    ]
+  },
+  "star-citizen": {
+    "name": "Star Citizen",
+    "slug": "star-citizen",
+    "year": 2024,
+    "description": "The famous multiplayer space-opera simulation with incredible streaming tech. Currently working in the engine in C++ alongside the editor team",
+    "category": "Tool",
+    "context": "Professional",
+    "tags": [
+      "C++", "QT"
+    ],
+    "links": {
+      "website": "https://robertsspaceindustries.com/star-citizen",
+      "video": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/nWm_OhIKms8?si=g3wEmHlMiEpjxngq\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe>"
+    },
+    "partners": []
+  },
   "the-greedy-tank": {
     "name": "The Greedy Tank",
     "slug": "the-greedy-tank",
@@ -24,7 +64,7 @@
     "name": "Fortnite",
     "slug": "fortnite",
     "year": 2023,
-    "description": "The famous live service game known for its battle-royale mode. I am working on the mobile and streaming support in C++",
+    "description": "The famous live service game known for its battle-royale mode. I was working on the mobile and streaming support in C++",
     "category": "Gameplay",
     "context": "Professional",
     "tags": [

@@ -2,7 +2,7 @@
   <div class="landing readable">
     <div id="first-screen">
       <h1 class="backgrounded left orange">Hello I'm Guillaume,<br>a C++ Software Engineer<br>originating from France</h1>
-      <p id="description">Currently working at Frima with Unreal Engine and making some open-source contribution when the sun is bright 🎶</p>
+      <p id="description">Currently working at Cloud Imperium on Star Citizen/Squadron 42 and making some open-source contribution when the sun is bright 🎶</p>
 
       <div id="links">
         <p><a id="cv" href="https://www.guillaumehaerinck.com/resume.pdf" target="_blank">resume</a></p>
@@ -62,8 +62,8 @@ export default defineComponent({
   },
   data() {
     return {
-      professionalProjects: [Projects["fortnite"], Projects["sparks-of-hope"]],
-      hobbyProjects: [Projects["open-engine"], Projects["harmless-delivery"]]
+      professionalProjects: [Projects["star-citizen"], Projects["sparks-of-hope"]],
+      hobbyProjects: [Projects["open-engine"], Projects["the-unsummoning"]]
     }
   }
 });

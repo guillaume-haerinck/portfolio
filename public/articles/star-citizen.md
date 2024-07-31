@@ -1,0 +1,1 @@
+Amongst multiple things, I am currently working on the toolset in C++ to keep both game and editor stability on board. Many ideas of improvements comes from my experience at Ubisoft on the Snowdrop Engine
